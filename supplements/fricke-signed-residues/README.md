@@ -1,6 +1,6 @@
 # Supplement: supersingular poles and signed residues of prime-level Fricke Hauptmoduln
 
-Journal draft v1.3 (3 November 2026) of a separate paper by David Jordan, with its computational evidence bundle.
+Journal draft v1.4 (4 November 2026) of a separate paper by David Jordan, with its computational evidence bundle.
 
 For N ∈ {2, 3, 5, 7, 13} and every prime p ≥ 5, p ≠ N, the paper determines the poles and residues of the rational function R<sub>N,p</sub> representing T<sub>N</sub>|U<sub>p</sub> modulo p, where T<sub>N</sub> is the normalized Hauptmodul for Γ<sub>0</sub>(N)<sup>+</sup>. The poles are exactly the supersingular values with effective ramification index one. At such a value t<sub>i</sub>, the residue times ∏<sub>k≠i</sub>(t<sub>i</sub> − t<sub>k</sub>)<sup>(p+1)/e<sub>k</sub></sup> equals −(−N/p) (Theorem 1.1). The sign comes from an eta-character calculation, which gives (Δ(τ)/Δ(ℓτ))<sup>(p²−1)/24</sup> = (ℓ/p) at every supersingular point of X<sub>0</sub>(ℓ), for every prime ℓ ≠ p (Theorem 1.3). The factorial evaluation of the constant c<sub>p</sub> (Conjecture 1.5) remains a conjecture.
 
@@ -12,11 +12,11 @@ This supplement is **separate from the main paper** (`paper/`), which is unchang
 
 | Path | Contents |
 |---|---|
-| `Fricke_Signed_Residues_Journal_v1_3.pdf` | The paper (18 pages) |
-| `Fricke_Signed_Residues_Journal_v1_3.tex` | LaTeX source (compile with `pdflatex` twice; no external files needed) |
+| `Fricke_Signed_Residues_Journal_v1_4.pdf` | The paper (19 pages) |
+| `Fricke_Signed_Residues_Journal_v1_4.tex` | LaTeX source (compile with `pdflatex` twice; no external files needed) |
 | `computational_evidence/` | Computational evidence bundle v1.0: the two packages named in the paper's Data and software paragraph (`Signed_Weighted_Residue_v1_0`, `Eta_Frobenius_Lemma_Audit_v1_0`), recorded results, provenance, a SHA-256 manifest and reproduction scripts. Start with its [`README.md`](computational_evidence/README.md) and [`CLAIMS_AND_FILES.md`](computational_evidence/CLAIMS_AND_FILES.md) |
 
-`computational_evidence/PROVENANCE.json` records the SHA-256 of the `.tex` file above, so the bundle and this manuscript version can be matched. The bundle is committed byte-for-byte as supplied; its `GITHUB_UPLOAD.md` describes a standalone repository layout and is kept only because the manifest covers it.
+The bundle was packaged against journal draft v1.3, and `computational_evidence/PROVENANCE.json` records the SHA-256 of that earlier `.tex` file (it is not updated for v1.4, so the manifest stays intact). v1.4 revises proofs, attribution and presentation; it reports the same computational ranges and does not assert a new rerun. The bundle is committed byte-for-byte as supplied; its `GITHUB_UPLOAD.md` describes a standalone repository layout and is kept only because the manifest covers it.
 
 ## Evidence levels
 
