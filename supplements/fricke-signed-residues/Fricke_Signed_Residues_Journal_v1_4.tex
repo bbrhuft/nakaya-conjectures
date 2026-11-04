@@ -34,7 +34,7 @@
 
 \title{Supersingular poles and signed residues\\of prime-level Fricke Hauptmoduln}
 \author{David Jordan}
-\date{3 November 2026}
+\date{4 November 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -220,6 +220,16 @@ All constants are reduced modulo $p$; $\mathcal S_{N,p}$ is distinct from the
 weighted polynomial $S$ of Proposition~\ref{prop:S}. Thus
 $D_{\rm thin}=\mathcal S_{N,p}/\prod_{e_i>1}(T-t_i)$, while the omitted
 values still occur in the weights $W_i$.
+The exceptional values can also be specified by a polynomial independent of $p$.
+Let $h_N$ be the elliptic-value polynomial in Table~\ref{tab:elliptic-values}.
+Lemma~\ref{lem:elliptic-specialization} and Theorem~\ref{thm:main}(b) give
+\begin{equation}\label{eq:elliptic-gcd}
+D_{\rm thin}(T)=\frac{\mathcal S_{N,p}(T)}
+{\gcd\bigl(\mathcal S_{N,p}(T),\overline h_N(T)\bigr)},
+\end{equation}
+where the gcd is monic. Thus the denominator is obtained from Nakaya's
+supersingular polynomial by removing its common factors with the reduction
+of a fixed characteristic-zero elliptic-value polynomial.
 
 At level two, put
 $\varepsilon_p=(1-\left(\frac{-1}{p}\right))/2$ and
@@ -286,6 +296,15 @@ identities. Formula~\eqref{eq:nakaya-coordinate} identifies the supersingular
 values used here with that literature; the present residue formula additionally
 assigns a nonzero coefficient to each thin pole and retains the ramified values
 in its weighted product.
+
+\citet[\S4.2, Table~1 and Appendix~C]{JST19} determine the elliptic values
+of normalized Fricke Hauptmoduln and their associated class fields. Their
+$j_N$ equals our $T_N$. Table~\ref{tab:elliptic-values} records their
+polynomials at the five levels considered here. Their Schwarzian equation
+detects the same local ramification indices that enter our Hasse-derivative
+calculation; \eqref{eq:elliptic-gcd} expresses its elliptic-value locus as
+the locus of possible supersingular pole cancellations. The signed residue
+formula concerns the remaining thin values.
 
 \citet[Proposition~3.1 and \S4]{DS26} use Deligne's
 supersingular expansion of $pJ|U_p$ and modular functions of prime-power level
@@ -449,6 +468,61 @@ For explicit calculations, $m_x$ can be read off from the multiplicity $\mu$ of 
 $P_N(u)-j\,u^N$: $m_x=3/\mu$ over $j=0$, $m_x=2/\mu$ over $j=1728$, and $m_x=1$ (with $\mu=1$) otherwise.
 These are ramification indices of the coarse map $X_0(N)\to X(1)$.
 The Fricke stabilizer has order two exactly when $u(x)^2=b_N$.
+
+\begin{lemma}[elliptic values and specialization]\label{lem:elliptic-specialization}
+Let $h_N(T)=\prod_{\tau}(T-T_N(\tau))$, where $\tau$ runs over the
+inequivalent elliptic points of $\Gamma_0(N)^+$. For the five levels under
+consideration, $h_N$ is given in Table~\ref{tab:elliptic-values}.
+For every prime $p\ge5$ with $p\ne N$, its reduction is squarefree, and
+its roots in $\Fb$ are exactly the values with effective index $e>1$.
+Consequently,
+\[
+\gcd(\mathcal S_{N,p},\overline h_N)=\prod_{e_i>1}(T-t_i).
+\]
+\end{lemma}
+\begin{proof}
+The characteristic-zero values and elliptic orders are those of
+\citet[\S4.2, Table~1 and Appendix~C]{JST19}, in the same normalization
+$T_N=q^{-1}+O(q)$. Their elliptic orders are the effective indices of
+Lemma~\ref{lem:inertia} in characteristic zero.
+We justify the specialization of their support. A nontrivial effective
+stabilizer arises either from an automorphism of $(E,C)$ or from a Fricke
+fixed point. The former can occur only over $j=0$ or $1728$. Since
+$p\ge5$ and $p\nmid N$, the corresponding elliptic curve and its
+automorphisms lift to characteristic zero, and the prime-to-$p$ cyclic
+subgroup $C$ lifts uniquely over a strict henselian base. An automorphism
+preserving $C$ on the special fibre therefore preserves its lift.
+Conversely, these prime-to-$p$ automorphisms persist under reduction.
+Fricke fixed points are given by $u^2=b_N$, which is finite \'etale away
+from $2N$ and has the same fixed-point locus under specialization.
+This accounts for all values with $e>1$ in either characteristic.
+Directly from the displayed polynomials, the discriminants of $h_N$, in
+the order $N=2,3,5,7,13$, are
+\[
+2^{16},\qquad 2^4\cdot3^6,\qquad 2^{12}\cdot5^3,\qquad
+2^4\cdot3^6\cdot7^2,\qquad 2^{12}\cdot3^6\cdot13.
+\]
+Thus distinct elliptic values do not collide at any admissible prime.
+The roots of $\overline h_N$ are precisely the values with $e>1$;
+intersecting this set with the supersingular locus proves the gcd formula.
+\end{proof}
+
+\begin{table}[htbp]\centering
+\begin{tabular}{cll}\toprule
+$N$ & $h_N(T)$ & Effective indices\\\midrule
+2 & $(T+104)(T-152)$ & $4,\ 2$\\
+3 & $(T+42)(T-66)$ & $6,\ 2$\\
+5 & $(T+16)(T^2-12T-464)$ & $2,\ 2$\\
+7 & $(T+10)(T+9)(T-18)$ & $2,\ 3,\ 2$\\
+13 & $(T+4)(T+3)(T^2-4T-48)$ & $2,\ 3,\ 2$\\\bottomrule
+\end{tabular}
+\caption{Elliptic-value polynomials from \citet{JST19}.
+The indices are listed in the order of the displayed factors; an index
+beside a quadratic factor applies to both roots. At admissible primes,
+the supersingular roots of $\overline h_N$ are exactly the thick values
+removed in \eqref{eq:elliptic-gcd}.}
+\label{tab:elliptic-values}
+\end{table}
 
 \begin{lemma}\label{lem:AW}
 As mod-$p$ forms on $\Gamma_0(N)$: $A|_{p-1}W_N=\Lp{N}A$, $\Delta_N|_{24}W_N=\Delta_N$ and
@@ -1117,6 +1191,14 @@ Modular functions and the monstrous exponents. \emph{arXiv:2602.09135v1},
 9 February 2026. \url{https://arxiv.org/abs/2602.09135v1}.
 
 \bibitem[Gross(1990)]{Gross90} Gross, B.~H. (1990). A tameness criterion for Galois representations associated to modular forms (mod $p$). \emph{Duke Mathematical Journal}, 61(2), 445--517.
+
+\bibitem[Jorgenson et~al.(2019)]{JST19} Jorgenson, J., Smajlovi\'c, L., \& Then, H. (2019).
+The Hauptmodul at elliptic points of certain arithmetic groups.
+\emph{Journal of Number Theory}, 204, 661--682.
+\url{https://doi.org/10.1016/j.jnt.2019.03.021}.
+The elliptic-value tables used here are also available in
+\emph{arXiv:1602.07426v2}, \S4.2, Table~1 and Appendix~C.
+\url{https://arxiv.org/abs/1602.07426v2}.
 
 \bibitem[Kaneko and Zagier(1998)]{KZ98} Kaneko, M., \& Zagier, D. (1998). Supersingular $j$-invariants,
 hypergeometric series, and Atkin's orthogonal polynomials. In \emph{Computational Perspectives on Number
