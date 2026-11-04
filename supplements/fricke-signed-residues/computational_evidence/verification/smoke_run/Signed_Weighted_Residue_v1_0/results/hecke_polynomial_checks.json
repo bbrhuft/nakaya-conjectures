@@ -1,0 +1,132 @@
+[
+ {
+  "N": 2,
+  "p": 5,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 0,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 3,
+  "p": 5,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 0,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 7,
+  "p": 5,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 0,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 13,
+  "p": 5,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 1,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 2,
+  "p": 7,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 0,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 3,
+  "p": 7,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 1,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 5,
+  "p": 7,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 1,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 13,
+  "p": 7,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 3,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 2,
+  "p": 11,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 1,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 3,
+  "p": 11,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 1,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 5,
+  "p": 11,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 1,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 7,
+  "p": 11,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 3,
+  "hecke_form_of_conjecture": true
+ },
+ {
+  "N": 13,
+  "p": 11,
+  "kronecker_mod_p": true,
+  "H_symmetric": true,
+  "H_bidegree_le_p+1": true,
+  "residue_equals_minus_H_all_Fp2": true,
+  "thin_count": 5,
+  "hecke_form_of_conjecture": true
+ }
+]

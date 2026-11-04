@@ -1,0 +1,6 @@
+2 {'T_first_coeffs': {'q^-1': 1, 'q^0': 0, 'q^1': 4372, 'q^2': 96256, 'q^3': 1240002, 'q^4': 10698752, 'q^5': 74428120}, 'jmap_identity_holds': True, 'fricke_identity_holds': True, 'a_N_formula': True, 'b_N_formula': True}
+3 {'T_first_coeffs': {'q^-1': 1, 'q^0': 0, 'q^1': 783, 'q^2': 8672, 'q^3': 65367, 'q^4': 371520, 'q^5': 1741655}, 'jmap_identity_holds': True, 'fricke_identity_holds': True, 'a_N_formula': True, 'b_N_formula': True}
+5 {'T_first_coeffs': {'q^-1': 1, 'q^0': 0, 'q^1': 134, 'q^2': 760, 'q^3': 3345, 'q^4': 12256, 'q^5': 39350}, 'jmap_identity_holds': True, 'fricke_identity_holds': True, 'a_N_formula': True, 'b_N_formula': True}
+7 {'T_first_coeffs': {'q^-1': 1, 'q^0': 0, 'q^1': 51, 'q^2': 204, 'q^3': 681, 'q^4': 1956, 'q^5': 5135}, 'jmap_identity_holds': True, 'fricke_identity_holds': True, 'a_N_formula': True, 'b_N_formula': True}
+13 {'T_first_coeffs': {'q^-1': 1, 'q^0': 0, 'q^1': 12, 'q^2': 28, 'q^3': 66, 'q^4': 132, 'q^5': 258}, 'jmap_identity_holds': True, 'fricke_identity_holds': True, 'a_N_formula': True, 'b_N_formula': True}
+all normalization checks passed

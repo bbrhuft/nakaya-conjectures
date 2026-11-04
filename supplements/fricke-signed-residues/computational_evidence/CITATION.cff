@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using these computations."
+title: "Computational evidence for Supersingular poles and signed residues of prime-level Fricke Hauptmoduln"
+type: software
+authors:
+  - family-names: Jordan
+    given-names: David
+version: "1.0"
+abstract: "Original exact-arithmetic evidence packages, recorded results, provenance, integrity checks and reproduction tools accompanying journal draft v1.3."

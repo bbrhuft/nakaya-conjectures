@@ -1,0 +1,1529 @@
+{
+ "summary": {
+  "pmax": 31,
+  "ells": [
+   2,
+   3,
+   5,
+   7,
+   11,
+   13
+  ],
+  "n_pairs": 50,
+  "n_points": 794,
+  "n_points_j0": 217,
+  "n_points_j1728": 215,
+  "theorem_C_failures": [],
+  "all_theorem_C_ok": true,
+  "all_ono_12_ok": true,
+  "all_robert_ok": true,
+  "all_baker_ok": true,
+  "all_c_constant_ok": true,
+  "all_hauptmodul_match_ok": true,
+  "all_deuring_kappa_ok": true,
+  "all_deuring_B_in_Fp_ok": true,
+  "seconds": 0.3
+ },
+ "pairs": [
+  {
+   "ell": 2,
+   "p": 5,
+   "n_ss_j": 1,
+   "n_points": 3,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "4"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 3,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "2"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 2,
+   "p": 7,
+   "n_ss_j": 1,
+   "n_points": 3,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 3,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 2,
+   "p": 11,
+   "n_ss_j": 2,
+   "n_points": 6,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "10"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 3,
+   "n_points_j1728": 3,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 2,
+   "p": 13,
+   "n_ss_j": 1,
+   "n_points": 3,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "12"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": false,
+   "n_points_j0": 0,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "8"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 2,
+   "p": 17,
+   "n_ss_j": 2,
+   "n_points": 6,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 3,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "4"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 2,
+   "p": 19,
+   "n_ss_j": 2,
+   "n_points": 6,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "18"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 3,
+   "theorem_C_ok": true,
+   "c_values": [
+    "18"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 2,
+   "p": 23,
+   "n_ss_j": 3,
+   "n_points": 9,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 3,
+   "n_points_j1728": 3,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 2,
+   "p": 29,
+   "n_ss_j": 3,
+   "n_points": 9,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "28"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 3,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "12"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 2,
+   "p": 31,
+   "n_ss_j": 3,
+   "n_points": 9,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 3,
+   "theorem_C_ok": true,
+   "c_values": [
+    "30"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 3,
+   "p": 5,
+   "n_ss_j": 1,
+   "n_points": 4,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "4"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 4,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "2"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 3,
+   "p": 7,
+   "n_ss_j": 1,
+   "n_points": 4,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "6"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 4,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 3,
+   "p": 11,
+   "n_ss_j": 2,
+   "n_points": 8,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 4,
+   "n_points_j1728": 4,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 3,
+   "p": 13,
+   "n_ss_j": 1,
+   "n_points": 4,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": false,
+   "n_points_j0": 0,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "8"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 3,
+   "p": 17,
+   "n_ss_j": 2,
+   "n_points": 8,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "16"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 4,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "4"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 3,
+   "p": 19,
+   "n_ss_j": 2,
+   "n_points": 8,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "18"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 4,
+   "theorem_C_ok": true,
+   "c_values": [
+    "18"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 3,
+   "p": 23,
+   "n_ss_j": 3,
+   "n_points": 12,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 4,
+   "n_points_j1728": 4,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 3,
+   "p": 29,
+   "n_ss_j": 3,
+   "n_points": 12,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "28"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 4,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "12"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 3,
+   "p": 31,
+   "n_ss_j": 3,
+   "n_points": 12,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "30"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 4,
+   "theorem_C_ok": true,
+   "c_values": [
+    "30"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 5,
+   "p": 7,
+   "n_ss_j": 1,
+   "n_points": 6,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "6"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 6,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 5,
+   "p": 11,
+   "n_ss_j": 2,
+   "n_points": 12,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 6,
+   "n_points_j1728": 6,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 5,
+   "p": 13,
+   "n_ss_j": 1,
+   "n_points": 6,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "12"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": false,
+   "n_points_j0": 0,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "8"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 5,
+   "p": 17,
+   "n_ss_j": 2,
+   "n_points": 12,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "16"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 6,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "4"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 5,
+   "p": 19,
+   "n_ss_j": 2,
+   "n_points": 12,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 6,
+   "theorem_C_ok": true,
+   "c_values": [
+    "18"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 5,
+   "p": 23,
+   "n_ss_j": 3,
+   "n_points": 18,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "22"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 6,
+   "n_points_j1728": 6,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 5,
+   "p": 29,
+   "n_ss_j": 3,
+   "n_points": 18,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 6,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "12"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 5,
+   "p": 31,
+   "n_ss_j": 3,
+   "n_points": 18,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 6,
+   "theorem_C_ok": true,
+   "c_values": [
+    "30"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 7,
+   "p": 5,
+   "n_ss_j": 1,
+   "n_points": 8,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "4"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 8,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "2"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 7,
+   "p": 11,
+   "n_ss_j": 2,
+   "n_points": 16,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "10"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 8,
+   "n_points_j1728": 8,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 7,
+   "p": 13,
+   "n_ss_j": 1,
+   "n_points": 8,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "12"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": false,
+   "n_points_j0": 0,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "8"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 7,
+   "p": 17,
+   "n_ss_j": 2,
+   "n_points": 16,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "16"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 8,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "4"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 7,
+   "p": 19,
+   "n_ss_j": 2,
+   "n_points": 16,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 8,
+   "theorem_C_ok": true,
+   "c_values": [
+    "18"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 7,
+   "p": 23,
+   "n_ss_j": 3,
+   "n_points": 24,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "22"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 8,
+   "n_points_j1728": 8,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 7,
+   "p": 29,
+   "n_ss_j": 3,
+   "n_points": 24,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 8,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "12"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 7,
+   "p": 31,
+   "n_ss_j": 3,
+   "n_points": 24,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 8,
+   "theorem_C_ok": true,
+   "c_values": [
+    "30"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 11,
+   "p": 5,
+   "n_ss_j": 1,
+   "n_points": 12,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": null,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 12,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "2"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 11,
+   "p": 7,
+   "n_ss_j": 1,
+   "n_points": 12,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": null,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 12,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 11,
+   "p": 13,
+   "n_ss_j": 1,
+   "n_points": 12,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "12"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": null,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": false,
+   "n_points_j0": 0,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "8"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.01
+  },
+  {
+   "ell": 11,
+   "p": 17,
+   "n_ss_j": 2,
+   "n_points": 24,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "16"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": null,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 12,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "4"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.01
+  },
+  {
+   "ell": 11,
+   "p": 19,
+   "n_ss_j": 2,
+   "n_points": 24,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": null,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 12,
+   "theorem_C_ok": true,
+   "c_values": [
+    "18"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.01
+  },
+  {
+   "ell": 11,
+   "p": 23,
+   "n_ss_j": 3,
+   "n_points": 36,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "22"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": null,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 12,
+   "n_points_j1728": 12,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.01
+  },
+  {
+   "ell": 11,
+   "p": 29,
+   "n_ss_j": 3,
+   "n_points": 36,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "28"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": null,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 12,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "12"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.02
+  },
+  {
+   "ell": 11,
+   "p": 31,
+   "n_ss_j": 3,
+   "n_points": 36,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "30"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": null,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 12,
+   "theorem_C_ok": true,
+   "c_values": [
+    "30"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.02
+  },
+  {
+   "ell": 13,
+   "p": 5,
+   "n_ss_j": 1,
+   "n_points": 14,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "4"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 14,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "2"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 13,
+   "p": 7,
+   "n_ss_j": 1,
+   "n_points": 14,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "6"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 14,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.0
+  },
+  {
+   "ell": 13,
+   "p": 11,
+   "n_ss_j": 2,
+   "n_points": 28,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "10"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 14,
+   "n_points_j1728": 14,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.01
+  },
+  {
+   "ell": 13,
+   "p": 17,
+   "n_ss_j": 2,
+   "n_points": 28,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 14,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "4"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.02
+  },
+  {
+   "ell": 13,
+   "p": 19,
+   "n_ss_j": 2,
+   "n_points": 28,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "18"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 14,
+   "theorem_C_ok": true,
+   "c_values": [
+    "18"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.02
+  },
+  {
+   "ell": 13,
+   "p": 23,
+   "n_ss_j": 3,
+   "n_points": 42,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": true,
+   "n_points_j0": 14,
+   "n_points_j1728": 14,
+   "theorem_C_ok": true,
+   "c_values": [
+    "1"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.02
+  },
+  {
+   "ell": 13,
+   "p": 29,
+   "n_ss_j": 3,
+   "n_points": 42,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": 1,
+   "values_D_ell_pow_k": [
+    "1"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": true,
+   "j1728_present": false,
+   "n_points_j0": 14,
+   "n_points_j1728": 0,
+   "theorem_C_ok": true,
+   "c_values": [
+    "12"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.03
+  },
+  {
+   "ell": 13,
+   "p": 31,
+   "n_ss_j": 3,
+   "n_points": 42,
+   "ell_12k_is_1": true,
+   "legendre_ell_p": -1,
+   "values_D_ell_pow_k": [
+    "30"
+   ],
+   "ono_m_power_all_1": true,
+   "robert_B_relation_ok": true,
+   "baker_ok": true,
+   "c_constant_ok": true,
+   "hasse_zero_ok": true,
+   "velu_j_supersingular_ok": true,
+   "hauptmodul_match_ok": true,
+   "deuring_kappa_ok": true,
+   "deuring_B_in_Fp_ok": true,
+   "j0_present": false,
+   "j1728_present": true,
+   "n_points_j0": 0,
+   "n_points_j1728": 14,
+   "theorem_C_ok": true,
+   "c_values": [
+    "30"
+   ],
+   "c_constant_over_all_ss": true,
+   "seconds": 0.03
+  }
+ ]
+}

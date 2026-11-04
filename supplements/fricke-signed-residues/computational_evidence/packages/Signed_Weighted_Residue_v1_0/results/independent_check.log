@@ -1,0 +1,26 @@
+{'N': 13, 'p': 7, 'd': 3, 's': 4, 'thin': 3, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'6'}, 'pred': 6} OK
+{'N': 7, 'p': 11, 'd': 3, 's': 4, 'thin': 3, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'10'}, 'pred': 10} OK
+{'N': 2, 'p': 29, 'd': 3, 's': 4, 'thin': 3, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'1'}, 'pred': 1} OK
+{'N': 5, 'p': 19, 'd': 3, 's': 6, 'thin': 3, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'1'}, 'pred': 1} OK
+{'N': 3, 'p': 23, 'd': 3, 's': 5, 'thin': 3, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'1'}, 'pred': 1} OK
+{'N': 13, 'p': 17, 'd': 9, 's': 10, 'thin': 9, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'16'}, 'pred': 16} OK
+{'N': 7, 'p': 29, 'd': 9, 's': 10, 'thin': 9, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'28'}, 'pred': 28} OK
+{'N': 13, 'p': 29, 'd': 16, 's': 17, 'thin': 16, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'28'}, 'pred': 28} OK
+{'N': 2, 'p': 31, 'd': 3, 's': 5, 'thin': 3, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'1'}, 'pred': 1} OK
+{'N': 5, 'p': 37, 'd': 8, 's': 10, 'thin': 8, 'den_eq_thin': True, 'all_simple': True, 'mass_ok': True, 'vals': {'1'}, 'pred': 1} OK
+5 ss= 1 beta {'4'} baker 4 c {'2'} conj 2 OK
+7 ss= 1 beta {'1'} baker 1 c {'1'} conj 1 OK
+11 ss= 2 beta {'1'} baker 1 c {'1'} conj 1 OK
+13 ss= 1 beta {'12'} baker 12 c {'8'} conj 8 OK
+17 ss= 2 beta {'16'} baker 16 c {'4'} conj 4 OK
+19 ss= 2 beta {'1'} baker 1 c {'18'} conj 18 OK
+23 ss= 3 beta {'1'} baker 1 c {'1'} conj 1 OK
+29 ss= 3 beta {'28'} baker 28 c {'12'} conj 12 OK
+31 ss= 3 beta {'1'} baker 1 c {'30'} conj 30 OK
+37 ss= 3 beta {'36'} baker 36 c {'6'} conj 6 OK
+41 ss= 4 beta {'40'} baker 40 c {'32'} conj 32 OK
+43 ss= 4 beta {'1'} baker 1 c {'42'} conj 42 OK
+47 ss= 5 beta {'1'} baker 1 c {'46'} conj 46 OK
+53 ss= 5 beta {'52'} baker 52 c {'23'} conj 23 OK
+59 ss= 6 beta {'1'} baker 1 c {'58'} conj 58 OK
+checked 32 bad 0

@@ -1,0 +1,102 @@
+{
+  "suite": "smoke",
+  "started_utc": "2026-11-04T00:01:12.184409+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "dependencies": {
+    "python-flint": "0.9.0",
+    "mpmath": "1.3.0"
+  },
+  "runs": [
+    {
+      "label": "normalization",
+      "command": [
+        "python",
+        "verify_normalization.py",
+        "300"
+      ],
+      "working_directory": "Signed_Weighted_Residue_v1_0/code",
+      "log": "normalization.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.1
+    },
+    {
+      "label": "certified-small",
+      "command": [
+        "python",
+        "run_all.py",
+        "--cert-max",
+        "29",
+        "--pade-max",
+        "29"
+      ],
+      "working_directory": "Signed_Weighted_Residue_v1_0/code",
+      "log": "certified-small.log",
+      "exit_code": 0,
+      "elapsed_seconds": 1.587
+    },
+    {
+      "label": "hecke-small",
+      "command": [
+        "python",
+        "hecke_check.py",
+        "11"
+      ],
+      "working_directory": "Signed_Weighted_Residue_v1_0/code",
+      "log": "hecke-small.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.285
+    },
+    {
+      "label": "velu-small",
+      "command": [
+        "python",
+        "velu_sign_check.py",
+        "31",
+        "2,3,5,7,11,13"
+      ],
+      "working_directory": "Eta_Frobenius_Lemma_Audit_v1_0/code",
+      "log": "velu-small.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.354
+    },
+    {
+      "label": "level1-small",
+      "command": [
+        "python",
+        "level1_c_explore.py",
+        "100"
+      ],
+      "working_directory": "Signed_Weighted_Residue_v1_0/code",
+      "log": "level1-small.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.127
+    },
+    {
+      "label": "factorial-small",
+      "command": [
+        "python",
+        "level1_c_formula.py",
+        "100"
+      ],
+      "working_directory": "Signed_Weighted_Residue_v1_0/code",
+      "log": "factorial-small.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.094
+    }
+  ],
+  "comparisons": {
+    "compared_record_totals": {
+      "certified_pairs": 37,
+      "hecke_polynomial_checks_records": 13,
+      "normalization_levels": 5,
+      "level1_c_checks_records": 23,
+      "level1_c_closed_form_records": 23,
+      "velu_pairs": 50,
+      "velu_kernel_checks": 794
+    },
+    "mismatches": [],
+    "comparison_note": "Timings, random choices and finite-field root enumeration order are not compared; invariant counts, fractions and indicated checks are compared."
+  },
+  "completed_utc": "2026-11-04T00:01:14.743992+00:00"
+}
