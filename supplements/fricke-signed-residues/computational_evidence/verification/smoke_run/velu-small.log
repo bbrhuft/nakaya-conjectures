@@ -1,0 +1,75 @@
+ell= 2 p=   5 ss_j=  1 points=   3 D^k values=['4'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=3 j1728=0 [0.0s]
+ell= 2 p=   7 ss_j=  1 points=   3 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=3 [0.0s]
+ell= 2 p=  11 ss_j=  2 points=   6 D^k values=['10'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=3 j1728=3 [0.0s]
+ell= 2 p=  13 ss_j=  1 points=   3 D^k values=['12'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=0 [0.0s]
+ell= 2 p=  17 ss_j=  2 points=   6 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=3 j1728=0 [0.0s]
+ell= 2 p=  19 ss_j=  2 points=   6 D^k values=['18'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=3 [0.0s]
+ell= 2 p=  23 ss_j=  3 points=   9 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=3 j1728=3 [0.0s]
+ell= 2 p=  29 ss_j=  3 points=   9 D^k values=['28'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=3 j1728=0 [0.0s]
+ell= 2 p=  31 ss_j=  3 points=   9 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=3 [0.0s]
+ell= 3 p=   5 ss_j=  1 points=   4 D^k values=['4'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=4 j1728=0 [0.0s]
+ell= 3 p=   7 ss_j=  1 points=   4 D^k values=['6'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=4 [0.0s]
+ell= 3 p=  11 ss_j=  2 points=   8 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=4 j1728=4 [0.0s]
+ell= 3 p=  13 ss_j=  1 points=   4 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=0 [0.0s]
+ell= 3 p=  17 ss_j=  2 points=   8 D^k values=['16'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=4 j1728=0 [0.0s]
+ell= 3 p=  19 ss_j=  2 points=   8 D^k values=['18'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=4 [0.0s]
+ell= 3 p=  23 ss_j=  3 points=  12 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=4 j1728=4 [0.0s]
+ell= 3 p=  29 ss_j=  3 points=  12 D^k values=['28'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=4 j1728=0 [0.0s]
+ell= 3 p=  31 ss_j=  3 points=  12 D^k values=['30'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=4 [0.0s]
+ell= 5 p=   7 ss_j=  1 points=   6 D^k values=['6'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=6 [0.0s]
+ell= 5 p=  11 ss_j=  2 points=  12 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=6 j1728=6 [0.0s]
+ell= 5 p=  13 ss_j=  1 points=   6 D^k values=['12'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=0 [0.0s]
+ell= 5 p=  17 ss_j=  2 points=  12 D^k values=['16'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=6 j1728=0 [0.0s]
+ell= 5 p=  19 ss_j=  2 points=  12 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=6 [0.0s]
+ell= 5 p=  23 ss_j=  3 points=  18 D^k values=['22'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=6 j1728=6 [0.0s]
+ell= 5 p=  29 ss_j=  3 points=  18 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=6 j1728=0 [0.0s]
+ell= 5 p=  31 ss_j=  3 points=  18 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=6 [0.0s]
+ell= 7 p=   5 ss_j=  1 points=   8 D^k values=['4'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=8 j1728=0 [0.0s]
+ell= 7 p=  11 ss_j=  2 points=  16 D^k values=['10'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=8 j1728=8 [0.0s]
+ell= 7 p=  13 ss_j=  1 points=   8 D^k values=['12'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=0 [0.0s]
+ell= 7 p=  17 ss_j=  2 points=  16 D^k values=['16'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=8 j1728=0 [0.0s]
+ell= 7 p=  19 ss_j=  2 points=  16 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=8 [0.0s]
+ell= 7 p=  23 ss_j=  3 points=  24 D^k values=['22'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=8 j1728=8 [0.0s]
+ell= 7 p=  29 ss_j=  3 points=  24 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=8 j1728=0 [0.0s]
+ell= 7 p=  31 ss_j=  3 points=  24 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=8 [0.0s]
+ell=11 p=   5 ss_j=  1 points=  12 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=None kappa=True BinFp=True j0=12 j1728=0 [0.0s]
+ell=11 p=   7 ss_j=  1 points=  12 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=None kappa=True BinFp=True j0=0 j1728=12 [0.0s]
+ell=11 p=  13 ss_j=  1 points=  12 D^k values=['12'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=None kappa=True BinFp=True j0=0 j1728=0 [0.01s]
+ell=11 p=  17 ss_j=  2 points=  24 D^k values=['16'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=None kappa=True BinFp=True j0=12 j1728=0 [0.01s]
+ell=11 p=  19 ss_j=  2 points=  24 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=None kappa=True BinFp=True j0=0 j1728=12 [0.01s]
+ell=11 p=  23 ss_j=  3 points=  36 D^k values=['22'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=None kappa=True BinFp=True j0=12 j1728=12 [0.01s]
+ell=11 p=  29 ss_j=  3 points=  36 D^k values=['28'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=None kappa=True BinFp=True j0=12 j1728=0 [0.02s]
+ell=11 p=  31 ss_j=  3 points=  36 D^k values=['30'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=None kappa=True BinFp=True j0=0 j1728=12 [0.02s]
+ell=13 p=   5 ss_j=  1 points=  14 D^k values=['4'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=14 j1728=0 [0.0s]
+ell=13 p=   7 ss_j=  1 points=  14 D^k values=['6'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=14 [0.0s]
+ell=13 p=  11 ss_j=  2 points=  28 D^k values=['10'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=14 j1728=14 [0.01s]
+ell=13 p=  17 ss_j=  2 points=  28 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=14 j1728=0 [0.02s]
+ell=13 p=  19 ss_j=  2 points=  28 D^k values=['18'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=14 [0.02s]
+ell=13 p=  23 ss_j=  3 points=  42 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=14 j1728=14 [0.02s]
+ell=13 p=  29 ss_j=  3 points=  42 D^k values=['1'] (ell/p)=+1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=14 j1728=0 [0.03s]
+ell=13 p=  31 ss_j=  3 points=  42 D^k values=['30'] (ell/p)=-1 OK  ono12=True robert=True baker=True c_const=True hm=True kappa=True BinFp=True j0=0 j1728=14 [0.03s]
+{
+ "pmax": 31,
+ "ells": [
+  2,
+  3,
+  5,
+  7,
+  11,
+  13
+ ],
+ "n_pairs": 50,
+ "n_points": 794,
+ "n_points_j0": 217,
+ "n_points_j1728": 215,
+ "theorem_C_failures": [],
+ "all_theorem_C_ok": true,
+ "all_ono_12_ok": true,
+ "all_robert_ok": true,
+ "all_baker_ok": true,
+ "all_c_constant_ok": true,
+ "all_hauptmodul_match_ok": true,
+ "all_deuring_kappa_ok": true,
+ "all_deuring_B_in_Fp_ok": true,
+ "seconds": 0.3
+}

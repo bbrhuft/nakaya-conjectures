@@ -1,0 +1,23 @@
+# Sources inspected (3 November 2026)
+
+Legend: **R** read in full or in the relevant sections from the stated copy; **P** partial (abstract / metadata / quoted via another source); **X** not accessible in this session.
+
+| Source | Status | Copy / version inspected | What was read |
+|---|---|---|---|
+| Ono, K. *Modular forms for chromatic homotopy: Supersingular congruences*, arXiv:2509.16175 | **R** | arXiv abstract page (submission history: 19 Sep 2025; **v2 3 Jul 2026 = current**); arXiv HTML of current version (contains Thms 1.1–1.3, §4.1–4.4, Lemmas 4.2–4.4, Prop. 4.5, Cors 4.6–4.7, Remark 4); D. Ravenel's archive PDF with header "arXiv:2509.16175v2 [math.AT] 3 Jul 2026"; arXiv HTML of v1 (checked to contain none of these items). | Thm 1.2 ($R_\ell^{(p^2-1)/12}=1$), Thm 1.3 ($\kappa(E)=(-1)^{(p+1)/2}$), Lemma 4.3 (Deuring models), Lemma 4.4 ($R_\ell^m=\kappa(E')/\kappa(E)$), definition of Vélu-normalised $\Delta^{[\ell]}=\ell^{-12}\Delta(E',\omega')$, Remark 4 ($p=11$, $\ell=2$, values 6,7,2; $g_\ell$ values generate $\mathbb F_{11^4}$; descent of $\Delta^{1/24},\Delta^{1/12}$ must fail), Cors 4.6–4.7, acknowledgements, bibliography entries for Behrens [3],[4] and Larson [12]. No Legendre symbol $(\ell/p)$, no $E_{p+1}^{(p-1)/2}$, no Baker/Robert/Landweber in the bibliography. |
+| Baker, A. (1998). *Acta Arith.* 86(1), 91–100 | **R** | Author's copy https://www.maths.gla.ac.uk/~ajb/dvi-ps/modforms.pdf; publisher page (IMPAN) for bibliographic data and DOI. | Thm 1.4 and (0.3); (0.1) Gross–Landweber congruence and its attribution; §2 (isogeny invariance of $((-1/p)\Delta)^{(p^2-1)/12}$ over $\mathbb F_{p^2}$); Lemma 2.2 (Robert's Thm B/Lemme 7: $B(E_2)=\lambda^{-(p+1)}\deg\phi\,B(E_1)$); Cor. 2.3; §4 Frobenius cases; §6 and (6.1) = Kaneko–Zagier (40); reference list. |
+| Kaneko, M., & Zagier, D. (1998) | **R** | Full text at Zagier's MPIM page. | §10: (35)–(40), status of (39)/(40), relation to de Shalit and Koike; no $/24$ exponent. |
+| Robert, G. (1980). *Invent. Math.* 61, 103–158 | **X** | Geodesic/EuDML item pages only (Zbl 0442.10020, keywords). GDZ full-text link not fetchable from this session. | Content known only through Baker's Lemma 2.2. **Must be read by a specialist.** |
+| Gross, B. H. (1990). *Duke Math. J.* 61(2), 445–517 | **R** (§2, §3, §7) | Copy at https://www.math.purdue.edu/~tongliu/seminar/Mlift/Gross.pdf | §2 Prop. 2.1 (moduli of $(E,\alpha:\mu_N\hookrightarrow E_N)$), Tate-curve cusp over $\mathbb Z[1/N][[q]]$; §3 p. 454 (the point model $X_1(N)'$ "preferred by many authors"); §7 p. 470 (the two models become isomorphic over $\mathbb Z[1/N][\zeta_p,\zeta_N]$). |
+| Conrad, B. *Math 248B. Algebraic theory of q-expansions* (handout) | **R** | https://virtualmath1.stanford.edu/~conrad/248BPage/handouts/qexp.pdf | Ex. 2.3 (cusp $\infty$ of the point model only a section over $\mathbb Z[1/N,\zeta_N]$); Thm 3.3 ($q$-expansion principle over $O=\mathbb Z[1/N,\zeta_N]$-algebras). |
+| Loeffler, D. *Modular curves* (lecture notes) | **R** (§3.5, §4.2) | Warwick PDF | §3.5: $Y_1(N)$ not characterised over $\mathbb Q$ by rational $q$-expansions; §4.2 Galois action on cusps. |
+| Knopp, M. I. (1970), Ch. 4 §4.1 | **P** | Closed form of $\nu_\eta$ quoted (as eq. (3.10), citing Knopp §4.1) in arXiv:2307.07438 (read there); verified independently against the Dedekind-sum formula and numerics here. | Both parity cases. |
+| Apostol, T. M. (1990), Thm 3.4 | **P** | Dedekind-sum form used as implemented in the inherited code and re-implemented here; validated against mpmath. | — |
+| Ono, K. (2004), Thm 1.64 (Gordon–Hughes–Newman) | **P** | From memory of the standard statement; hypotheses checked in the report §2.1; result superseded by a complete derivation. | — |
+| de Shalit (1994); Deligne–Rapoport (1973); Katz–Mazur (1985); Katz (1976); Deuring (1941); Waterhouse (1969); Mestre (1986); Pizer (1990); Kohel (1996); Newman (1959); Gordon–Hughes (1993); Ligozat (1975) | **P** | Cited at section level from standard knowledge; not re-read in this session. | — |
+| Landweber (1988) LNM 1326, 69–93; Behrens (2009) G&T 13; Larson (2020) Top. Appl. 273; Betina–Lecouturier TAMS (2019) final text; Sakai (2011) | **X** | Bibliographic data from Baker's and Ono's reference lists. | — |
+
+## Search queries that returned nothing relevant
+
+* `"E_{p+1}^{(p-1)/2}" supersingular congruence Delta "(p^2-1)/24"` (results: Sutherland notes, Kaneko–Zagier, Baker, Nakaya, …; none states the half-exponent identity).
+* `supersingular elliptic curve "24th power" discriminant Deuring model Frobenius -p eta quotient Legendre symbol isogeny F_{p^2}` (only Ono v2 relevant).

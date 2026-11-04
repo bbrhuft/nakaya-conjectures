@@ -2,9 +2,16 @@ MIT License (code)
 
 Copyright (c) 2026 David (GitHub: bbrhuft)
 
-This licence applies to the source code in this repository (verification/ and
-exploratory/). The manuscript in paper/ is NOT covered by this licence: all
-rights reserved.
+This licence applies to the source code in this repository (verification/,
+exploratory/, the verification code in supplements/prime-square-levels/, and
+the code and computational records in
+supplements/fricke-signed-residues/computational_evidence/). The manuscripts
+are NOT covered by this licence: all rights reserved. They are paper/, the
+note in supplements/prime-square-levels/, the paper in
+supplements/fricke-signed-residues/, and the historical documents in
+supplements/fricke-signed-residues/computational_evidence/packages/
+(Signed_Weighted_Residue_v1_0/note/, Eta_Frobenius_Lemma_Audit_v1_0/AUDIT_REPORT.*
+and Eta_Frobenius_Lemma_Audit_v1_0/replacement_section/).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,0 +1,356 @@
+kz        N= 2 p=1009 s=126 thin=126 nonrat=114 ratios=[-1] expected=-1 match=True false_flags=[] t=0.9s
+kz        N= 3 p=1009 s=168 thin=168 nonrat=156 ratios=[-1] expected=-1 match=True false_flags=[] t=0.99s
+kz        N= 5 p=1009 s=252 thin=252 nonrat=216 ratios=[-1] expected=-1 match=True false_flags=[] t=1.61s
+kz        N= 7 p=1009 s=336 thin=336 nonrat=316 ratios=[-1] expected=-1 match=True false_flags=[] t=1.91s
+kz        N=13 p=1009 s=589 thin=587 nonrat=576 ratios=[1] expected=+1 match=True false_flags=[] t=3.85s
+kz        N= 2 p=1013 s=127 thin=126 nonrat=112 ratios=[1] expected=+1 match=True false_flags=[] t=0.82s
+kz        N= 3 p=1013 s=170 thin=168 nonrat=136 ratios=[1] expected=+1 match=True false_flags=[] t=1.04s
+kz        N= 5 p=1013 s=254 thin=252 nonrat=246 ratios=[1] expected=+1 match=True false_flags=[] t=1.42s
+kz        N= 7 p=1013 s=339 thin=336 nonrat=288 ratios=[1] expected=+1 match=True false_flags=[] t=2.04s
+kz        N=13 p=1013 s=591 thin=590 nonrat=548 ratios=[-1] expected=-1 match=True false_flags=[] t=4.21s
+kz        N= 2 p=1019 s=128 thin=127 nonrat=104 ratios=[-1] expected=-1 match=True false_flags=[] t=0.84s
+kz        N= 3 p=1019 s=171 thin=169 nonrat=138 ratios=[1] expected=+1 match=True false_flags=[] t=0.97s
+kz        N= 5 p=1019 s=256 thin=253 nonrat=206 ratios=[1] expected=+1 match=True false_flags=[] t=1.46s
+kz        N= 7 p=1019 s=340 thin=339 nonrat=324 ratios=[-1] expected=-1 match=True false_flags=[] t=1.81s
+kz        N=13 p=1019 s=595 thin=593 nonrat=540 ratios=[-1] expected=-1 match=True false_flags=[] t=3.93s
+kz        N= 2 p=1021 s=128 thin=127 nonrat=110 ratios=[1] expected=+1 match=True false_flags=[] t=0.85s
+kz        N= 3 p=1021 s=170 thin=170 nonrat=162 ratios=[-1] expected=-1 match=True false_flags=[] t=1.0s
+kz        N= 5 p=1021 s=255 thin=255 nonrat=226 ratios=[-1] expected=-1 match=True false_flags=[] t=1.43s
+kz        N= 7 p=1021 s=341 thin=339 nonrat=316 ratios=[1] expected=+1 match=True false_flags=[] t=1.96s
+kz        N=13 p=1021 s=596 thin=594 nonrat=582 ratios=[1] expected=+1 match=True false_flags=[] t=4.21s
+kz        N= 2 p=1031 s=130 thin=128 nonrat= 92 ratios=[1] expected=+1 match=True false_flags=[] t=0.88s
+kz        N= 3 p=1031 s=173 thin=171 nonrat=126 ratios=[1] expected=+1 match=True false_flags=[] t=1.16s
+kz        N= 5 p=1031 s=259 thin=256 nonrat=212 ratios=[1] expected=+1 match=True false_flags=[] t=1.58s
+kz        N= 7 p=1031 s=344 thin=343 nonrat=330 ratios=[-1] expected=-1 match=True false_flags=[] t=2.4s
+kz        N=13 p=1031 s=603 thin=599 nonrat=528 ratios=[1] expected=+1 match=True false_flags=[] t=4.37s
+kz        N= 2 p=1033 s=129 thin=129 nonrat=112 ratios=[-1] expected=-1 match=True false_flags=[] t=0.85s
+kz        N= 3 p=1033 s=172 thin=172 nonrat=152 ratios=[-1] expected=-1 match=True false_flags=[] t=1.0s
+kz        N= 5 p=1033 s=259 thin=257 nonrat=236 ratios=[1] expected=+1 match=True false_flags=[] t=1.35s
+kz        N= 7 p=1033 s=344 thin=344 nonrat=322 ratios=[-1] expected=-1 match=True false_flags=[] t=1.89s
+kz        N=13 p=1033 s=603 thin=601 nonrat=580 ratios=[1] expected=+1 match=True false_flags=[] t=4.93s
+kz        N= 2 p=1039 s=131 thin=129 nonrat= 98 ratios=[1] expected=+1 match=True false_flags=[] t=0.84s
+kz        N= 3 p=1039 s=173 thin=173 nonrat=168 ratios=[-1] expected=-1 match=True false_flags=[] t=0.99s
+kz        N= 5 p=1039 s=261 thin=258 nonrat=222 ratios=[1] expected=+1 match=True false_flags=[] t=1.36s
+kz        N= 7 p=1039 s=347 thin=345 nonrat=314 ratios=[1] expected=+1 match=True false_flags=[] t=1.86s
+kz        N=13 p=1039 s=607 thin=604 nonrat=568 ratios=[1] expected=+1 match=True false_flags=[] t=3.88s
+kz        N= 2 p=1049 s=131 thin=131 nonrat=114 ratios=[-1] expected=-1 match=True false_flags=[] t=0.85s
+kz        N= 3 p=1049 s=176 thin=174 nonrat=144 ratios=[1] expected=+1 match=True false_flags=[] t=1.1s
+kz        N= 5 p=1049 s=262 thin=262 nonrat=234 ratios=[-1] expected=-1 match=True false_flags=[] t=1.58s
+kz        N= 7 p=1049 s=351 thin=348 nonrat=292 ratios=[1] expected=+1 match=True false_flags=[] t=2.1s
+kz        N=13 p=1049 s=612 thin=611 nonrat=566 ratios=[-1] expected=-1 match=True false_flags=[] t=4.92s
+kz        N= 2 p=1051 s=132 thin=131 nonrat=118 ratios=[-1] expected=-1 match=True false_flags=[] t=1.31s
+kz        N= 3 p=1051 s=175 thin=175 nonrat=166 ratios=[-1] expected=-1 match=True false_flags=[] t=1.09s
+kz        N= 5 p=1051 s=264 thin=261 nonrat=208 ratios=[1] expected=+1 match=True false_flags=[] t=1.43s
+kz        N= 7 p=1051 s=350 thin=350 nonrat=342 ratios=[-1] expected=-1 match=True false_flags=[] t=2.08s
+kz        N=13 p=1051 s=613 thin=612 nonrat=584 ratios=[-1] expected=-1 match=True false_flags=[] t=4.61s
+kz        N= 2 p=1061 s=133 thin=132 nonrat=122 ratios=[1] expected=+1 match=True false_flags=[] t=0.93s
+kz        N= 3 p=1061 s=178 thin=176 nonrat=148 ratios=[1] expected=+1 match=True false_flags=[] t=1.04s
+kz        N= 5 p=1061 s=265 thin=265 nonrat=242 ratios=[-1] expected=-1 match=True false_flags=[] t=1.57s
+kz        N= 7 p=1061 s=354 thin=353 nonrat=326 ratios=[-1] expected=-1 match=True false_flags=[] t=1.95s
+kz        N=13 p=1061 s=620 thin=617 nonrat=588 ratios=[1] expected=+1 match=True false_flags=[] t=4.26s
+kz        N= 2 p=1063 s=134 thin=132 nonrat=100 ratios=[1] expected=+1 match=True false_flags=[] t=0.91s
+kz        N= 3 p=1063 s=177 thin=177 nonrat=164 ratios=[-1] expected=-1 match=True false_flags=[] t=1.07s
+kz        N= 5 p=1063 s=266 thin=265 nonrat=248 ratios=[-1] expected=-1 match=True false_flags=[] t=1.48s
+kz        N= 7 p=1063 s=355 thin=353 nonrat=326 ratios=[1] expected=+1 match=True false_flags=[] t=2.18s
+kz        N=13 p=1063 s=621 thin=618 nonrat=586 ratios=[1] expected=+1 match=True false_flags=[] t=4.4s
+kz        N= 2 p=1069 s=134 thin=133 nonrat=116 ratios=[1] expected=+1 match=True false_flags=[] t=0.98s
+kz        N= 3 p=1069 s=178 thin=178 nonrat=162 ratios=[-1] expected=-1 match=True false_flags=[] t=1.19s
+kz        N= 5 p=1069 s=267 thin=267 nonrat=240 ratios=[-1] expected=-1 match=True false_flags=[] t=1.61s
+kz        N= 7 p=1069 s=357 thin=355 nonrat=332 ratios=[1] expected=+1 match=True false_flags=[] t=2.14s
+kz        N=13 p=1069 s=623 thin=623 nonrat=596 ratios=[-1] expected=-1 match=True false_flags=[] t=4.26s
+kz        N= 2 p=1087 s=137 thin=135 nonrat=112 ratios=[1] expected=+1 match=True false_flags=[] t=0.89s
+kz        N= 3 p=1087 s=181 thin=181 nonrat=170 ratios=[-1] expected=-1 match=True false_flags=[] t=1.17s
+kz        N= 5 p=1087 s=272 thin=271 nonrat=246 ratios=[-1] expected=-1 match=True false_flags=[] t=1.68s
+kz        N= 7 p=1087 s=362 thin=362 nonrat=350 ratios=[-1] expected=-1 match=True false_flags=[] t=2.47s
+kz        N=13 p=1087 s=634 thin=633 nonrat=600 ratios=[-1] expected=-1 match=True false_flags=[] t=4.8s
+kz        N= 2 p=1091 s=137 thin=136 nonrat=106 ratios=[-1] expected=-1 match=True false_flags=[] t=0.99s
+kz        N= 3 p=1091 s=183 thin=181 nonrat=140 ratios=[1] expected=+1 match=True false_flags=[] t=1.24s
+kz        N= 5 p=1091 s=274 thin=271 nonrat=222 ratios=[1] expected=+1 match=True false_flags=[] t=1.58s
+kz        N= 7 p=1091 s=365 thin=362 nonrat=316 ratios=[1] expected=+1 match=True false_flags=[] t=2.21s
+kz        N=13 p=1091 s=638 thin=634 nonrat=572 ratios=[1] expected=+1 match=True false_flags=[] t=4.47s
+kz        N= 2 p=1093 s=137 thin=136 nonrat=124 ratios=[1] expected=+1 match=True false_flags=[] t=0.93s
+kz        N= 3 p=1093 s=182 thin=182 nonrat=156 ratios=[-1] expected=-1 match=True false_flags=[] t=1.07s
+kz        N= 5 p=1093 s=274 thin=272 nonrat=250 ratios=[1] expected=+1 match=True false_flags=[] t=1.68s
+kz        N= 7 p=1093 s=364 thin=364 nonrat=344 ratios=[-1] expected=-1 match=True false_flags=[] t=2.25s
+kz        N=13 p=1093 s=637 thin=637 nonrat=610 ratios=[-1] expected=-1 match=True false_flags=[] t=4.89s
+kz        N= 2 p=1097 s=137 thin=137 nonrat=120 ratios=[-1] expected=-1 match=True false_flags=[] t=1.25s
+kz        N= 3 p=1097 s=184 thin=182 nonrat=156 ratios=[1] expected=+1 match=True false_flags=[] t=1.2s
+kz        N= 5 p=1097 s=275 thin=273 nonrat=262 ratios=[1] expected=+1 match=True false_flags=[] t=1.57s
+kz        N= 7 p=1097 s=367 thin=364 nonrat=296 ratios=[1] expected=+1 match=True false_flags=[] t=2.19s
+kz        N=13 p=1097 s=641 thin=638 nonrat=608 ratios=[1] expected=+1 match=True false_flags=[] t=4.6s
+kz        N= 2 p=1103 s=139 thin=137 nonrat=108 ratios=[1] expected=+1 match=True false_flags=[] t=0.96s
+kz        N= 3 p=1103 s=185 thin=183 nonrat=150 ratios=[1] expected=+1 match=True false_flags=[] t=1.17s
+kz        N= 5 p=1103 s=276 thin=275 nonrat=266 ratios=[-1] expected=-1 match=True false_flags=[] t=1.71s
+kz        N= 7 p=1103 s=368 thin=367 nonrat=340 ratios=[-1] expected=-1 match=True false_flags=[] t=2.32s
+kz        N=13 p=1103 s=644 thin=642 nonrat=574 ratios=[-1] expected=-1 match=True false_flags=[] t=4.48s
+kz        N= 2 p=1109 s=139 thin=138 nonrat=120 ratios=[1] expected=+1 match=True false_flags=[] t=0.93s
+kz        N= 3 p=1109 s=186 thin=184 nonrat=148 ratios=[1] expected=+1 match=True false_flags=[] t=1.24s
+kz        N= 5 p=1109 s=277 thin=277 nonrat=246 ratios=[-1] expected=-1 match=True false_flags=[] t=1.76s
+kz        N= 7 p=1109 s=371 thin=368 nonrat=324 ratios=[1] expected=+1 match=True false_flags=[] t=2.29s
+kz        N=13 p=1109 s=647 thin=646 nonrat=594 ratios=[-1] expected=-1 match=True false_flags=[] t=4.65s
+kz        N= 2 p=1117 s=140 thin=139 nonrat=128 ratios=[1] expected=+1 match=True false_flags=[] t=1.07s
+kz        N= 3 p=1117 s=186 thin=186 nonrat=156 ratios=[-1] expected=-1 match=True false_flags=[] t=1.17s
+kz        N= 5 p=1117 s=280 thin=278 nonrat=254 ratios=[1] expected=+1 match=True false_flags=[] t=1.78s
+kz        N= 7 p=1117 s=372 thin=372 nonrat=356 ratios=[-1] expected=-1 match=True false_flags=[] t=2.23s
+kz        N=13 p=1117 s=651 thin=651 nonrat=628 ratios=[-1] expected=-1 match=True false_flags=[] t=4.77s
+kz        N= 2 p=1123 s=141 thin=140 nonrat=114 ratios=[-1] expected=-1 match=True false_flags=[] t=0.95s
+kz        N= 3 p=1123 s=187 thin=187 nonrat=180 ratios=[-1] expected=-1 match=True false_flags=[] t=1.4s
+kz        N= 5 p=1123 s=281 thin=280 nonrat=250 ratios=[-1] expected=-1 match=True false_flags=[] t=1.72s
+kz        N= 7 p=1123 s=375 thin=373 nonrat=352 ratios=[1] expected=+1 match=True false_flags=[] t=2.31s
+kz        N=13 p=1123 s=655 thin=654 nonrat=616 ratios=[-1] expected=-1 match=True false_flags=[] t=4.94s
+kz        N= 2 p=1129 s=141 thin=141 nonrat=130 ratios=[-1] expected=-1 match=True false_flags=[] t=1.03s
+kz        N= 3 p=1129 s=188 thin=188 nonrat=176 ratios=[-1] expected=-1 match=True false_flags=[] t=1.25s
+kz        N= 5 p=1129 s=282 thin=282 nonrat=246 ratios=[-1] expected=-1 match=True false_flags=[] t=1.76s
+kz        N= 7 p=1129 s=376 thin=376 nonrat=354 ratios=[-1] expected=-1 match=True false_flags=[] t=2.44s
+kz        N=13 p=1129 s=659 thin=657 nonrat=646 ratios=[1] expected=+1 match=True false_flags=[] t=4.73s
+kz        N= 2 p=1151 s=145 thin=143 nonrat=100 ratios=[1] expected=+1 match=True false_flags=[] t=1.0s
+kz        N= 3 p=1151 s=193 thin=191 nonrat=144 ratios=[1] expected=+1 match=True false_flags=[] t=1.24s
+kz        N= 5 p=1151 s=289 thin=286 nonrat=236 ratios=[1] expected=+1 match=True false_flags=[] t=1.79s
+kz        N= 7 p=1151 s=385 thin=382 nonrat=322 ratios=[1] expected=+1 match=True false_flags=[] t=2.44s
+kz        N=13 p=1151 s=672 thin=670 nonrat=646 ratios=[-1] expected=-1 match=True false_flags=[] t=5.01s
+kz        N= 2 p=1153 s=144 thin=144 nonrat=124 ratios=[-1] expected=-1 match=True false_flags=[] t=1.18s
+kz        N= 3 p=1153 s=192 thin=192 nonrat=180 ratios=[-1] expected=-1 match=True false_flags=[] t=1.28s
+kz        N= 5 p=1153 s=289 thin=287 nonrat=268 ratios=[1] expected=+1 match=True false_flags=[] t=1.89s
+kz        N= 7 p=1153 s=385 thin=383 nonrat=344 ratios=[1] expected=+1 match=True false_flags=[] t=2.53s
+kz        N=13 p=1153 s=672 thin=672 nonrat=650 ratios=[-1] expected=-1 match=True false_flags=[] t=4.8s
+kz        N= 2 p=1163 s=146 thin=145 nonrat=130 ratios=[-1] expected=-1 match=True false_flags=[] t=1.06s
+kz        N= 3 p=1163 s=195 thin=193 nonrat=164 ratios=[1] expected=+1 match=True false_flags=[] t=1.34s
+kz        N= 5 p=1163 s=291 thin=290 nonrat=266 ratios=[-1] expected=-1 match=True false_flags=[] t=1.92s
+kz        N= 7 p=1163 s=388 thin=387 nonrat=360 ratios=[-1] expected=-1 match=True false_flags=[] t=2.45s
+kz        N=13 p=1163 s=679 thin=677 nonrat=602 ratios=[-1] expected=-1 match=True false_flags=[] t=5.02s
+kz        N= 2 p=1171 s=147 thin=146 nonrat=126 ratios=[-1] expected=-1 match=True false_flags=[] t=1.17s
+kz        N= 3 p=1171 s=195 thin=195 nonrat=186 ratios=[-1] expected=-1 match=True false_flags=[] t=1.32s
+kz        N= 5 p=1171 s=294 thin=291 nonrat=242 ratios=[1] expected=+1 match=True false_flags=[] t=1.9s
+kz        N= 7 p=1171 s=390 thin=390 nonrat=382 ratios=[-1] expected=-1 match=True false_flags=[] t=2.55s
+kz        N=13 p=1171 s=684 thin=681 nonrat=640 ratios=[1] expected=+1 match=True false_flags=[] t=5.27s
+kz        N= 2 p=1181 s=148 thin=147 nonrat=130 ratios=[1] expected=+1 match=True false_flags=[] t=1.19s
+kz        N= 3 p=1181 s=198 thin=196 nonrat=166 ratios=[1] expected=+1 match=True false_flags=[] t=1.46s
+kz        N= 5 p=1181 s=295 thin=295 nonrat=264 ratios=[-1] expected=-1 match=True false_flags=[] t=1.88s
+kz        N= 7 p=1181 s=395 thin=392 nonrat=342 ratios=[1] expected=+1 match=True false_flags=[] t=2.59s
+kz        N=13 p=1181 s=690 thin=687 nonrat=664 ratios=[1] expected=+1 match=True false_flags=[] t=5.28s
+kz        N= 2 p=1187 s=149 thin=148 nonrat=130 ratios=[-1] expected=-1 match=True false_flags=[] t=1.22s
+kz        N= 3 p=1187 s=199 thin=197 nonrat=162 ratios=[1] expected=+1 match=True false_flags=[] t=1.44s
+kz        N= 5 p=1187 s=297 thin=296 nonrat=276 ratios=[-1] expected=-1 match=True false_flags=[] t=1.95s
+kz        N= 7 p=1187 s=396 thin=395 nonrat=376 ratios=[-1] expected=-1 match=True false_flags=[] t=2.76s
+kz        N=13 p=1187 s=694 thin=690 nonrat=596 ratios=[1] expected=+1 match=True false_flags=[] t=5.13s
+kz        N= 2 p=1193 s=149 thin=149 nonrat=132 ratios=[-1] expected=-1 match=True false_flags=[] t=1.21s
+kz        N= 3 p=1193 s=200 thin=198 nonrat=168 ratios=[1] expected=+1 match=True false_flags=[] t=1.39s
+kz        N= 5 p=1193 s=299 thin=297 nonrat=288 ratios=[1] expected=+1 match=True false_flags=[] t=1.9s
+kz        N= 7 p=1193 s=399 thin=396 nonrat=322 ratios=[1] expected=+1 match=True false_flags=[] t=2.66s
+kz        N=13 p=1193 s=696 thin=695 nonrat=644 ratios=[-1] expected=-1 match=True false_flags=[] t=5.33s
+kz        N= 2 p=1201 s=150 thin=150 nonrat=136 ratios=[-1] expected=-1 match=True false_flags=[] t=1.12s
+kz        N= 3 p=1201 s=200 thin=200 nonrat=184 ratios=[-1] expected=-1 match=True false_flags=[] t=1.41s
+kz        N= 5 p=1201 s=300 thin=300 nonrat=266 ratios=[-1] expected=-1 match=True false_flags=[] t=1.92s
+kz        N= 7 p=1201 s=400 thin=400 nonrat=382 ratios=[-1] expected=-1 match=True false_flags=[] t=2.63s
+kz        N=13 p=1201 s=701 thin=699 nonrat=686 ratios=[1] expected=+1 match=True false_flags=[] t=5.54s
+kz        N= 2 p=1213 s=152 thin=151 nonrat=136 ratios=[1] expected=+1 match=True false_flags=[] t=1.26s
+kz        N= 3 p=1213 s=202 thin=202 nonrat=172 ratios=[-1] expected=-1 match=True false_flags=[] t=1.42s
+kz        N= 5 p=1213 s=304 thin=302 nonrat=284 ratios=[1] expected=+1 match=True false_flags=[] t=1.9s
+kz        N= 7 p=1213 s=404 thin=404 nonrat=384 ratios=[-1] expected=-1 match=True false_flags=[] t=2.77s
+kz        N=13 p=1213 s=707 thin=707 nonrat=674 ratios=[-1] expected=-1 match=True false_flags=[] t=5.74s
+kz        N= 2 p=1217 s=152 thin=152 nonrat=136 ratios=[-1] expected=-1 match=True false_flags=[] t=1.31s
+kz        N= 3 p=1217 s=204 thin=202 nonrat=170 ratios=[1] expected=+1 match=True false_flags=[] t=1.68s
+kz        N= 5 p=1217 s=305 thin=303 nonrat=294 ratios=[1] expected=+1 match=True false_flags=[] t=2.06s
+kz        N= 7 p=1217 s=407 thin=404 nonrat=336 ratios=[1] expected=+1 match=True false_flags=[] t=3.05s
+kz        N=13 p=1217 s=711 thin=708 nonrat=676 ratios=[1] expected=+1 match=True false_flags=[] t=5.88s
+kz        N= 2 p=1223 s=154 thin=152 nonrat=112 ratios=[1] expected=+1 match=True false_flags=[] t=1.36s
+kz        N= 3 p=1223 s=205 thin=203 nonrat=158 ratios=[1] expected=+1 match=True false_flags=[] t=1.47s
+kz        N= 5 p=1223 s=306 thin=305 nonrat=296 ratios=[-1] expected=-1 match=True false_flags=[] t=2.11s
+kz        N= 7 p=1223 s=409 thin=406 nonrat=352 ratios=[1] expected=+1 match=True false_flags=[] t=2.9s
+kz        N=13 p=1223 s=715 thin=711 nonrat=628 ratios=[1] expected=+1 match=True false_flags=[] t=5.71s
+kz        N= 2 p=1229 s=154 thin=153 nonrat=140 ratios=[1] expected=+1 match=True false_flags=[] t=1.42s
+kz        N= 3 p=1229 s=206 thin=204 nonrat=166 ratios=[1] expected=+1 match=True false_flags=[] t=1.49s
+kz        N= 5 p=1229 s=307 thin=307 nonrat=274 ratios=[-1] expected=-1 match=True false_flags=[] t=2.13s
+kz        N= 7 p=1229 s=410 thin=409 nonrat=386 ratios=[-1] expected=-1 match=True false_flags=[] t=2.97s
+kz        N=13 p=1229 s=718 thin=715 nonrat=690 ratios=[1] expected=+1 match=True false_flags=[] t=6.05s
+kz        N= 2 p=1231 s=155 thin=153 nonrat=120 ratios=[1] expected=+1 match=True false_flags=[] t=1.19s
+kz        N= 3 p=1231 s=205 thin=205 nonrat=198 ratios=[-1] expected=-1 match=True false_flags=[] t=1.45s
+kz        N= 5 p=1231 s=309 thin=306 nonrat=254 ratios=[1] expected=+1 match=True false_flags=[] t=2.11s
+kz        N= 7 p=1231 s=411 thin=409 nonrat=374 ratios=[1] expected=+1 match=True false_flags=[] t=2.67s
+kz        N=13 p=1231 s=719 thin=716 nonrat=680 ratios=[1] expected=+1 match=True false_flags=[] t=5.66s
+kz        N= 2 p=1237 s=155 thin=154 nonrat=132 ratios=[1] expected=+1 match=True false_flags=[] t=1.29s
+kz        N= 3 p=1237 s=206 thin=206 nonrat=188 ratios=[-1] expected=-1 match=True false_flags=[] t=1.49s
+kz        N= 5 p=1237 s=310 thin=308 nonrat=294 ratios=[1] expected=+1 match=True false_flags=[] t=2.14s
+kz        N= 7 p=1237 s=413 thin=411 nonrat=384 ratios=[1] expected=+1 match=True false_flags=[] t=3.08s
+kz        N=13 p=1237 s=722 thin=720 nonrat=704 ratios=[1] expected=+1 match=True false_flags=[] t=6.31s
+kz        N= 2 p=1249 s=156 thin=156 nonrat=138 ratios=[-1] expected=-1 match=True false_flags=[] t=1.36s
+kz        N= 3 p=1249 s=208 thin=208 nonrat=196 ratios=[-1] expected=-1 match=True false_flags=[] t=1.65s
+kz        N= 5 p=1249 s=312 thin=312 nonrat=282 ratios=[-1] expected=-1 match=True false_flags=[] t=2.2s
+kz        N= 7 p=1249 s=417 thin=415 nonrat=388 ratios=[1] expected=+1 match=True false_flags=[] t=2.98s
+kz        N=13 p=1249 s=728 thin=728 nonrat=702 ratios=[-1] expected=-1 match=True false_flags=[] t=6.03s
+kz        N= 2 p=1259 s=158 thin=157 nonrat=128 ratios=[-1] expected=-1 match=True false_flags=[] t=1.21s
+kz        N= 3 p=1259 s=211 thin=209 nonrat=174 ratios=[1] expected=+1 match=True false_flags=[] t=1.45s
+kz        N= 5 p=1259 s=316 thin=313 nonrat=274 ratios=[1] expected=+1 match=True false_flags=[] t=2.25s
+kz        N= 7 p=1259 s=421 thin=418 nonrat=374 ratios=[1] expected=+1 match=True false_flags=[] t=2.82s
+kz        N=13 p=1259 s=735 thin=733 nonrat=676 ratios=[-1] expected=-1 match=True false_flags=[] t=6.6s
+kz        N= 2 p=1277 s=160 thin=159 nonrat=142 ratios=[1] expected=+1 match=True false_flags=[] t=1.34s
+kz        N= 3 p=1277 s=214 thin=212 nonrat=176 ratios=[1] expected=+1 match=True false_flags=[] t=1.64s
+kz        N= 5 p=1277 s=320 thin=318 nonrat=310 ratios=[1] expected=+1 match=True false_flags=[] t=2.45s
+kz        N= 7 p=1277 s=427 thin=424 nonrat=372 ratios=[1] expected=+1 match=True false_flags=[] t=3.06s
+kz        N=13 p=1277 s=745 thin=744 nonrat=686 ratios=[-1] expected=-1 match=True false_flags=[] t=6.72s
+kz        N= 2 p=1279 s=161 thin=159 nonrat=122 ratios=[1] expected=+1 match=True false_flags=[] t=1.56s
+kz        N= 3 p=1279 s=213 thin=213 nonrat=206 ratios=[-1] expected=-1 match=True false_flags=[] t=1.88s
+kz        N= 5 p=1279 s=321 thin=318 nonrat=282 ratios=[1] expected=+1 match=True false_flags=[] t=2.13s
+kz        N= 7 p=1279 s=427 thin=425 nonrat=394 ratios=[1] expected=+1 match=True false_flags=[] t=3.12s
+kz        N=13 p=1279 s=746 thin=745 nonrat=728 ratios=[-1] expected=-1 match=True false_flags=[] t=6.98s
+kz        N= 2 p=1283 s=161 thin=160 nonrat=140 ratios=[-1] expected=-1 match=True false_flags=[] t=1.45s
+kz        N= 3 p=1283 s=215 thin=213 nonrat=178 ratios=[1] expected=+1 match=True false_flags=[] t=1.53s
+kz        N= 5 p=1283 s=321 thin=320 nonrat=296 ratios=[-1] expected=-1 match=True false_flags=[] t=2.26s
+kz        N= 7 p=1283 s=428 thin=427 nonrat=398 ratios=[-1] expected=-1 match=True false_flags=[] t=3.1s
+kz        N=13 p=1283 s=750 thin=746 nonrat=646 ratios=[1] expected=+1 match=True false_flags=[] t=6.52s
+kz        N= 2 p=1289 s=161 thin=161 nonrat=148 ratios=[-1] expected=-1 match=True false_flags=[] t=1.41s
+kz        N= 3 p=1289 s=216 thin=214 nonrat=184 ratios=[1] expected=+1 match=True false_flags=[] t=1.6s
+kz        N= 5 p=1289 s=322 thin=322 nonrat=290 ratios=[-1] expected=-1 match=True false_flags=[] t=2.39s
+kz        N= 7 p=1289 s=430 thin=429 nonrat=390 ratios=[-1] expected=-1 match=True false_flags=[] t=3.54s
+kz        N=13 p=1289 s=753 thin=750 nonrat=722 ratios=[1] expected=+1 match=True false_flags=[] t=6.65s
+kz        N= 2 p=1291 s=162 thin=161 nonrat=136 ratios=[-1] expected=-1 match=True false_flags=[] t=1.44s
+kz        N= 3 p=1291 s=215 thin=215 nonrat=208 ratios=[-1] expected=-1 match=True false_flags=[] t=1.63s
+kz        N= 5 p=1291 s=324 thin=321 nonrat=276 ratios=[1] expected=+1 match=True false_flags=[] t=2.26s
+kz        N= 7 p=1291 s=431 thin=429 nonrat=404 ratios=[1] expected=+1 match=True false_flags=[] t=3.25s
+kz        N=13 p=1291 s=754 thin=751 nonrat=716 ratios=[1] expected=+1 match=True false_flags=[] t=6.39s
+kz        N= 2 p=1297 s=162 thin=162 nonrat=148 ratios=[-1] expected=-1 match=True false_flags=[] t=1.41s
+kz        N= 3 p=1297 s=216 thin=216 nonrat=192 ratios=[-1] expected=-1 match=True false_flags=[] t=1.68s
+kz        N= 5 p=1297 s=325 thin=323 nonrat=298 ratios=[1] expected=+1 match=True false_flags=[] t=2.34s
+kz        N= 7 p=1297 s=432 thin=432 nonrat=406 ratios=[-1] expected=-1 match=True false_flags=[] t=3.15s
+kz        N=13 p=1297 s=756 thin=756 nonrat=728 ratios=[-1] expected=-1 match=True false_flags=[] t=6.53s
+kz        N= 2 p=1301 s=163 thin=162 nonrat=144 ratios=[1] expected=+1 match=True false_flags=[] t=1.45s
+kz        N= 3 p=1301 s=218 thin=216 nonrat=180 ratios=[1] expected=+1 match=True false_flags=[] t=1.67s
+kz        N= 5 p=1301 s=325 thin=325 nonrat=292 ratios=[-1] expected=-1 match=True false_flags=[] t=2.43s
+kz        N= 7 p=1301 s=435 thin=432 nonrat=384 ratios=[1] expected=+1 match=True false_flags=[] t=3.78s
+kz        N=13 p=1301 s=759 thin=758 nonrat=704 ratios=[-1] expected=-1 match=True false_flags=[] t=6.5s
+kz        N= 2 p=1303 s=164 thin=162 nonrat=138 ratios=[1] expected=+1 match=True false_flags=[] t=1.36s
+kz        N= 3 p=1303 s=217 thin=217 nonrat=200 ratios=[-1] expected=-1 match=True false_flags=[] t=1.61s
+kz        N= 5 p=1303 s=326 thin=325 nonrat=300 ratios=[-1] expected=-1 match=True false_flags=[] t=2.44s
+kz        N= 7 p=1303 s=434 thin=434 nonrat=422 ratios=[-1] expected=-1 match=True false_flags=[] t=3.18s
+kz        N=13 p=1303 s=761 thin=758 nonrat=714 ratios=[1] expected=+1 match=True false_flags=[] t=6.87s
+kz        N= 2 p=1307 s=164 thin=163 nonrat=136 ratios=[-1] expected=-1 match=True false_flags=[] t=1.42s
+kz        N= 3 p=1307 s=219 thin=217 nonrat=188 ratios=[1] expected=+1 match=True false_flags=[] t=1.68s
+kz        N= 5 p=1307 s=327 thin=326 nonrat=312 ratios=[-1] expected=-1 match=True false_flags=[] t=2.59s
+kz        N= 7 p=1307 s=437 thin=434 nonrat=382 ratios=[1] expected=+1 match=True false_flags=[] t=3.1s
+kz        N=13 p=1307 s=763 thin=761 nonrat=688 ratios=[-1] expected=-1 match=True false_flags=[] t=6.83s
+kz        N= 2 p=1319 s=166 thin=164 nonrat=116 ratios=[1] expected=+1 match=True false_flags=[] t=1.56s
+kz        N= 3 p=1319 s=221 thin=219 nonrat=170 ratios=[1] expected=+1 match=True false_flags=[] t=2.12s
+kz        N= 5 p=1319 s=331 thin=328 nonrat=270 ratios=[1] expected=+1 match=True false_flags=[] t=2.55s
+kz        N= 7 p=1319 s=441 thin=438 nonrat=374 ratios=[1] expected=+1 match=True false_flags=[] t=3.6s
+kz        N=13 p=1319 s=770 thin=768 nonrat=748 ratios=[-1] expected=-1 match=True false_flags=[] t=7.04s
+kz        N= 2 p=1321 s=165 thin=165 nonrat=146 ratios=[-1] expected=-1 match=True false_flags=[] t=1.52s
+kz        N= 3 p=1321 s=220 thin=220 nonrat=212 ratios=[-1] expected=-1 match=True false_flags=[] t=1.74s
+kz        N= 5 p=1321 s=330 thin=330 nonrat=300 ratios=[-1] expected=-1 match=True false_flags=[] t=2.24s
+kz        N= 7 p=1321 s=441 thin=439 nonrat=402 ratios=[1] expected=+1 match=True false_flags=[] t=3.59s
+kz        N=13 p=1321 s=771 thin=769 nonrat=758 ratios=[1] expected=+1 match=True false_flags=[] t=7.09s
+kz        N= 2 p=1327 s=167 thin=165 nonrat=140 ratios=[1] expected=+1 match=True false_flags=[] t=1.56s
+kz        N= 3 p=1327 s=221 thin=221 nonrat=204 ratios=[-1] expected=-1 match=True false_flags=[] t=1.78s
+kz        N= 5 p=1327 s=332 thin=331 nonrat=302 ratios=[-1] expected=-1 match=True false_flags=[] t=2.56s
+kz        N= 7 p=1327 s=442 thin=442 nonrat=432 ratios=[-1] expected=-1 match=True false_flags=[] t=3.27s
+kz        N=13 p=1327 s=775 thin=772 nonrat=724 ratios=[1] expected=+1 match=True false_flags=[] t=6.45s
+kz        N= 2 p=1361 s=170 thin=170 nonrat=150 ratios=[-1] expected=-1 match=True false_flags=[] t=1.59s
+kz        N= 3 p=1361 s=228 thin=226 nonrat=188 ratios=[1] expected=+1 match=True false_flags=[] t=1.76s
+kz        N= 5 p=1361 s=340 thin=340 nonrat=302 ratios=[-1] expected=-1 match=True false_flags=[] t=2.61s
+kz        N= 7 p=1361 s=455 thin=452 nonrat=392 ratios=[1] expected=+1 match=True false_flags=[] t=3.42s
+kz        N=13 p=1361 s=794 thin=793 nonrat=740 ratios=[-1] expected=-1 match=True false_flags=[] t=7.66s
+kz        N= 2 p=1367 s=172 thin=170 nonrat=140 ratios=[1] expected=+1 match=True false_flags=[] t=1.55s
+kz        N= 3 p=1367 s=229 thin=227 nonrat=192 ratios=[1] expected=+1 match=True false_flags=[] t=1.84s
+kz        N= 5 p=1367 s=342 thin=341 nonrat=324 ratios=[-1] expected=-1 match=True false_flags=[] t=2.48s
+kz        N= 7 p=1367 s=456 thin=455 nonrat=418 ratios=[-1] expected=-1 match=True false_flags=[] t=3.59s
+kz        N=13 p=1367 s=798 thin=796 nonrat=728 ratios=[-1] expected=-1 match=True false_flags=[] t=7.18s
+kz        N= 2 p=1373 s=172 thin=171 nonrat=158 ratios=[1] expected=+1 match=True false_flags=[] t=1.62s
+kz        N= 3 p=1373 s=230 thin=228 nonrat=194 ratios=[1] expected=+1 match=True false_flags=[] t=2.03s
+kz        N= 5 p=1373 s=344 thin=342 nonrat=332 ratios=[1] expected=+1 match=True false_flags=[] t=2.57s
+kz        N= 7 p=1373 s=458 thin=457 nonrat=414 ratios=[-1] expected=-1 match=True false_flags=[] t=3.62s
+kz        N=13 p=1373 s=802 thin=799 nonrat=748 ratios=[1] expected=+1 match=True false_flags=[] t=7.21s
+kz        N= 2 p=1381 s=173 thin=172 nonrat=160 ratios=[1] expected=+1 match=True false_flags=[] t=1.51s
+kz        N= 3 p=1381 s=230 thin=230 nonrat=208 ratios=[-1] expected=-1 match=True false_flags=[] t=1.83s
+kz        N= 5 p=1381 s=345 thin=345 nonrat=308 ratios=[-1] expected=-1 match=True false_flags=[] t=2.61s
+kz        N= 7 p=1381 s=460 thin=460 nonrat=448 ratios=[-1] expected=-1 match=True false_flags=[] t=3.46s
+kz        N=13 p=1381 s=805 thin=805 nonrat=778 ratios=[-1] expected=-1 match=True false_flags=[] t=7.93s
+kz        N= 2 p=1399 s=176 thin=174 nonrat=138 ratios=[1] expected=+1 match=True false_flags=[] t=1.55s
+kz        N= 3 p=1399 s=233 thin=233 nonrat=224 ratios=[-1] expected=-1 match=True false_flags=[] t=1.81s
+kz        N= 5 p=1399 s=351 thin=348 nonrat=292 ratios=[1] expected=+1 match=True false_flags=[] t=2.72s
+kz        N= 7 p=1399 s=467 thin=465 nonrat=430 ratios=[1] expected=+1 match=True false_flags=[] t=3.68s
+kz        N=13 p=1399 s=816 thin=815 nonrat=802 ratios=[-1] expected=-1 match=True false_flags=[] t=7.48s
+kz        N= 2 p=1409 s=176 thin=176 nonrat=162 ratios=[-1] expected=-1 match=True false_flags=[] t=1.52s
+kz        N= 3 p=1409 s=236 thin=234 nonrat=208 ratios=[1] expected=+1 match=True false_flags=[] t=1.83s
+kz        N= 5 p=1409 s=352 thin=352 nonrat=324 ratios=[-1] expected=-1 match=True false_flags=[] t=2.68s
+kz        N= 7 p=1409 s=470 thin=469 nonrat=422 ratios=[-1] expected=-1 match=True false_flags=[] t=3.63s
+kz        N=13 p=1409 s=823 thin=820 nonrat=786 ratios=[1] expected=+1 match=True false_flags=[] t=7.72s
+kz        N= 2 p=1423 s=179 thin=177 nonrat=152 ratios=[1] expected=+1 match=True false_flags=[] t=1.58s
+kz        N= 3 p=1423 s=237 thin=237 nonrat=220 ratios=[-1] expected=-1 match=True false_flags=[] t=2.22s
+kz        N= 5 p=1423 s=356 thin=355 nonrat=326 ratios=[-1] expected=-1 match=True false_flags=[] t=3.16s
+kz        N= 7 p=1423 s=474 thin=474 nonrat=458 ratios=[-1] expected=-1 match=True false_flags=[] t=3.73s
+kz        N=13 p=1423 s=830 thin=829 nonrat=792 ratios=[-1] expected=-1 match=True false_flags=[] t=8.37s
+kz        N= 2 p=1427 s=179 thin=178 nonrat=150 ratios=[-1] expected=-1 match=True false_flags=[] t=1.65s
+kz        N= 3 p=1427 s=239 thin=237 nonrat=198 ratios=[1] expected=+1 match=True false_flags=[] t=1.91s
+kz        N= 5 p=1427 s=357 thin=356 nonrat=338 ratios=[-1] expected=-1 match=True false_flags=[] t=2.75s
+kz        N= 7 p=1427 s=477 thin=474 nonrat=420 ratios=[1] expected=+1 match=True false_flags=[] t=3.8s
+kz        N=13 p=1427 s=834 thin=830 nonrat=736 ratios=[1] expected=+1 match=True false_flags=[] t=7.82s
+kz        N= 2 p=1429 s=179 thin=178 nonrat=164 ratios=[1] expected=+1 match=True false_flags=[] t=1.78s
+kz        N= 3 p=1429 s=238 thin=238 nonrat=214 ratios=[-1] expected=-1 match=True false_flags=[] t=2.08s
+kz        N= 5 p=1429 s=357 thin=357 nonrat=322 ratios=[-1] expected=-1 match=True false_flags=[] t=2.98s
+kz        N= 7 p=1429 s=476 thin=476 nonrat=464 ratios=[-1] expected=-1 match=True false_flags=[] t=3.99s
+kz        N=13 p=1429 s=833 thin=833 nonrat=808 ratios=[-1] expected=-1 match=True false_flags=[] t=10.31s
+kz        N= 2 p=1433 s=179 thin=179 nonrat=160 ratios=[-1] expected=-1 match=True false_flags=[] t=2.34s
+kz        N= 3 p=1433 s=240 thin=238 nonrat=204 ratios=[1] expected=+1 match=True false_flags=[] t=2.94s
+kz        N= 5 p=1433 s=359 thin=357 nonrat=350 ratios=[1] expected=+1 match=True false_flags=[] t=3.83s
+kz        N= 7 p=1433 s=479 thin=476 nonrat=398 ratios=[1] expected=+1 match=True false_flags=[] t=5.38s
+kz        N=13 p=1433 s=836 thin=835 nonrat=786 ratios=[-1] expected=-1 match=True false_flags=[] t=11.17s
+kz        N= 2 p=1439 s=181 thin=179 nonrat=138 ratios=[1] expected=+1 match=True false_flags=[] t=2.43s
+kz        N= 3 p=1439 s=241 thin=239 nonrat=192 ratios=[1] expected=+1 match=True false_flags=[] t=3.01s
+kz        N= 5 p=1439 s=361 thin=358 nonrat=306 ratios=[1] expected=+1 match=True false_flags=[] t=3.92s
+kz        N= 7 p=1439 s=480 thin=479 nonrat=456 ratios=[-1] expected=-1 match=True false_flags=[] t=5.46s
+kz        N=13 p=1439 s=841 thin=837 nonrat=766 ratios=[1] expected=+1 match=True false_flags=[] t=11.74s
+kz        N= 2 p=1447 s=182 thin=180 nonrat=142 ratios=[1] expected=+1 match=True false_flags=[] t=2.51s
+kz        N= 3 p=1447 s=241 thin=241 nonrat=228 ratios=[-1] expected=-1 match=True false_flags=[] t=2.98s
+kz        N= 5 p=1447 s=362 thin=361 nonrat=340 ratios=[-1] expected=-1 match=True false_flags=[] t=4.07s
+kz        N= 7 p=1447 s=483 thin=481 nonrat=446 ratios=[1] expected=+1 match=True false_flags=[] t=5.67s
+kz        N=13 p=1447 s=845 thin=842 nonrat=798 ratios=[1] expected=+1 match=True false_flags=[] t=11.7s
+kz        N= 2 p=1451 s=182 thin=181 nonrat=158 ratios=[-1] expected=-1 match=True false_flags=[] t=2.64s
+kz        N= 3 p=1451 s=243 thin=241 nonrat=206 ratios=[1] expected=+1 match=True false_flags=[] t=2.98s
+kz        N= 5 p=1451 s=364 thin=361 nonrat=308 ratios=[1] expected=+1 match=True false_flags=[] t=3.9s
+kz        N= 7 p=1451 s=484 thin=483 nonrat=466 ratios=[-1] expected=-1 match=True false_flags=[] t=5.77s
+kz        N=13 p=1451 s=847 thin=845 nonrat=786 ratios=[-1] expected=-1 match=True false_flags=[] t=11.5s
+kz        N= 2 p=1453 s=182 thin=181 nonrat=162 ratios=[1] expected=+1 match=True false_flags=[] t=1.81s
+kz        N= 3 p=1453 s=242 thin=242 nonrat=212 ratios=[-1] expected=-1 match=True false_flags=[] t=2.89s
+kz        N= 5 p=1453 s=364 thin=362 nonrat=344 ratios=[1] expected=+1 match=True false_flags=[] t=4.18s
+kz        N= 7 p=1453 s=484 thin=484 nonrat=464 ratios=[-1] expected=-1 match=True false_flags=[] t=5.47s
+kz        N=13 p=1453 s=847 thin=847 nonrat=816 ratios=[-1] expected=-1 match=True false_flags=[] t=8.26s
+kz        N= 2 p=1459 s=183 thin=182 nonrat=158 ratios=[-1] expected=-1 match=True false_flags=[] t=1.73s
+kz        N= 3 p=1459 s=243 thin=243 nonrat=232 ratios=[-1] expected=-1 match=True false_flags=[] t=2.95s
+kz        N= 5 p=1459 s=366 thin=363 nonrat=304 ratios=[1] expected=+1 match=True false_flags=[] t=4.38s
+kz        N= 7 p=1459 s=487 thin=485 nonrat=456 ratios=[1] expected=+1 match=True false_flags=[] t=5.87s
+kz        N=13 p=1459 s=852 thin=849 nonrat=808 ratios=[1] expected=+1 match=True false_flags=[] t=8.67s
+kz        N= 2 p=1471 s=185 thin=183 nonrat=152 ratios=[1] expected=+1 match=True false_flags=[] t=1.64s
+kz        N= 3 p=1471 s=245 thin=245 nonrat=234 ratios=[-1] expected=-1 match=True false_flags=[] t=1.98s
+kz        N= 5 p=1471 s=369 thin=366 nonrat=310 ratios=[1] expected=+1 match=True false_flags=[] t=2.84s
+kz        N= 7 p=1471 s=490 thin=490 nonrat=480 ratios=[-1] expected=-1 match=True false_flags=[] t=3.92s
+kz        N=13 p=1471 s=858 thin=857 nonrat=840 ratios=[-1] expected=-1 match=True false_flags=[] t=8.45s
+kz        N= 2 p=1481 s=185 thin=185 nonrat=168 ratios=[-1] expected=-1 match=True false_flags=[] t=1.76s
+kz        N= 3 p=1481 s=248 thin=246 nonrat=208 ratios=[1] expected=+1 match=True false_flags=[] t=2.22s
+kz        N= 5 p=1481 s=370 thin=370 nonrat=330 ratios=[-1] expected=-1 match=True false_flags=[] t=3.08s
+kz        N= 7 p=1481 s=494 thin=493 nonrat=458 ratios=[-1] expected=-1 match=True false_flags=[] t=4.35s
+kz        N=13 p=1481 s=864 thin=863 nonrat=814 ratios=[-1] expected=-1 match=True false_flags=[] t=8.52s
+kz        N= 2 p=1483 s=186 thin=185 nonrat=154 ratios=[-1] expected=-1 match=True false_flags=[] t=1.74s
+kz        N= 3 p=1483 s=247 thin=247 nonrat=234 ratios=[-1] expected=-1 match=True false_flags=[] t=2.17s
+kz        N= 5 p=1483 s=371 thin=370 nonrat=342 ratios=[-1] expected=-1 match=True false_flags=[] t=3.16s
+kz        N= 7 p=1483 s=495 thin=493 nonrat=464 ratios=[1] expected=+1 match=True false_flags=[] t=4.27s
+kz        N=13 p=1483 s=866 thin=863 nonrat=806 ratios=[1] expected=+1 match=True false_flags=[] t=9.47s
+kz        N= 2 p=1487 s=187 thin=185 nonrat=138 ratios=[1] expected=+1 match=True false_flags=[] t=1.83s
+kz        N= 3 p=1487 s=249 thin=247 nonrat=198 ratios=[1] expected=+1 match=True false_flags=[] t=2.32s
+kz        N= 5 p=1487 s=372 thin=371 nonrat=362 ratios=[-1] expected=-1 match=True false_flags=[] t=3.22s
+kz        N= 7 p=1487 s=497 thin=494 nonrat=432 ratios=[1] expected=+1 match=True false_flags=[] t=4.23s
+kz        N=13 p=1487 s=868 thin=866 nonrat=822 ratios=[-1] expected=-1 match=True false_flags=[] t=8.61s
+kz        N= 2 p=1489 s=186 thin=186 nonrat=166 ratios=[-1] expected=-1 match=True false_flags=[] t=1.79s
+kz        N= 3 p=1489 s=248 thin=248 nonrat=236 ratios=[-1] expected=-1 match=True false_flags=[] t=2.11s
+kz        N= 5 p=1489 s=372 thin=372 nonrat=346 ratios=[-1] expected=-1 match=True false_flags=[] t=3.1s
+kz        N= 7 p=1489 s=497 thin=495 nonrat=464 ratios=[1] expected=+1 match=True false_flags=[] t=4.13s
+kz        N=13 p=1489 s=869 thin=867 nonrat=852 ratios=[1] expected=+1 match=True false_flags=[] t=8.81s
+kz        N= 2 p=1493 s=187 thin=186 nonrat=174 ratios=[1] expected=+1 match=True false_flags=[] t=1.69s
+kz        N= 3 p=1493 s=250 thin=248 nonrat=204 ratios=[1] expected=+1 match=True false_flags=[] t=2.01s
+kz        N= 5 p=1493 s=374 thin=372 nonrat=358 ratios=[1] expected=+1 match=True false_flags=[] t=2.95s
+kz        N= 7 p=1493 s=498 thin=497 nonrat=458 ratios=[-1] expected=-1 match=True false_flags=[] t=3.91s
+kz        N=13 p=1493 s=872 thin=869 nonrat=820 ratios=[1] expected=+1 match=True false_flags=[] t=8.88s
+kz        N= 2 p=1499 s=188 thin=187 nonrat=164 ratios=[-1] expected=-1 match=True false_flags=[] t=1.84s
+kz        N= 3 p=1499 s=251 thin=249 nonrat=216 ratios=[1] expected=+1 match=True false_flags=[] t=2.32s
+kz        N= 5 p=1499 s=376 thin=373 nonrat=326 ratios=[1] expected=+1 match=True false_flags=[] t=3.27s
+kz        N= 7 p=1499 s=500 thin=499 nonrat=476 ratios=[-1] expected=-1 match=True false_flags=[] t=3.8s
+kz        N=13 p=1499 s=876 thin=872 nonrat=778 ratios=[1] expected=+1 match=True false_flags=[] t=7.85s
+DONE

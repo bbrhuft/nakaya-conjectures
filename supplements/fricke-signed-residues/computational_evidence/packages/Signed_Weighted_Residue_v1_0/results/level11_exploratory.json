@@ -1,0 +1,310 @@
+[
+ {
+  "N": 11,
+  "p": 5,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "1": 2
+  },
+  "n_thin": 2,
+  "n_thin_nonrational": 0,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": -1,
+  "ratio_set": [
+   "4"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 7,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "2": 4,
+   "1": 1
+  },
+  "n_thin": 1,
+  "n_thin_nonrational": 0,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": 1,
+  "ratio_set": [
+   "1"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 13,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "2": 4,
+   "1": 4
+  },
+  "n_thin": 4,
+  "n_thin_nonrational": 0,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": 1,
+  "ratio_set": [
+   "1"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 17,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "2": 4,
+   "1": 6
+  },
+  "n_thin": 6,
+  "n_thin_nonrational": 4,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": 1,
+  "ratio_set": [
+   "1"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 19,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "2": 4,
+   "1": 7
+  },
+  "n_thin": 7,
+  "n_thin_nonrational": 2,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": 1,
+  "ratio_set": [
+   "1"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 23,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "1": 11
+  },
+  "n_thin": 11,
+  "n_thin_nonrational": 10,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": -1,
+  "ratio_set": [
+   "22"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 29,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "2": 4,
+   "1": 12
+  },
+  "n_thin": 12,
+  "n_thin_nonrational": 6,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": 1,
+  "ratio_set": [
+   "1"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 31,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "1": 15
+  },
+  "n_thin": 15,
+  "n_thin_nonrational": 8,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": -1,
+  "ratio_set": [
+   "30"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 37,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "1": 18
+  },
+  "n_thin": 18,
+  "n_thin_nonrational": 10,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": -1,
+  "ratio_set": [
+   "36"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 41,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "2": 4,
+   "1": 18
+  },
+  "n_thin": 18,
+  "n_thin_nonrational": 10,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": 1,
+  "ratio_set": [
+   "1"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 43,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "2": 4,
+   "1": 19
+  },
+  "n_thin": 19,
+  "n_thin_nonrational": 16,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": 1,
+  "ratio_set": [
+   "1"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 47,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "1": 23
+  },
+  "n_thin": 23,
+  "n_thin_nonrational": 20,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": -1,
+  "ratio_set": [
+   "46"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 53,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "1": 26
+  },
+  "n_thin": 26,
+  "n_thin_nonrational": 22,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": -1,
+  "ratio_set": [
+   "52"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 59,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "1": 29
+  },
+  "n_thin": 29,
+  "n_thin_nonrational": 24,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": -1,
+  "ratio_set": [
+   "58"
+  ],
+  "matches": true
+ },
+ {
+  "N": 11,
+  "p": 61,
+  "s_P_polynomials_ok": true,
+  "weighted_poly_splits": true,
+  "roots_match_resultant_set": true,
+  "mass_ok": true,
+  "weight_counts": {
+   "2": 4,
+   "1": 28
+  },
+  "n_thin": 28,
+  "n_thin_nonrational": 12,
+  "certificate_ok": true,
+  "r_and_W_in_Fp": true,
+  "expected": 1,
+  "ratio_set": [
+   "1"
+  ],
+  "matches": true
+ }
+]

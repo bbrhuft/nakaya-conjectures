@@ -45,6 +45,7 @@ Only step 1 needs N ∈ 𝔖. The same arguments count the rational supersingula
 | `notes/` | Source audit and author notes |
 | `exploratory/` | Pre-proof numerical experiments (history only) |
 | `supplements/prime-square-levels/` | Separate note proving λ<sub>p</sub>(X<sub>0</sub>(ℓ<sup>2</sup>)<sup>+</sup>) = ((ℓ+1)/2) · L(p), with its own direct-enumeration verification package (not part of the main paper) |
+| `supplements/fricke-signed-residues/` | Separate paper, *Supersingular poles and signed residues of prime-level Fricke Hauptmoduln* (journal draft v1.3), with its computational evidence bundle in `computational_evidence/` (not part of the main paper) |
 
 ## Reproducing the verification
 
@@ -139,5 +140,5 @@ OpenAI ChatGPT/Codex and Anthropic Claude assisted with the exposition, literatu
 
 ## Licence
 
-- Code (`verification/`, `exploratory/`, and the verification code in `supplements/prime-square-levels/`): MIT; see [`LICENSE`](LICENSE).
-- Manuscripts (`paper/` and the note in `supplements/prime-square-levels/`): all rights reserved.
+- Code (`verification/`, `exploratory/`, the verification code in `supplements/prime-square-levels/`, and the code and computational records in `supplements/fricke-signed-residues/computational_evidence/`): MIT; see [`LICENSE`](LICENSE).
+- Manuscripts (`paper/`, the note in `supplements/prime-square-levels/`, the paper in `supplements/fricke-signed-residues/`, and the historical note, audit report and replacement-section documents in its `computational_evidence/packages/`): all rights reserved.

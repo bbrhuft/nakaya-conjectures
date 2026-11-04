@@ -1,0 +1,38 @@
+certified N= 2 p=   5 s=  1 thin=  0 nonrat=  0 ratios=[] expected=+1 match=True false_flags=[] t=0.0s
+certified N= 3 p=   5 s=  2 thin=  0 nonrat=  0 ratios=[] expected=+1 match=True false_flags=[] t=0.0s
+certified N= 7 p=   5 s=  3 thin=  0 nonrat=  0 ratios=[] expected=+1 match=True false_flags=[] t=0.0s
+certified N=13 p=   5 s=  4 thin=  1 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.0s
+certified N= 2 p=   7 s=  2 thin=  0 nonrat=  0 ratios=[] expected=+1 match=True false_flags=[] t=0.0s
+certified N= 3 p=   7 s=  1 thin=  1 nonrat=  0 ratios=[-1] expected=-1 match=True false_flags=[] t=0.0s
+certified N= 5 p=   7 s=  2 thin=  1 nonrat=  0 ratios=[-1] expected=-1 match=True false_flags=[] t=0.0s
+certified N=13 p=   7 s=  4 thin=  3 nonrat=  2 ratios=[-1] expected=-1 match=True false_flags=[] t=0.0s
+certified N= 2 p=  11 s=  2 thin=  1 nonrat=  0 ratios=[-1] expected=-1 match=True false_flags=[] t=0.0s
+certified N= 3 p=  11 s=  3 thin=  1 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.0s
+certified N= 5 p=  11 s=  4 thin=  1 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.0s
+certified N= 7 p=  11 s=  4 thin=  3 nonrat=  2 ratios=[-1] expected=-1 match=True false_flags=[] t=0.0s
+certified N=13 p=  11 s=  7 thin=  5 nonrat=  2 ratios=[-1] expected=-1 match=True false_flags=[] t=0.0s
+certified N= 2 p=  13 s=  2 thin=  1 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.01s
+certified N= 3 p=  13 s=  2 thin=  2 nonrat=  0 ratios=[-1] expected=-1 match=True false_flags=[] t=0.01s
+certified N= 5 p=  13 s=  4 thin=  2 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.01s
+certified N= 7 p=  13 s=  5 thin=  3 nonrat=  2 ratios=[1] expected=+1 match=True false_flags=[] t=0.01s
+certified N= 2 p=  17 s=  2 thin=  2 nonrat=  0 ratios=[-1] expected=-1 match=True false_flags=[] t=0.02s
+certified N= 3 p=  17 s=  4 thin=  2 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.02s
+certified N= 5 p=  17 s=  5 thin=  3 nonrat=  2 ratios=[1] expected=+1 match=True false_flags=[] t=0.02s
+certified N= 7 p=  17 s=  7 thin=  4 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.02s
+certified N=13 p=  17 s= 10 thin=  9 nonrat=  4 ratios=[-1] expected=-1 match=True false_flags=[] t=0.02s
+certified N= 2 p=  19 s=  3 thin=  2 nonrat=  0 ratios=[-1] expected=-1 match=True false_flags=[] t=0.03s
+certified N= 3 p=  19 s=  3 thin=  3 nonrat=  2 ratios=[-1] expected=-1 match=True false_flags=[] t=0.03s
+certified N= 5 p=  19 s=  6 thin=  3 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.03s
+certified N= 7 p=  19 s=  7 thin=  5 nonrat=  4 ratios=[1] expected=+1 match=True false_flags=[] t=0.03s
+certified N=13 p=  19 s= 11 thin= 10 nonrat=  8 ratios=[-1] expected=-1 match=True false_flags=[] t=0.03s
+certified N= 2 p=  23 s=  4 thin=  2 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.08s
+certified N= 3 p=  23 s=  5 thin=  3 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.07s
+certified N= 5 p=  23 s=  6 thin=  5 nonrat=  4 ratios=[-1] expected=-1 match=True false_flags=[] t=0.07s
+certified N= 7 p=  23 s=  8 thin=  7 nonrat=  4 ratios=[-1] expected=-1 match=True false_flags=[] t=0.06s
+certified N=13 p=  23 s= 15 thin= 11 nonrat=  4 ratios=[1] expected=+1 match=True false_flags=[] t=0.08s
+certified N= 2 p=  29 s=  4 thin=  3 nonrat=  2 ratios=[1] expected=+1 match=True false_flags=[] t=0.15s
+certified N= 3 p=  29 s=  6 thin=  4 nonrat=  0 ratios=[1] expected=+1 match=True false_flags=[] t=0.17s
+certified N= 5 p=  29 s=  7 thin=  7 nonrat=  2 ratios=[-1] expected=-1 match=True false_flags=[] t=0.16s
+certified N= 7 p=  29 s= 10 thin=  9 nonrat=  6 ratios=[-1] expected=-1 match=True false_flags=[] t=0.17s
+certified N=13 p=  29 s= 17 thin= 16 nonrat= 10 ratios=[-1] expected=-1 match=True false_flags=[] t=0.18s
+DONE

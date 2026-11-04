@@ -1,0 +1,166 @@
+{
+  "scope": "Integrity and recorded-result validation; this does not rerun the mathematical algorithms.",
+  "original_manifests": {
+    "signed": {
+      "verified_files": 1220,
+      "excluded_self_entries": []
+    },
+    "eta": {
+      "verified_files": 15,
+      "excluded_self_entries": [
+        "SHA256SUMS.txt"
+      ]
+    },
+    "eta_self_entry_note": "The inherited eta manifest includes an invalid hash of itself. Its original bytes are preserved; the new release manifest independently hashes that file."
+  },
+  "certified": {
+    "pairs": 222,
+    "thin_values": 6246,
+    "nonrational_thin_values": 4696,
+    "empty_pole_pairs": [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        7,
+        5
+      ]
+    ],
+    "by_level": [
+      {
+        "tier": "certified",
+        "N": 2,
+        "pairs": 45,
+        "thin_values": 530,
+        "nonrational_thin_values": 310,
+        "p_min": 5,
+        "p_max": 211
+      },
+      {
+        "tier": "certified",
+        "N": 3,
+        "pairs": 45,
+        "thin_values": 716,
+        "nonrational_thin_values": 456,
+        "p_min": 5,
+        "p_max": 211
+      },
+      {
+        "tier": "certified",
+        "N": 5,
+        "pairs": 44,
+        "thin_values": 1059,
+        "nonrational_thin_values": 740,
+        "p_min": 7,
+        "p_max": 211
+      },
+      {
+        "tier": "certified",
+        "N": 7,
+        "pairs": 44,
+        "thin_values": 1431,
+        "nonrational_thin_values": 1116,
+        "p_min": 5,
+        "p_max": 211
+      },
+      {
+        "tier": "certified",
+        "N": 13,
+        "pairs": 44,
+        "thin_values": 2510,
+        "nonrational_thin_values": 2074,
+        "p_min": 5,
+        "p_max": 211
+      }
+    ]
+  },
+  "kz": {
+    "pairs": 960,
+    "thin_values": 233336,
+    "nonrational_thin_values": 210326,
+    "empty_pole_pairs": [],
+    "by_level": [
+      {
+        "tier": "kz",
+        "N": 2,
+        "pairs": 192,
+        "thin_values": 19978,
+        "nonrational_thin_values": 16586,
+        "p_min": 223,
+        "p_max": 1499
+      },
+      {
+        "tier": "kz",
+        "N": 3,
+        "pairs": 192,
+        "thin_values": 26669,
+        "nonrational_thin_values": 22808,
+        "p_min": 223,
+        "p_max": 1499
+      },
+      {
+        "tier": "kz",
+        "N": 5,
+        "pairs": 192,
+        "thin_values": 39960,
+        "nonrational_thin_values": 35524,
+        "p_min": 223,
+        "p_max": 1499
+      },
+      {
+        "tier": "kz",
+        "N": 7,
+        "pairs": 192,
+        "thin_values": 53338,
+        "nonrational_thin_values": 48318,
+        "p_min": 223,
+        "p_max": 1499
+      },
+      {
+        "tier": "kz",
+        "N": 13,
+        "pairs": 192,
+        "thin_values": 93391,
+        "nonrational_thin_values": 87090,
+        "p_min": 223,
+        "p_max": 1499
+      }
+    ]
+  },
+  "hecke": {
+    "pairs": 42,
+    "p_max": 31,
+    "all_recorded_checks_pass": true
+  },
+  "factorial_conjecture": {
+    "primes": 166,
+    "p_max": 997,
+    "all_recorded_matches": true,
+    "status": "Computational evidence only; the journal draft leaves this formula conjectural."
+  },
+  "velu": {
+    "pairs": 647,
+    "kernel_checks": 127541,
+    "ell_max": 47,
+    "p_max": 199,
+    "counting_convention": "Cyclic kernels on chosen representatives, not distinct coarse points."
+  },
+  "eta_multiplier_audit": {
+    "numeric_validation": 40,
+    "petersson_vs_dedekind": 400,
+    "G_character": 1696,
+    "y_lemma": 300,
+    "negative_control": 5,
+    "kronecker_character_identification": 15
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,341 @@
+% =====================================================================================
+% Replacement for Section "The eta quotient at supersingular points" (\label{sec:eta})
+% of  Signed_Weighted_Residue_Note.tex  (v1.0, 3 Nov 2026).
+%
+% Drop-in: uses only the macros of the note (\Fp,\Fq,\Fb,\Z,\Q,\leg,\Lp) and its theorem
+% environments (theorem, lemma, proposition, corollary, remark, fact).  It replaces
+% Lemma~\ref{lem:mult} and the proof of Theorem~\ref{thm:C}; the statement of Theorem~\ref{thm:C}
+% in Section 1 is unchanged.  Two imported facts are to be edited as indicated in the comments.
+% =====================================================================================
+
+\section{The eta quotient at supersingular points}\label{sec:eta}
+
+Throughout this section $\ell\ne p$ is a prime, $M:=576\ell$, $k:=(p^2-1)/24$, and
+\[
+D_\ell(\tau):=\frac{\Delta(\tau)}{\Delta(\ell\tau)},\qquad
+G(\tau):=\frac{\eta(24\ell\tau)}{\eta(24\tau)}=q^{\ell-1}\prod_{n\ge1}\frac{1-q^{24\ell n}}{1-q^{24n}}\in q^{\ell-1}\Z[[q]],
+\qquad G(\tau)^{24}=D_\ell(24\tau)^{-1}.
+\]
+We prove Theorem~\ref{thm:C}: $D_\ell(x)^{k}=\leg{\ell}{p}$ at every supersingular point $x$ of
+$X_0(\ell)_{\Fb}$. The argument has four steps: (i) the multiplier of $G$ on $\Gamma_0(M)$; (ii) the
+moduli interpretation of $D_\ell$, of $G$, and of the diamond operators; (iii) the Frobenius action
+on a lift of $x$ to $X_1(M)$; (iv) the descent.
+
+%--------------------------------------------------------------------------------------
+\subsection{The multiplier of \texorpdfstring{$G$}{G}}
+
+We use the closed form of the eta multiplier (Rademacher; Petersson; see
+\citealp[Ch.~4, \S4.1]{Knopp70}, and \citealp[Thm.~3.4]{Apostol90} for the Dedekind-sum form):
+for $\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\mathrm{SL}_2(\Z)$ with $c>0$,
+\begin{equation}\label{eq:petersson}
+\eta(\gamma\tau)=\nu(\gamma)\,(c\tau+d)^{1/2}\,\eta(\tau),\qquad
+\nu(\gamma)=
+\begin{cases}
+\leg{d}{c}\,e\!\Bigl(\dfrac{(a+d)c-bd(c^2-1)-3c}{24}\Bigr), & c\ \text{odd},\\[2ex]
+\leg{c}{d}\,e\!\Bigl(\dfrac{(a+d)c-bd(c^2-1)+3d-3-3cd}{24}\Bigr), & c\ \text{even},
+\end{cases}
+\end{equation}
+where $e(x)=e^{2\pi ix}$, $(c\tau+d)^{1/2}$ is the principal branch, and the symbols are Kronecker
+symbols (so $\leg{c}{d}$ is defined for $d<0$, with $\leg{c}{-1}=\operatorname{sgn}c$). We checked
+\eqref{eq:petersson} exactly against the Dedekind-sum formula on $400$ random matrices of both
+parities of $c$ and both signs of $d$, and the Dedekind-sum formula against $50$-digit numerics
+(file \texttt{eta\_multiplier\_audit.json}).
+
+\begin{lemma}[multiplier of $G$]\label{lem:mult}
+Let $\chi_\ell(d):=\leg{\ell}{d}$ (Kronecker symbol). For every
+$\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\Gamma_0(M)$,
+\[
+G(\gamma\tau)=\chi_\ell(d)\,G(\tau).
+\]
+The function $d\mapsto\chi_\ell(d)$ on $(\Z/M)^\times$ is the Kronecker character of
+$\Q(\sqrt\ell)$: it is a Dirichlet character of conductor $\ell$ ($\ell\equiv1\bmod4$),
+$4\ell$ ($\ell\equiv3\bmod4$) or $8$ ($\ell=2$), each dividing $M$; it is even and quadratic, and
+$\chi_\ell(p)=\leg{\ell}{p}$ is the Legendre symbol.
+\end{lemma}
+\begin{proof}
+If $c=0$ then $\gamma=\pm\begin{pmatrix}1&b\\0&1\end{pmatrix}$, $G(\tau+b)=G(\tau)$ because $G$ has
+an integral $q$-expansion, and $\chi_\ell(\pm1)=1$. If $c<0$ replace $\gamma$ by $-\gamma$, which
+acts in the same way on $\mathfrak H$ and has $\chi_\ell(-d)=\chi_\ell(d)$ since $\leg{\ell}{-1}=1$.
+So let $c>0$. Put $c_1=c/24$, $c_2=c/(24\ell)$, $b_1=24b$, $b_2=24\ell b$ and
+$\gamma_i=\begin{pmatrix}a&b_i\\c_i&d\end{pmatrix}\in\mathrm{SL}_2(\Z)$. Then
+$24\gamma\tau=\gamma_1(24\tau)$ and $24\ell\gamma\tau=\gamma_2(24\ell\tau)$, and both automorphy
+factors equal $(c\tau+d)^{1/2}$, so $G(\gamma\tau)=\bigl(\nu(\gamma_2)/\nu(\gamma_1)\bigr)G(\tau)$.
+Since $576\ell\mid c$, both $c_1$ and $c_2$ are divisible by $24$, in particular even, so the second
+line of \eqref{eq:petersson} applies to both. In the quotient of the exponentials every term is a
+multiple of $24$: $(a+d)(c_2-c_1)$ and $3d(c_2-c_1)$ because $24\mid c_i$, and
+$d\bigl(b_2(c_2^2-1)-b_1(c_1^2-1)\bigr)$ because $24\mid b_i$. Hence the exponentials cancel and
+\[
+\frac{\nu(\gamma_2)}{\nu(\gamma_1)}=\leg{c_2}{d}\leg{c_1}{d}=\leg{c_1c_2}{d}=\leg{\ell c_2^2}{d}
+=\leg{\ell}{d}\leg{c_2}{d}^{2}=\leg{\ell}{d},
+\]
+using $c_1=\ell c_2$ and $\gcd(c_2,d)=1$. The statements about $\chi_\ell$ are quadratic
+reciprocity: for $d>0$ odd, $\leg{\ell}{d}=\leg{d}{\ell}$ if $\ell\equiv1\pmod 4$,
+$\leg{\ell}{d}=\leg{-1}{d}\leg{d}{\ell}$ if $\ell\equiv3\pmod4$, and $\leg{2}{d}=\chi_8(d)$; in each
+case this is the Kronecker character of discriminant $\ell$, $4\ell$, $8$ respectively, which is even
+because $\Q(\sqrt\ell)$ is real. For a prime $p\nmid M$, $\chi_\ell(p)$ is the Legendre symbol.
+\end{proof}
+
+\begin{remark}
+(a) Lemma~\ref{lem:mult} is the case $f=\eta(24\ell\tau)\eta(24\tau)^{-1}$, $N=576\ell$ of the
+Gordon--Hughes--Newman theorem \citep[Thm.~1.64]{Ono04}: $\sum r_\delta=0$,
+$\sum\delta r_\delta=24(\ell-1)$, $\sum(N/\delta)r_\delta=24(1-\ell)$ are $\equiv0\pmod{24}$ and
+$s=\prod\delta^{r_\delta}=\ell$. The proof above is included so that no citation carries the sign.
+(b) Equivalently, with $y=\eta(\tau)/\eta(\ell\tau)$: if $24\ell\mid c$ and $24\mid b$ then
+$y(\gamma\tau)=\leg{\ell}{d}y(\tau)$. The hypothesis $24\mid b$ cannot be dropped
+(\texttt{eta\_multiplier\_audit.json}, negative control). (c) Lemma~\ref{lem:mult} was verified
+exactly for $\ell\le47$ on random $\gamma\in\Gamma_0(M)$ covering every unit class of $d$ modulo the
+conductor, with $d$ of both signs, and $G$ was checked to be invariant under $\Gamma_1(M)$.
+\end{remark}
+
+%--------------------------------------------------------------------------------------
+\subsection{Moduli conventions}\label{subsec:moduli}
+
+\paragraph{The $\mu_M$-model.} For $M\ge4$ and over $\Z[1/M]$ let $Y_1(M)$ be the fine moduli
+scheme of pairs $(E,\iota)$ with $\iota:\mu_M\hookrightarrow E$ a closed immersion of group schemes,
+and $X_1(M)\supset Y_1(M)$ its smooth proper compactification
+\citep[IV--V]{DR73}; \citep[\S2]{Gross90}; \citep[\S1]{Katz76}. The Tate curve
+$\mathrm{Tate}(q)=\mathbb G_m/q^{\Z}$ over $\Z[1/M]((q))$ with the canonical embedding
+$\mu_M\subset\mathbb G_m$ gives a section $\infty$ of $X_1(M)$ over $\Z[1/M]$ whose formal
+completion is $\operatorname{Spf}\Z[1/M][[q]]$. The complex points are $\Gamma_1(M)\backslash\mathfrak H^*$
+via $\tau\mapsto x_\tau:=(E_\tau,\iota_\tau)$, $E_\tau=\mathbb C/(\Z+\Z\tau)$,
+$\iota_\tau(e^{2\pi i/M})=1/M$; under $E_\tau\cong\mathbb C^\times/q^\Z$, $z\mapsto e^{2\pi iz}$,
+this is the canonical embedding, so the $q$-expansion of a function at $\infty$ is its Fourier
+expansion in $q=e^{2\pi i\tau}$. The diamond operators are the $\Z[1/M]$-automorphisms
+\[
+\langle d\rangle(E,\iota)=(E,\iota\circ[d]),\qquad d\in(\Z/M)^\times .
+\]
+\emph{Convention.} We write $\langle d\rangle$ for this automorphism of the scheme and
+$f\circ\langle d\rangle$ for the pull-back of a function; no inverse occurs anywhere below.
+
+\begin{lemma}[analytic diamond operators]\label{lem:diamond}
+For $\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\Gamma_0(M)$ one has
+$x_{\gamma\tau}=\langle d\rangle x_\tau$. Consequently, for a function $f$ on $X_1(M)_{\mathbb C}$
+with $f(\gamma\tau)=\chi(d)f(\tau)$ on $\Gamma_0(M)$,
+\[
+f\circ\langle d\rangle=\chi(d)\,f .
+\]
+\end{lemma}
+\begin{proof}
+Multiplication by $c\tau+d$ maps $\Z+\Z\gamma\tau$ onto $\Z+\Z\tau$ (it sends $\gamma\tau\mapsto a\tau+b$
+and $1\mapsto c\tau+d$, and $\det\gamma=1$), hence is an isomorphism $E_{\gamma\tau}\to E_\tau$. It
+sends $\iota_{\gamma\tau}(\zeta_M)=1/M$ to $(c\tau+d)/M\equiv d/M=\iota_\tau(\zeta_M^d)$ because
+$M\mid c$. So $(E_{\gamma\tau},\iota_{\gamma\tau})\cong(E_\tau,\iota_\tau\circ[d])$. Then
+$(f\circ\langle d\rangle)(x_\tau)=f(x_{\gamma\tau})=f(\gamma\tau)=\chi(d)f(x_\tau)$.
+\end{proof}
+
+\begin{lemma}[$q$-expansion principle for functions]\label{lem:qexp}
+Let $f\in\overline{\Q}(X_1(M))$ have Fourier expansion at $\infty$ in $\Q((q))$. Then
+$f\in\Q(X_1(M))$, the function field of the $\mu_M$-model over $\Q$.
+\end{lemma}
+\begin{proof}
+For $\sigma\in\operatorname{Gal}(\overline\Q/\Q)$, $f^\sigma$ has expansion $\sigma(\text{coefficients of }f)=f$'s
+expansion at $\infty$, because the cusp $\infty$ and its formal parameter $q$ are defined over $\Q$.
+So $f^\sigma-f$ vanishes in the completed local ring at $\infty$, hence identically.
+\end{proof}
+
+\begin{remark}[the point convention]\label{rem:point}
+In the model $X_1(M)'$ classifying pairs $(E,P)$ with $P$ of exact order $M$, the Tate point
+$(\mathrm{Tate}(q),\zeta_M)$ is only a $\Z[1/M,\zeta_M]$-section \citep[Ex.~2.3]{ConradQexp}; the
+Galois group acts on the cusps over $\infty$ through $\sigma_a:(\mathrm{Tate}(q),\zeta_M)\mapsto
+(\mathrm{Tate}(q),\zeta_M^a)$, i.e.\ through diamond operators. The same Galois argument then shows
+that a function with rational $q$-expansion and $f\circ\langle a\rangle'=\chi(a)f$ satisfies
+$f^{\sigma_a}=\chi(a)^{-1}f$; so $G$ is defined only over the fixed field of $\ker\chi_\ell$, which is
+$\Q(\sqrt\ell)$, and its reduction over $\Fp(\sqrt\ell)\subset\Fq$
+(cf.\ \citealp[\S3.5]{Loeffler}). Lemma~\ref{lem:qexp} is the statement for the $\mu_M$-model and is
+what is used below; the point-model statement is recorded only to show that the distinction is
+real. The two models are isomorphic over $\Z[1/M]$ via $(E,P)\mapsto(E/\langle P\rangle,\ \mu_M\cong
+E[M]/\langle P\rangle)$ (Weil pairing), but this isomorphism does not commute with the
+uniformizations by $\mathfrak H$, which is why rationality statements may not be transferred between
+the conventions by changing words only.
+\end{remark}
+
+\paragraph{The function $D_\ell$ on $Y_0(\ell)$.} For a pair $(E,C)$ over a $\Z[1/\ell]$-scheme, with
+$\pi:E\to E'=E/C$ the quotient isogeny and $\omega'$ any nowhere-vanishing invariant differential on
+$E'$, put
+\begin{equation}\label{eq:Dmoduli}
+D_\ell(E,C):=\ell^{12}\,\frac{\Delta(E,\pi^*\omega')}{\Delta(E',\omega')}\in\mathcal O(S)^\times .
+\end{equation}
+This is independent of $\omega'$ (both discriminants have weight $12$), so it is an invertible
+function on $Y_0(\ell)_{\Z[1/\ell]}$. On the Tate curve with $C=\mu_\ell$, $E'=\mathrm{Tate}(q^\ell)$
+via $t\mapsto t^\ell$, $\pi^*(dt'/t')=\ell\,dt/t$, so
+$\Delta(E,\pi^*\omega'_{\rm can})=\ell^{-12}\Delta(q)$ and $\Delta(E',\omega'_{\rm can})=\Delta(q^\ell)$:
+the $q$-expansion of \eqref{eq:Dmoduli} is $\Delta(q)/\Delta(q^\ell)$. Hence
+\eqref{eq:Dmoduli} is the algebraic incarnation of $\Delta(\tau)/\Delta(\ell\tau)$, with the value
+at a geometric point $x=(E,C)$ given by \eqref{eq:Dmoduli}; this is the meaning of
+``$D_\ell(x)$'' in Theorem~\ref{thm:C} (and $\Delta(\ell\tau)(x)=\ell^{-12}\Delta(E',\omega')$ with
+$\omega=\pi^*\omega'$, as in Lemma~\ref{lem:Bisog}).
+
+\begin{lemma}[the degeneracy map]\label{lem:delta}
+The rule
+\[
+\delta(E,\iota)=\Bigl(E/\iota(\mu_{24}),\ \ \iota(\mu_{24\ell})/\iota(\mu_{24})\Bigr)
+\]
+defines a morphism $\delta:Y_1(M)\to Y_0(\ell)$ over $\Z[1/M]$ (here $\mu_{24}\subset\mu_{24\ell}\subset\mu_M$).
+On complex points $\delta(x_\tau)=(E_{24\tau},\langle 1/\ell\rangle)$, i.e.\ $\delta$ is
+$\tau\mapsto24\tau$, and
+\[
+G^{24}=\delta^*\bigl(D_\ell^{-1}\bigr)\quad\text{in }\Q(X_1(M)).
+\]
+For every $x\in Y_0(\ell)(\Fb)$ there is $\tilde x\in Y_1(M)(\Fb)$ with $\delta(\tilde x)=x$.
+\end{lemma}
+\begin{proof}
+The quotient by the finite \'etale subgroup $\iota(\mu_{24})$ and the image of $\iota(\mu_{24\ell})$
+(cyclic of order $\ell$) are defined over $\Z[1/M]$. Analytically, multiplication by $24$ induces
+$E_\tau\to\mathbb C/(\Z+\Z\,24\tau)=E_{24\tau}$ with kernel $\langle 1/24\rangle=\iota_\tau(\mu_{24})$,
+and maps $\iota_\tau(\mu_{24\ell})=\langle1/(24\ell)\rangle$ onto $\langle1/\ell\rangle$. The
+function $D_\ell$ at $(E_{\tau'},\langle1/\ell\rangle)$ is $\Delta(\tau')/\Delta(\ell\tau')$, so
+$(\delta^*D_\ell)(x_\tau)=\Delta(24\tau)/\Delta(24\ell\tau)=G(\tau)^{-24}$; two elements of
+$\overline\Q(X_1(M))$ that agree on $\mathbb C$-points are equal. For surjectivity on $\Fb$-points:
+given $(E,C)$, choose a cyclic subgroup $K\subset E$ of order $24$, put $E_1=E/K$, so that
+$E=E_1/K_1$ with $K_1=E[24]/K$ cyclic of order $24$; choose a cyclic subgroup $Z\subset E_1$ of order
+$M$ with $Z[24]=K_1$ whose image in $E=E_1/K_1$ has $\ell$-part $C$ (such $Z$ exist because
+$E_1[M]\cong(\Z/M)^2$ and $p\nmid M$), and let $\iota:\mu_M\xrightarrow{\ \sim\ }Z$ (possible over
+$\Fb$ since $\mu_M$ is \'etale and cyclic). Then $\delta(E_1,\iota)=(E,C)$.
+\end{proof}
+
+\begin{proposition}[descent and integrality of $G$]\label{prop:Gint}
+$G\in\Q(X_1(M))$, and $G$ is an invertible regular function on $Y_1(M)_{\Z_{(p)}}$. Its reduction
+$\overline G$ is an invertible regular function on $Y_1(M)_{\Fp}$, defined over $\Fp$, and
+\[
+\overline G\circ\langle d\rangle=\chi_\ell(d)\,\overline G\qquad(d\in(\Z/M)^\times),\qquad
+\overline G^{\,24}=\delta^*\bigl(\overline D_\ell^{\,-1}\bigr).
+\]
+\end{proposition}
+\begin{proof}
+$G$ is holomorphic and non-vanishing on $\mathfrak H$, invariant under $\Gamma_1(M)$
+(Lemma~\ref{lem:mult}, $\chi_\ell(1)=1$) and meromorphic at the cusps, so $G\in\mathbb C(X_1(M))$;
+by Lemma~\ref{lem:qexp} and the integral $q$-expansion, $G\in\Q(X_1(M))$. By
+Lemma~\ref{lem:delta}, $F:=\delta^*(D_\ell^{-1})$ lies in $\mathcal O(Y_1(M)_{\Z[1/M]})^\times$ and
+$G^{24}=F$. The ring $R:=\mathcal O(Y_1(M)_{\Z_{(p)}})$ is a normal domain (smooth over $\Z_{(p)}$,
+flat with integral generic fibre), and $G\in\operatorname{Frac}(R)$ satisfies the monic equation
+$T^{24}-F=0$ with $F\in R^\times$; hence $G\in R$, and $G^{-1}=G^{23}F^{-1}\in R$. The identity
+$G\circ\langle d\rangle=\chi_\ell(d)G$ holds in $\mathbb C(X_1(M))$ by Lemmas~\ref{lem:mult}
+and~\ref{lem:diamond}, hence in $R$ ($\langle d\rangle$ is an automorphism of $Y_1(M)$ over
+$\Z[1/M]$), hence after reduction. Reduction of $G^{24}=F$ gives the last identity.
+\end{proof}
+
+\begin{remark}
+The note's earlier formulation (``a modular unit with unit leading coefficients at all cusps is
+invertible on $Y_1(M)_{\Z_{(p)}[\zeta_M]}$'') is also correct, by the divisor argument on the regular
+arithmetic surface $X_1(M)_{\Z_{(p)}}$ (irreducible special fibre, cuspidal horizontal divisor), but
+it needs the expansions at every cusp; the monic-equation argument above needs only $\infty$ and the
+moduli description \eqref{eq:Dmoduli}. The only descent input is Lemma~\ref{lem:qexp}.
+\end{remark}
+
+%--------------------------------------------------------------------------------------
+\subsection{Frobenius on a lift}
+
+\begin{lemma}[Deuring models]\label{lem:deuring}
+Let $E_1/\Fb$ be supersingular, $p\ge5$. Then $E_1$ has a model over $\Fq$ whose $p^2$-power
+Frobenius endomorphism is $[-p]$. For such a model every finite subgroup of order prime to $p$ is
+$\Fq$-rational, and $E_1/K$ again has Frobenius $[-p]$.
+\end{lemma}
+\begin{proof}
+For any model $E/\Fq$ of a supersingular curve, the $p$-power Frobenius $F:E\to E^{(p)}$ and the
+Verschiebung $V:E^{(p)}\to E$ are both purely inseparable of degree $p$ (the Hasse invariant
+vanishes), so $F^{(p)}:E^{(p)}\to E^{(p^2)}=E$ and $V$ differ by an automorphism $u$ of $E$:
+$F^{(p)}=u\circ V$, whence $\pi_{p^2}=F^{(p)}\circ F=u\circ V\circ F=u\circ[p]$. Thus
+$\pi_{p^2}=p\,u$ with $u\in\Aut(E)$. If $j\ne0,1728$ then $u=\pm1$ and the quadratic twist changes
+the sign; if $j=0$ (resp.\ $1728$) the curve $y^2=x^3+1$ (resp.\ $y^2=x^3+x$) over $\Fp$ has
+trace $0$, so $\pi_{p^2}=\pi_p^2=[-p]$ \citep{Deuring41,Waterhouse69}; see also
+\citet[Lemma~4.3]{Ono25}. Since $[-p]$ is central, Galois preserves every subgroup, and the quotient
+isogeny $\phi$ satisfies $\pi'\phi=\phi\pi=\phi[-p]=[-p]\phi$, so $\pi'=[-p]$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:C}]
+Let $x=(E,C)\in Y_0(\ell)(\Fb)$ be supersingular and choose, by Lemma~\ref{lem:delta}, a lift
+$\tilde x=(E_1,\iota)\in Y_1(M)(\Fb)$ with $\delta(\tilde x)=x$. The curve $E_1$ is isogenous to $E$,
+hence supersingular, so by Lemma~\ref{lem:deuring} we may replace $(E_1,\iota)$ by an isomorphic
+pair (same geometric point $\tilde x$, same value $\overline G(\tilde x)$) in which $E_1$ is defined
+over $\Fq$ with $\pi_{E_1}=[-p]$. The embedding $\iota:\mu_M\to E_1$ is defined over $\Fb$; nothing
+requires it to be $\Fq$-rational.
+
+\emph{Galois action on the point.} Let $\sigma\in\operatorname{Gal}(\Fb/\Fq)$ be $u\mapsto u^{p^2}$.
+Since $Y_1(M)$ is a fine moduli scheme, $\sigma$ acts on $Y_1(M)(\Fb)$ by
+$\sigma(E_1,\iota)=(E_1^\sigma,\iota^\sigma)=(E_1,\sigma_{E_1}\circ\iota\circ\sigma_{\mu_M}^{-1})$,
+where $\sigma_{\mu_M}(\zeta)=\zeta^{p^2}$ and $\sigma_{E_1}$ is the action on $E_1(\Fb)$ through the
+$\Fq$-structure, i.e.\ the Frobenius endomorphism $\pi_{E_1}=[-p]$. Hence
+\[
+\iota^\sigma(\zeta)=[-p]\,\iota(\zeta^{p^{-2}})=[-p][p^{-2}]\,\iota(\zeta)=\iota([-p^{-1}]\zeta),
+\qquad\text{i.e.}\qquad \sigma(\tilde x)=\langle -p^{-1}\rangle\tilde x,
+\]
+with $-p^{-1}$ read in $(\Z/M)^\times$. (In the point convention the same computation gives
+$\sigma(E_1,P)=(E_1,[-p]P)=\langle-p\rangle'(E_1,P)$; the final answer below is unchanged because
+$\chi_\ell$ is even and quadratic, but we fix the $\mu_M$-convention and use only the displayed formula.)
+
+\emph{Galois action on the value.} $\overline G$ is defined over $\Fp$
+(Proposition~\ref{prop:Gint}), so $\overline G(\sigma\tilde x)=\sigma\bigl(\overline G(\tilde x)\bigr)
+=\overline G(\tilde x)^{p^2}$. Combining with the diamond identity of Proposition~\ref{prop:Gint},
+\[
+\overline G(\tilde x)^{p^2}=\overline G\bigl(\langle-p^{-1}\rangle\tilde x\bigr)
+=\chi_\ell(-p^{-1})\,\overline G(\tilde x)=\chi_\ell(p)\,\overline G(\tilde x)=\leg{\ell}{p}\overline G(\tilde x),
+\]
+because $\chi_\ell(-1)=1$ and $\chi_\ell(p^{-1})=\chi_\ell(p)^{-1}=\chi_\ell(p)$. Since
+$\overline G$ is invertible on $Y_1(M)_{\Fp}$, $\overline G(\tilde x)\ne0$ and
+\begin{equation}\label{eq:Gfrob}
+\overline G(\tilde x)^{p^2-1}=\leg{\ell}{p}.
+\end{equation}
+No coefficient-field factor enters: the only Galois action used is that of $\sigma$ on the point
+$\tilde x$, and $\overline G$ is $\sigma$-invariant as a function.
+
+\emph{Descent to $X_0(\ell)$.} By Proposition~\ref{prop:Gint},
+$\overline G(\tilde x)^{24}=\overline D_\ell(\delta\tilde x)^{-1}=D_\ell(x)^{-1}$. Therefore
+\[
+D_\ell(x)^{k}=\overline G(\tilde x)^{-24k}=\overline G(\tilde x)^{-(p^2-1)}=\leg{\ell}{p}^{-1}=\leg{\ell}{p}.
+\]
+This holds at every geometric supersingular point, including those over $j=0$ and $j=1728$: the
+argument takes place on the fine moduli scheme $Y_1(M)$, and $D_\ell(x)$ is defined by
+\eqref{eq:Dmoduli} independently of automorphisms of $(E,C)$. For $\ell=N\in\mathcal N$,
+$D_N=u_N^{N-1}$ and $(N-1)k=(p^2-1)/a_N$.
+\end{proof}
+
+\begin{remark}[comparison with Ono]\label{rem:ono}
+\citet[Thm.~1.2]{Ono25} (v2, 3 July 2026) proves $R_\ell^{(p^2-1)/12}=1$ at supersingular points
+for $R_\ell=\Delta(\ell\tau)/\Delta(\tau)=D_\ell^{-1}$, via $R_\ell(\tilde P)^{(p^2-1)/12}=\kappa(E')/\kappa(E)$
+(his Lemma~4.4) and $\kappa(E)=\Delta(E,\omega)^{(p^2-1)/12}=(-1)^{(p+1)/2}$ on Deuring models with
+$\Fq$-rational $\omega$ (his Thm.~1.3). His Remark~4 observes that the $(p^2-1)/24$ power can be $-1$
+($p=11$, $\ell=2$: $R_2\in\{6,7,2\}$, fifth powers $-1$), that the values of
+$g_\ell=\eta(\ell z)/\eta(z)$ need not lie in $\Fq$ (they generate $\mathbb F_{11^4}$ there), and that
+a proof descending $\Delta^{1/24}$ or $\Delta^{1/12}$ to $\Fq$ must fail. Theorem~\ref{thm:C}
+determines the sign: $R_\ell^{(p^2-1)/24}=\leg{\ell}{p}$, equivalently $R_\ell(\tilde P)$ is a
+$24$-th power in $\Fq^\times$ iff $\leg{\ell}{p}=1$. This is consistent with Remark~4: $\leg{2}{11}=-1$,
+and \eqref{eq:Gfrob} shows $\overline G(\tilde x)\in\mathbb F_{p^4}\setminus\Fq$ exactly when
+$\leg{\ell}{p}=-1$. The proof above does not descend any root of $\Delta$ to $\Fq$: it uses that
+$\overline G$ is an $\Fp$-rational \emph{function} on $Y_1(576\ell)$, and tracks its values through
+the diamond character. The isogeny-invariance of $\kappa$ over $\Fq$ (for $E_1,E_2$ separably isogenous over $\Fq$,
+the values $(\Lp{-1}\Delta(E_i))^{(p^2-1)/12}$ coincide) is already in \citet[\S2]{Baker98}, as a
+consequence of the Gross--Landweber congruence; Ono's Theorem~1.2 follows from it by his Lemma~4.4.
+\end{remark}
+
+% =====================================================================================
+% Edits to Section 2 (Imported facts) that go with this replacement:
+%
+% * Replace Fact I4 (Gordon--Hughes--Newman) by:
+%   \begin{fact}[eta multiplier; Rademacher, Petersson; \citealp[Ch.~4, \S4.1]{Knopp70}, \citealp[Thm.~3.4]{Apostol90}]
+%   For $c>0$, $\eta(\gamma\tau)=\nu(\gamma)(c\tau+d)^{1/2}\eta(\tau)$ with $\nu$ given by \eqref{eq:petersson}.
+%   \end{fact}
+%   (GHN may be kept as a remark.)
+%
+% * Replace Fact I5 (moduli and Frobenius) by:
+%   \begin{fact}[moduli; \citealp{DR73,KM85,Katz76,Gross90}]
+%   For $M\ge4$, $Y_1(M)$ in the $\mu_M$-convention is a fine moduli scheme, smooth and affine over
+%   $\Z[1/M]$, with smooth proper compactification $X_1(M)$ whose cusp $\infty$ (Tate curve, canonical
+%   $\mu_M$) is a $\Z[1/M]$-section with formal parameter $q$. The diamond operators
+%   $\langle d\rangle(E,\iota)=(E,\iota\circ[d])$ are $\Z[1/M]$-automorphisms. For $p\nmid M$,
+%   $X_1(M)_{\Fp}$ is smooth and geometrically irreducible.
+%   \end{fact}
+%   Everything else formerly in Fact I5 is now proved in Section 7 (Lemmas 7.2--7.4, Prop. 7.6).
+%
+% * Fact I6 (Deuring models) can be kept, or replaced by Lemma~\ref{lem:deuring}.
+%
+% * Add to the bibliography:
+%   \bibitem[Apostol(1990)]{Apostol90} Apostol, T. M. (1990). \emph{Modular Functions and Dirichlet Series in Number Theory} (2nd ed., GTM 41). Springer.
+%   \bibitem[Conrad(n.d.)]{ConradQexp} Conrad, B. (n.d.). \emph{Math 248B. Algebraic theory of $q$-expansions} [Course handout]. Stanford University.
+%   \bibitem[Deuring(1941)]{Deuring41} Deuring, M. (1941). Die Typen der Multiplikatorenringe elliptischer Funktionenk\"orper. \emph{Abh. Math. Sem. Hansischen Univ.}, 14, 197--272.
+%   \bibitem[Gross(1990)]{Gross90} Gross, B. H. (1990). A tameness criterion for Galois representations associated to modular forms (mod $p$). \emph{Duke Math. J.}, 61(2), 445--517.
+%   \bibitem[Katz(1976)]{Katz76} Katz, N. M. (1976). $p$-adic interpolation of real analytic Eisenstein series. \emph{Ann. of Math.}, 104, 459--571.
+%   \bibitem[Knopp(1970)]{Knopp70} Knopp, M. I. (1970). \emph{Modular Functions in Analytic Number Theory}. Markham.
+%   \bibitem[Loeffler(n.d.)]{Loeffler} Loeffler, D. (n.d.). \emph{Modular curves} [Lecture notes]. University of Warwick.
+%   \bibitem[Waterhouse(1969)]{Waterhouse69} Waterhouse, W. C. (1969). Abelian varieties over finite fields. \emph{Ann. Sci. \'Ecole Norm. Sup. (4)}, 2, 521--560.
+%   and update \citet{Ono25} to: Ono, K. (2026). Modular forms for chromatic homotopy: Supersingular congruences. arXiv:2509.16175v2 (3 July 2026).
+% =====================================================================================

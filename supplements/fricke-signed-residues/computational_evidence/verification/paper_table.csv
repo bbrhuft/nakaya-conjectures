@@ -1,0 +1,6 @@
+tier,N,pairs,thin_values,nonrational_thin_values,p_min,p_max
+certified,2,45,530,310,5,211
+certified,3,45,716,456,5,211
+certified,5,44,1059,740,7,211
+certified,7,44,1431,1116,5,211
+certified,13,44,2510,2074,5,211

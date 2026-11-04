@@ -1,0 +1,34 @@
+{
+  "paper_file": "Fricke_Signed_Residues_Journal_v1_3.tex",
+  "paper_sha256": "696038188f4ba999d29a15d88a8ade2a87344aad40ac86a55fdabe759d2d0cdb",
+  "package_version": "1.0",
+  "input_archives": [
+    {
+      "name": "Signed_Weighted_Residue_v1_0.zip",
+      "sha256": "d4b0ac057c84f344fb047dd7f70c591c334fa3adb7764c2118c10ad5c2e8b009",
+      "size_bytes": 4790661,
+      "contents": "packages/Signed_Weighted_Residue_v1_0"
+    },
+    {
+      "name": "Eta_Frobenius_Lemma_Audit_v1_0.zip",
+      "sha256": "fdc656203cf261b0979174f177124b12abfe947f3a33fae9085666a9d8b1510c",
+      "size_bytes": 616059,
+      "contents": "packages/Eta_Frobenius_Lemma_Audit_v1_0"
+    }
+  ],
+  "original_manifest_validation": {
+    "signed": {
+      "verified_files": 1220,
+      "excluded_self_entries": []
+    },
+    "eta": {
+      "verified_files": 15,
+      "excluded_self_entries": [
+        "SHA256SUMS.txt"
+      ]
+    },
+    "eta_self_entry_note": "The inherited eta manifest includes an invalid hash of itself. Its original bytes are preserved; the new release manifest independently hashes that file."
+  },
+  "preservation": "All original archive member files are retained byte-for-byte in packages/. Root documentation, wrappers and verification/smoke_run are additions.",
+  "fresh_rerun": "verification/smoke_run/RUN_METADATA.json"
+}

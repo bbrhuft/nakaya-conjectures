@@ -1,0 +1,67 @@
+% Standalone compile test for eta_section_replacement.tex (same preamble as the note).
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,amsthm,booktabs,longtable,enumitem}
+\usepackage[round,sort]{natbib}
+\usepackage{xurl}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\setlength{\emergencystretch}{2em}
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{fact}{Imported fact}
+\renewcommand{\thefact}{I\arabic{fact}}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Fp}{\mathbb F_p}
+\newcommand{\Fq}{\mathbb F_{p^2}}
+\newcommand{\Fb}{\overline{\mathbb F}_p}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\den}{\operatorname{den}_{\mathrm{red}}}
+\newcommand{\leg}[2]{\left(\frac{#1}{#2}\right)}
+\newcommand{\Lp}[1]{\left(\frac{#1}{p}\right)}
+\title{Replacement Section 7 for \emph{Signed weighted residues of the Fricke Hauptmoduln}\\(compile test)}
+\author{Audit deliverable}
+\date{3 November 2026}
+\begin{document}
+\maketitle
+\setcounter{section}{6}
+\section*{Context (from the note; for cross-references only)}
+\setcounter{section}{0}
+\begin{theorem}[Frobenius on the eta quotient; statement unchanged]\label{thm:C}
+Let $\ell\ne p$ be prime. At every supersingular point $x$ of $X_0(\ell)_{\Fb}$,
+$\bigl(\Delta(\tau)/\Delta(\ell\tau)\bigr)^{(p^2-1)/24}(x)=\leg{\ell}{p}$.
+For $\ell=N\in\mathcal N$ this reads $u_N(x)^{(p^2-1)/a_N}=\Lp N$.
+\end{theorem}
+\begin{lemma}[Kodaira--Spencer factor of the Fricke isogeny; as in the note]\label{lem:Bisog}
+$B(E',\omega')=N\,B(E,\omega)$, $A(E',\omega')=A(E,\omega)$, $\Delta(N\tau)(x)=N^{-12}\Delta(E',\omega')$, with $\omega=\pi^*\omega'$.
+\end{lemma}
+\setcounter{section}{6}
+\input{eta_section_replacement.tex}
+\begin{thebibliography}{99}\small
+\bibitem[Apostol(1990)]{Apostol90} Apostol, T. M. (1990). \emph{Modular Functions and Dirichlet Series in Number Theory} (2nd ed., GTM 41). Springer.
+\bibitem[Baker(1998)]{Baker98} Baker, A. (1998). A supersingular congruence for modular forms. \emph{Acta Arithmetica}, 86(1), 91--100.
+\bibitem[Conrad(n.d.)]{ConradQexp} Conrad, B. (n.d.). \emph{Math 248B. Algebraic theory of $q$-expansions} [Course handout]. Stanford University.
+\bibitem[Deligne and Rapoport(1973)]{DR73} Deligne, P., \& Rapoport, M. (1973). Les sch\'emas de modules de courbes elliptiques. LNM 349, 143--316.
+\bibitem[Deuring(1941)]{Deuring41} Deuring, M. (1941). Die Typen der Multiplikatorenringe elliptischer Funktionenk\"orper. \emph{Abh. Math. Sem. Hansischen Univ.}, 14, 197--272.
+\bibitem[Gross(1990)]{Gross90} Gross, B. H. (1990). A tameness criterion for Galois representations associated to modular forms (mod $p$). \emph{Duke Math. J.}, 61(2), 445--517.
+\bibitem[Katz(1976)]{Katz76} Katz, N. M. (1976). $p$-adic interpolation of real analytic Eisenstein series. \emph{Ann. of Math.}, 104, 459--571.
+\bibitem[Katz and Mazur(1985)]{KM85} Katz, N. M., \& Mazur, B. (1985). \emph{Arithmetic Moduli of Elliptic Curves}. Princeton University Press.
+\bibitem[Knopp(1970)]{Knopp70} Knopp, M. I. (1970). \emph{Modular Functions in Analytic Number Theory}. Markham.
+\bibitem[Loeffler(n.d.)]{Loeffler} Loeffler, D. (n.d.). \emph{Modular curves} [Lecture notes]. University of Warwick.
+\bibitem[Ono(2004)]{Ono04} Ono, K. (2004). \emph{The Web of Modularity} (CBMS 102). AMS.
+\bibitem[Ono(2026)]{Ono25} Ono, K. (2026). Modular forms for chromatic homotopy: Supersingular congruences. arXiv:2509.16175v2 (3 July 2026).
+\bibitem[Waterhouse(1969)]{Waterhouse69} Waterhouse, W. C. (1969). Abelian varieties over finite fields. \emph{Ann. Sci. \'Ecole Norm. Sup. (4)}, 2, 521--560.
+\end{thebibliography}
+\end{document}

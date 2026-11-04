@@ -1,0 +1,177 @@
+{
+ "reproduction_p_le_29": {
+  "pairs": 37,
+  "thin_points": 135,
+  "nonrational_thin_points": 60,
+  "pairs_with_ge2_thin": 26,
+  "pairs_with_1_thin": 7,
+  "pairs_with_0_thin": 4,
+  "all_match_conjecture": true,
+  "pmin": 5,
+  "pmax": 29
+ },
+ "certified_all": {
+  "pairs": 222,
+  "thin_points": 6246,
+  "nonrational_thin_points": 4696,
+  "pairs_with_ge2_thin": 211,
+  "pairs_with_1_thin": 7,
+  "pairs_with_0_thin": 4,
+  "all_match_conjecture": true,
+  "pmin": 5,
+  "pmax": 211
+ },
+ "kz_all": {
+  "pairs": 960,
+  "thin_points": 233336,
+  "nonrational_thin_points": 210326,
+  "pairs_with_ge2_thin": 960,
+  "pairs_with_1_thin": 0,
+  "pairs_with_0_thin": 0,
+  "all_match_conjecture": true,
+  "pmin": 223,
+  "pmax": 1499
+ },
+ "by_level_certified": {
+  "2": {
+   "pairs": 45,
+   "thin_points": 530,
+   "nonrational_thin_points": 310,
+   "pairs_with_ge2_thin": 41,
+   "pairs_with_1_thin": 2,
+   "pairs_with_0_thin": 2,
+   "all_match_conjecture": true,
+   "pmin": 5,
+   "pmax": 211
+  },
+  "3": {
+   "pairs": 45,
+   "thin_points": 716,
+   "nonrational_thin_points": 456,
+   "pairs_with_ge2_thin": 42,
+   "pairs_with_1_thin": 2,
+   "pairs_with_0_thin": 1,
+   "all_match_conjecture": true,
+   "pmin": 5,
+   "pmax": 211
+  },
+  "5": {
+   "pairs": 44,
+   "thin_points": 1059,
+   "nonrational_thin_points": 740,
+   "pairs_with_ge2_thin": 42,
+   "pairs_with_1_thin": 2,
+   "pairs_with_0_thin": 0,
+   "all_match_conjecture": true,
+   "pmin": 7,
+   "pmax": 211
+  },
+  "7": {
+   "pairs": 44,
+   "thin_points": 1431,
+   "nonrational_thin_points": 1116,
+   "pairs_with_ge2_thin": 43,
+   "pairs_with_1_thin": 0,
+   "pairs_with_0_thin": 1,
+   "all_match_conjecture": true,
+   "pmin": 5,
+   "pmax": 211
+  },
+  "13": {
+   "pairs": 44,
+   "thin_points": 2510,
+   "nonrational_thin_points": 2074,
+   "pairs_with_ge2_thin": 43,
+   "pairs_with_1_thin": 1,
+   "pairs_with_0_thin": 0,
+   "all_match_conjecture": true,
+   "pmin": 5,
+   "pmax": 211
+  }
+ },
+ "by_level_kz": {
+  "2": {
+   "pairs": 192,
+   "thin_points": 19978,
+   "nonrational_thin_points": 16586,
+   "pairs_with_ge2_thin": 192,
+   "pairs_with_1_thin": 0,
+   "pairs_with_0_thin": 0,
+   "all_match_conjecture": true,
+   "pmin": 223,
+   "pmax": 1499
+  },
+  "3": {
+   "pairs": 192,
+   "thin_points": 26669,
+   "nonrational_thin_points": 22808,
+   "pairs_with_ge2_thin": 192,
+   "pairs_with_1_thin": 0,
+   "pairs_with_0_thin": 0,
+   "all_match_conjecture": true,
+   "pmin": 223,
+   "pmax": 1499
+  },
+  "5": {
+   "pairs": 192,
+   "thin_points": 39960,
+   "nonrational_thin_points": 35524,
+   "pairs_with_ge2_thin": 192,
+   "pairs_with_1_thin": 0,
+   "pairs_with_0_thin": 0,
+   "all_match_conjecture": true,
+   "pmin": 223,
+   "pmax": 1499
+  },
+  "7": {
+   "pairs": 192,
+   "thin_points": 53338,
+   "nonrational_thin_points": 48318,
+   "pairs_with_ge2_thin": 192,
+   "pairs_with_1_thin": 0,
+   "pairs_with_0_thin": 0,
+   "all_match_conjecture": true,
+   "pmin": 223,
+   "pmax": 1499
+  },
+  "13": {
+   "pairs": 192,
+   "thin_points": 93391,
+   "nonrational_thin_points": 87090,
+   "pairs_with_ge2_thin": 192,
+   "pairs_with_1_thin": 0,
+   "pairs_with_0_thin": 0,
+   "all_match_conjecture": true,
+   "pmin": 223,
+   "pmax": 1499
+  }
+ },
+ "diagnostic_p29": {
+  "2": [
+   1
+  ],
+  "3": [
+   1
+  ],
+  "5": [
+   -1
+  ],
+  "7": [
+   -1
+  ],
+  "13": [
+   -1
+  ]
+ },
+ "failed_checks": [],
+ "ratio_sets_seen": [
+  [],
+  [
+   -1
+  ],
+  [
+   1
+  ]
+ ],
+ "counterexamples": []
+}
