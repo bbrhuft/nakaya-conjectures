@@ -31,12 +31,12 @@
 \newcommand{\den}{\operatorname{den}_{\mathrm{red}}}
 \newcommand{\leg}[2]{\left(\frac{#1}{#2}\right)}
 \newcommand{\Lp}[1]{\left(\frac{#1}{p}\right)}
-% Set this to the public evidence repository URL or DOI landing page before submission.
-\newcommand{\DataRepositoryURL}{}
+% Public evidence repository (GitHub). Replace with a DOI landing page if one is minted.
+\newcommand{\DataRepositoryURL}{https://github.com/bbrhuft/nakaya-conjectures/tree/main/supplements/fricke-signed-residues}
 
 \title{Supersingular poles and signed residues\\of prime-level Fricke Hauptmoduln}
 \author{David Jordan}
-\date{4 November 2026}
+\date{5 November 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -81,6 +81,11 @@ reconstructs the reduced $U_p$ image from supersingular values and their weights
 and detects vanishing when no contributing value remains. The level-one theory
 provides the model for this reconstruction; the Fricke quotient introduces
 additional ramification, which must enter both the pole criterion and the product.
+Corollary~\ref{cor:reconstruction} also gives an algorithm: once the weighted
+supersingular values are available, it constructs the reduced function without
+a long $q$-expansion. Section~\ref{subsec:benchmarks} compares this reconstruction,
+including the cost of acquiring the supersingular data, with a
+$q$-expansion calculation at the five eta-coordinate levels.
 
 The distinction between ramified and unramified supersingular values is essential.
 A ramified value is removed from the pole divisor, but remains in the residue
@@ -1323,6 +1328,92 @@ checked as polynomial identities in $\Fp[E_4,E_6]$ at
 $p=23,47,71,167$, where $F=\eta^{p+1}$ has level one.
 These finite checks are independent evidence, not premises of the proof.
 
+
+\subsection{Computational consequences and timings}\label{subsec:benchmarks}
+Corollary~\ref{cor:reconstruction} provides an exact reconstruction algorithm
+from the supersingular values and their effective indices. The implementation
+builds a subproduct tree for $D_{\rm thin}$, evaluates its derivative at the
+thin values by a remainder tree, and uses
+\[
+W_i=D_{\rm thin}'(t_i)^{p+1}
+\prod_{e_j>1}(t_i-t_j)^{(p+1)/e_j}
+\]
+to obtain the residues. A tree combines the simple fractions into the numerator
+and denominator. Thus the thick values remain necessary input even though
+they do not contribute poles. No $q$-expansion is used in this route.
+
+We distinguish reconstruction with supplied supersingular data from the complete
+calculation. The latter includes constructing $\Fq$, obtaining the supersingular
+$j$-values from a short-Weierstrass Hasse polynomial, and computing the level-$N$
+fibres and their indices. No supersingular $j$-cache is shared between levels.
+The comparison uses an independent $q$-expansion route: Euler's pentagonal
+series and the eta coordinates give $T_N$, after which compiled series reversion
+and composition express $T_N|U_p$ in $w=1/T_N$ and Pad\'e reconstruction
+recovers the rational function. It uses the degree bound
+$M=\lfloor(N+1)(p-1)/24\rfloor$ from Corollary~\ref{cor:degree}, but no
+supersingular values or residue signs. Since numerator and denominator in $w$
+have degree at most $M$, $2M+1$ series coefficients suffice; the resulting
+source precision is $O(p^2)$ for fixed $N$. We do not time the more conservative
+$O(p^3)$-precision certificate calculation as this comparator.
+
+The experiment covers $N\in\mathcal N_0$ and
+$p\in\{11,29,59,101,211,509,1009\}$, together with the two level-two zero
+cases $p=5,7$. All 37 rational functions agree exactly between the two routes,
+covering 2782 thin values; all 27 overlapping cases also agree with the
+original high-precision certificates. A separate conditional comparison supplies
+the thin denominator to the $q$-expansion route, which then recovers only the
+numerator. At $p=1009$, the corollary's reconstruction is 65--108 times faster
+than that conditional control across the five levels. Including acquisition,
+the complete supersingular calculation is 19--25 times faster than the
+$q$-expansion route. At $p=11,29$ the latter is faster at every tested level;
+the crossover is implementation-dependent. Representative results are in
+Table~\ref{tab:reconstruction-timings}.
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{rrrrrr}\toprule
+$N$&$p$&Recon.&SS full&$q$ full&Ratio\\\midrule
+2&101&0.116&1.310&1.892&1.44\\
+13&101&0.566&3.030&8.965&2.96\\
+2&211&0.249&4.654&12.278&2.64\\
+13&211&1.566&9.340&55.209&5.91\\
+2&1009&2.388&20.949&490.033&23.39\\
+13&1009&13.296&102.752&1998.450&19.45\\
+\bottomrule\end{tabular}
+\caption{Median times in milliseconds. ``Recon.'' assumes the weighted
+supersingular data are supplied; ``SS full'' includes acquiring them.
+``$q$ full'' uses no supersingular input. The ratio is $q$ full divided by
+SS full. These benchmarks concern the five eta-coordinate levels, not the
+other ten levels of Theorem~\ref{thm:main}.}
+\label{tab:reconstruction-timings}
+\end{table}
+
+Theorem~\ref{thm:factorial} has a separate evaluation consequence. Once
+$c_p=\Lp6h!$ is cached, it computes $B(E,\omega)^h$ from
+$c_p\Delta(E,\omega)^k$ in $O(\log p)$ field operations with a constant
+number of working field elements. This evaluates the specified power, not
+$B$ itself, and assumes supersingularity. At $p=1000003$, a base-field
+benchmark gave $0.257\,\mu\mathrm{s}$ per model, compared with
+$3.532\,\mu\mathrm{s}$ for the fastest tested coefficient-polynomial
+baseline, including reuse at repeated $j$-invariants within a batch.
+That batch contains 32 differentially rescaled models spanning three
+$j$-values. A warm-library FLINT evaluation of $h!\bmod p$ took
+$0.369\,\mathrm{ms}$ separately, so this setup cost must be charged when
+the characteristic changes. Extension-field timings and their interface
+overheads are documented in the supplement.
+
+The timings use a virtualized AMD EPYC 9V74 host, Python 3.12.14,
+\texttt{python-flint} 0.9.0 with FLINT 3.6.0, and GCC 13.3.0
+with \texttt{-O3}, pinned to one CPU. They are medians of warmed,
+repeated measurements: five timing blocks for reconstruction benchmarks
+through $p=211$, three above that range, and seven for the factorial-evaluation
+benchmarks. Imports and compilation are excluded. The complete reconstruction
+routes include their mathematical setup costs; field construction and input
+certification are excluded from the cached factorial-evaluation timings.
+All arithmetic is exact. These measurements establish advantages over the
+tested implementations, not optimality among all available algorithms;
+specialized supersingular-polynomial methods, persistent caches, alternative
+field backends and different batch sizes can change the comparisons.
+
 \paragraph{Data and software.}
 The supplementary packages \texttt{Signed\_Weighted\_Residue\_v1\_0} and
 \texttt{Eta\_Frobenius\_Lemma\_Audit\_v1\_0} contain Python code, per-pair JSON
@@ -1334,6 +1425,10 @@ contains the factorial-evaluation code and its recorded results under
 The package \path{Fricke_Fifteen_Levels_Extension_v1_0} contains the
 ten-level verifier, the fresh five-level regression, the model coefficients,
 source provenance and per-pair certificates (\texttt{python-flint} 0.9.0).
+The additional packages \path{Theorem_1_3_Benchmark_v1_0} and
+\path{Corollary_1_2_Reconstruction_Benchmark_v1_0} contain the timing code,
+exact inputs and outputs, raw timing samples, verification records and
+reproduction instructions for Section~\ref{subsec:benchmarks}.
 The reported ranges are those documented by the exact-arithmetic results
 in these supplementary packages.
 \if\relax\detokenize\expandafter{\DataRepositoryURL}\relax
@@ -1342,6 +1437,8 @@ supplementary files with the manuscript.
 \else
 The code, data and reproduction instructions are publicly available at
 \expandafter\url\expandafter{\DataRepositoryURL}.
+There, the first two packages are in \path{computational_evidence/}
+and the other four are in \path{additional_evidence/}.
 \fi
 
 \section{Further directions}

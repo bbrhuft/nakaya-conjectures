@@ -1,0 +1,6 @@
+101 PASS: saved inputs, Hasse=0, classical Hasse derivative, coefficient route, theorem and saved outputs
+1009 PASS: saved inputs, Hasse=0, classical Hasse derivative, coefficient route, theorem and saved outputs
+10007 PASS: saved inputs, Hasse=0, classical Hasse derivative, coefficient route, theorem and saved outputs
+100003 PASS: saved inputs, Hasse=0, classical Hasse derivative, coefficient route, theorem and saved outputs
+1000003 PASS: saved inputs, Hasse=0, classical Hasse derivative, coefficient route, theorem and saved outputs
+PASS 320 saved evaluations

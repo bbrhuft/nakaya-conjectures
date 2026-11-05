@@ -1,0 +1,50 @@
+[
+  {
+    "N": 2,
+    "p": 1009,
+    "route": "ss",
+    "elapsed_s": 0.031676023000272835,
+    "initial_rss_KiB": 22996,
+    "final_rss_KiB": 27900,
+    "initial_peak_KiB": 22944,
+    "final_peak_KiB": 27772,
+    "degree_D": 126,
+    "note": "One fresh-process call; OS RSS includes Python/FLINT and allocator overhead. Import/compilation excluded."
+  },
+  {
+    "N": 2,
+    "p": 1009,
+    "route": "q",
+    "elapsed_s": 0.6416357879998031,
+    "initial_rss_KiB": 23352,
+    "final_rss_KiB": 28828,
+    "initial_peak_KiB": 23308,
+    "final_peak_KiB": 54720,
+    "degree_D": 126,
+    "note": "One fresh-process call; OS RSS includes Python/FLINT and allocator overhead. Import/compilation excluded."
+  },
+  {
+    "N": 13,
+    "p": 1009,
+    "route": "ss",
+    "elapsed_s": 0.16668739199985794,
+    "initial_rss_KiB": 23292,
+    "final_rss_KiB": 31452,
+    "initial_peak_KiB": 23236,
+    "final_peak_KiB": 31316,
+    "degree_D": 587,
+    "note": "One fresh-process call; OS RSS includes Python/FLINT and allocator overhead. Import/compilation excluded."
+  },
+  {
+    "N": 13,
+    "p": 1009,
+    "route": "q",
+    "elapsed_s": 2.5844674660002056,
+    "initial_rss_KiB": 23328,
+    "final_rss_KiB": 28560,
+    "initial_peak_KiB": 23280,
+    "final_peak_KiB": 147628,
+    "degree_D": 587,
+    "note": "One fresh-process call; OS RSS includes Python/FLINT and allocator overhead. Import/compilation excluded."
+  }
+]

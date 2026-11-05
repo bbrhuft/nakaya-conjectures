@@ -1,15 +1,19 @@
-# Additional evidence for journal draft v1.9
+# Additional evidence for the journal draft (v1.9 and v1.10)
 
-These are the two packages that journal draft v1.9 added to its *Data and software* paragraph (Section 8):
+These are the four packages that journal drafts v1.9 and v1.10 added to the *Data and software* paragraph (Section 8):
 
 | Package | Supports | Paper location |
 |---|---|---|
 | [`Factorial_Conjecture_Result_v1_0/`](Factorial_Conjecture_Result_v1_0/) | The supersingular factorial evaluation B<sup>h</sup> = (6/p)·h!·Δ<sup>k</sup>, now **proved** as Theorem 1.3 | Section 5 (proof); Section 8, final paragraph (computations) |
 | [`Fricke_Fifteen_Levels_Extension_v1_0/`](Fricke_Fifteen_Levels_Extension_v1_0/) | Theorem 1.1 at the ten additional levels N ∈ {11, 17, 19, 23, 29, 31, 41, 47, 59, 71}, plus a fresh regression at the original five levels | Lemma 2.1 (integral coordinate); Section 8, Table 4 |
+| [`Corollary_1_2_Reconstruction_Benchmark_v1_0/`](Corollary_1_2_Reconstruction_Benchmark_v1_0/) (v1.10) | Timings of the Corollary 1.2 reconstruction against a q-expansion/Padé route at N ∈ {2, 3, 5, 7, 13} | Section 8.1, Table 5 |
+| [`Theorem_1_3_Benchmark_v1_0/`](Theorem_1_3_Benchmark_v1_0/) (v1.10) | Timings of the cached factorial evaluation of B<sup>h</sup> against coefficient-polynomial baselines | Section 8.1 |
 
 The original two packages (`Signed_Weighted_Residue_v1_0`, `Eta_Frobenius_Lemma_Audit_v1_0`) are unchanged in [`../computational_evidence/`](../computational_evidence/).
 
-In both cases the computations are finite checks. The proofs are in the paper; the computations are not used in them.
+In every case the computations are finite checks. The proofs are in the paper; the computations are not used in them. The benchmark timings measure the tested implementations on one host; they are not optimality claims. Read each benchmark's `REPORT.md` first.
+
+`verify_additional.py` covers the two v1.9 packages. Each benchmark package has its own `SHA256SUMS.txt` (check with `sha256sum -c SHA256SUMS.txt`) and an exact replay script, `verify_saved.py`.
 
 ## Quick check
 

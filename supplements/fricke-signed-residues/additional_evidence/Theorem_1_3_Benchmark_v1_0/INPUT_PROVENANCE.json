@@ -1,0 +1,10 @@
+[
+  {
+    "path_in_handoff": "manuscript/Fricke_Signed_Residues_Journal_v1_9.tex",
+    "sha256": "90aa0cf89868ad56df84c36b47f3788385cf1165d62ba56cda4c32ba9eca93bf"
+  },
+  {
+    "path_in_handoff": "evidence/Factorial_Conjecture_Result_v1_0.zip",
+    "sha256": "b1de59a756e6de68c9b1652b610b0e9508c9ffefd7110a94771aed3c66b07040"
+  }
+]

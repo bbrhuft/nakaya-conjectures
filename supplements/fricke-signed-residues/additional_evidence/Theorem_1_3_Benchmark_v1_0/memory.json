@@ -1,0 +1,32 @@
+[
+  {
+    "mode": "factorial",
+    "p": 1000003,
+    "elapsed_s": 0.0005737540000154695,
+    "initial_rss_KiB": 23264,
+    "final_rss_KiB": 27464,
+    "initial_peak_KiB": 23220,
+    "final_peak_KiB": 27304,
+    "note": "Separate process; coarse OS RSS including runtime/allocator overhead. Cached-theorem memory probe excludes setup; elapsed time includes setup and loop."
+  },
+  {
+    "mode": "baseline",
+    "p": 1000003,
+    "elapsed_s": 0.062123547999817674,
+    "initial_rss_KiB": 23276,
+    "final_rss_KiB": 34452,
+    "initial_peak_KiB": 23208,
+    "final_peak_KiB": 41104,
+    "note": "Separate process; coarse OS RSS including runtime/allocator overhead. Cached-theorem memory probe excludes setup; elapsed time includes setup and loop."
+  },
+  {
+    "mode": "theorem_cached",
+    "p": 1000003,
+    "elapsed_s": 0.01448606399981145,
+    "initial_rss_KiB": 27564,
+    "final_rss_KiB": 27568,
+    "initial_peak_KiB": 27440,
+    "final_peak_KiB": 27440,
+    "note": "Separate process; coarse OS RSS including runtime/allocator overhead. Cached-theorem memory probe excludes setup; elapsed time includes setup and loop."
+  }
+]

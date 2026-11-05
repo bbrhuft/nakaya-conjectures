@@ -1,6 +1,6 @@
 # Supplement: supersingular poles and signed residues of prime-level Fricke Hauptmoduln
 
-Journal draft v1.9 (4 November 2026) of a separate paper by David Jordan, with its computational evidence.
+Journal draft v1.10 (5 November 2026) of a separate paper by David Jordan, with its computational evidence.
 
 **Main theorem (Theorem 1.1).** For each of the fifteen prime levels N ∈ {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71} with X<sub>0</sub>(N)<sup>+</sup> of genus zero, and every prime p ≥ 5 with p ≠ N, the paper determines the poles and residues of the rational function R<sub>N,p</sub> representing T<sub>N</sub>|U<sub>p</sub> modulo p. Here T<sub>N</sub> = q<sup>−1</sup> + O(q) is the normalized Hauptmodul for Γ<sub>0</sub>(N)<sup>+</sup>. The poles are exactly the supersingular values with effective ramification index one. At such a value t<sub>i</sub>, the residue times ∏<sub>j≠i</sub>(t<sub>i</sub> − t<sub>j</sub>)<sup>(p+1)/e<sub>j</sub></sup> equals −(−N/p). An integral-coordinate lemma (Lemma 2.1) builds T<sub>N</sub> over ℤ[1/(6N)], so X<sub>0</sub>(N) itself need not have genus zero.
 
@@ -8,11 +8,17 @@ Journal draft v1.9 (4 November 2026) of a separate paper by David Jordan, with i
 
 **Signed discriminant ratio (Theorem 1.5).** With Robert's isogeny identity, the factorial evaluation gives (Δ(τ)/Δ(ℓτ))<sup>(p²−1)/24</sup> = (ℓ/p) at every supersingular point of X<sub>0</sub>(ℓ), for every prime ℓ ≠ p. Corollary 6.1 extends this to isogenies of any degree prime to p.
 
+**Benchmarks (new in v1.10, Section 8.1).** Corollary 1.2 gives an exact reconstruction of R<sub>N,p</sub> from the weighted supersingular values without a long q-expansion, and Theorem 1.3 gives an O(log p) evaluation of B<sup>h</sup> once ((p−1)/2)! is cached. Section 8.1 times both against tested conventional routes. These are measurements of the tested implementations, not optimality claims.
+
 This supplement is **separate from the main paper** (`paper/`), which is unchanged. At the five eta-coordinate levels N ∈ {2, 3, 5, 7, 13}, the supersingular values are those of Nakaya's polynomials ss<sub>p</sub><sup>(N\*)</sup> after a shift of coordinate (paper, equation (1.3)).
 
 > **Status: draft, not yet reviewed by a specialist.** AI systems assisted in developing the arguments, checking calculations and preparing the manuscript and the evidence, including the factorial-evaluation argument and its verification code, as stated in the paper. This assistance is not independent specialist refereeing. The paper makes no claim that the exponent (p²−1)/24 itself, or the isogeny transformation of E<sub>p+1</sub>, originates here.
 
-## What changed since v1.4
+## What changed in v1.10
+
+v1.10 adds Section 8.1, *Computational consequences and timings* (with Table 5), a pointer to it in the introduction, and the two benchmark packages to the *Data and software* paragraph, which now gives this repository's URL. The mathematics is otherwise unchanged from v1.9. v1.9 remains in the Git history.
+
+## What changed from v1.4 to v1.9
 
 | v1.4 | v1.9 |
 |---|---|
@@ -28,10 +34,10 @@ v1.4 remains in the Git history, and its source is also inside `additional_evide
 
 | Path | Contents |
 |---|---|
-| `Fricke_Signed_Residues_Journal_v1_9.pdf` | The paper (20 pages) |
-| `Fricke_Signed_Residues_Journal_v1_9.tex` | LaTeX source (compile with `pdflatex` twice; no external files needed) |
+| `Fricke_Signed_Residues_Journal_v1_10.pdf` | The paper (22 pages) |
+| `Fricke_Signed_Residues_Journal_v1_10.tex` | LaTeX source (compile with `pdflatex` twice; no external files needed) |
 | `computational_evidence/` | Original evidence bundle v1.0, unchanged: `Signed_Weighted_Residue_v1_0` and `Eta_Frobenius_Lemma_Audit_v1_0`, with recorded results, provenance, a SHA-256 manifest and reproduction scripts. See its [`README.md`](computational_evidence/README.md) and [`CLAIMS_AND_FILES.md`](computational_evidence/CLAIMS_AND_FILES.md), keeping in mind the note below. |
-| `additional_evidence/` | The two packages added in v1.9: `Factorial_Conjecture_Result_v1_0` (Theorem 1.3) and `Fricke_Fifteen_Levels_Extension_v1_0` (the ten new levels). Start with its [`README.md`](additional_evidence/README.md), which maps v1.9's claims to files. |
+| `additional_evidence/` | The two packages added in v1.9, `Factorial_Conjecture_Result_v1_0` (Theorem 1.3) and `Fricke_Fifteen_Levels_Extension_v1_0` (the ten new levels), and the two benchmark packages added in v1.10, `Corollary_1_2_Reconstruction_Benchmark_v1_0` and `Theorem_1_3_Benchmark_v1_0` (Section 8.1). Start with its [`README.md`](additional_evidence/README.md), which maps the paper's claims to files. |
 
 **Reading the original bundle against v1.9.** `computational_evidence/` was packaged against draft v1.3 and is committed byte-for-byte, so its documents still describe the older paper. Where they differ from v1.9, the paper and this README take precedence:
 
@@ -52,6 +58,8 @@ Its `PROVENANCE.json` records the SHA-256 of the v1.3 `.tex` and is not updated,
 | Kaneko–Zagier derivative route | 960 pairs, 223 ≤ p ≤ 1499, five levels | Signed products via the derivative lemma; **not** an independent reconstruction from T|U<sub>p</sub> | `computational_evidence/` |
 | Hecke polynomial modulo p² | p ≤ 31, five levels | Symmetry, Kronecker congruence and residue criterion at every element of 𝔽<sub>p²</sub> | `computational_evidence/` |
 | Normalized Vélu quotients | 647 (ℓ, p) pairs, ℓ ≤ 47, p ≤ 199 | 127541 cyclic-kernel checks of the discriminant-ratio sign, counted on chosen curve representatives, not distinct coarse points | `computational_evidence/` |
+| Reconstruction benchmark (Corollary 1.2, Section 8.1) | 37 (N, p) cases, five levels, p ≤ 1009 | Timings of supersingular reconstruction against an independent q-expansion/Padé route; all 37 rational functions agree exactly (2782 thin values) and the 27 overlapping cases match the original certificates | `additional_evidence/Corollary_1_2_Reconstruction_Benchmark_v1_0/` |
+| Factorial-evaluation benchmark (Theorem 1.3, Section 8.1) | p = 101 to 1000003 | Timings of cached B<sup>h</sup> = c<sub>p</sub>Δ<sup>k</sup> against coefficient-polynomial baselines, with exact replay of saved inputs | `additional_evidence/Theorem_1_3_Benchmark_v1_0/` |
 | Factorial evaluation (Theorem 1.3) | 166 primes, 5 ≤ p ≤ 997 | Exact remainders and evaluations at 6430 supersingular j-values (4734 outside 𝔽<sub>p</sub>), with three rescaled models each and Legendre and Weierstrass routes; the negated constant fails at every prime; the proof's theta identities checked at p = 23, 47, 71, 167 | `additional_evidence/` (the older 166-prime check is in `computational_evidence/`) |
 
 These are finite checks of the implementation and normalizations. The theorems rest on the proofs in the paper, and the computations are not used in them. The large five-level sweeps were not rerun when the original bundle was packaged; a bounded fresh rerun is in `computational_evidence/verification/smoke_run/`.
@@ -72,8 +80,9 @@ To rerun computations:
 | Original bundle | Python 3.12, python-flint 0.9.0, mpmath 1.3.0 | `computational_evidence/REPRODUCTION.md`; e.g. `python scripts/run_reproduction.py smoke` (writes to a new `reproduced/` directory) |
 | Ten new levels and regression | Python ≥ 3.11, python-flint 0.9.0 | `additional_evidence/README.md`, Reproduction |
 | Factorial evaluation | Python ≥ 3.11, cypari2 2.2.4 (PARI/GP 2.17.2), mpmath 1.3.0 | `additional_evidence/Factorial_Conjecture_Result_v1_0/new_work/run_all.sh` |
+| Benchmarks (Section 8.1) | Linux x86-64, GCC, Python 3.12, python-flint 0.9.0 (FLINT 3.6.0) | Each package's `README.md`; `benchmark.py`, then `verify_saved.py` |
 
-The additional packages' scripts write to their own `results/` folders, so run them on a copy.
+The additional packages' scripts write to their own `results/` folders, and `benchmark.py` overwrites the recorded `results.json` and `summary.csv`, so run them on a copy. Timings vary by host.
 
 ## Historical material
 

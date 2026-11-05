@@ -45,7 +45,7 @@ Only step 1 needs N ∈ 𝔖. The same arguments count the rational supersingula
 | `notes/` | Source audit and author notes |
 | `exploratory/` | Pre-proof numerical experiments (history only) |
 | `supplements/prime-square-levels/` | Separate note proving λ<sub>p</sub>(X<sub>0</sub>(ℓ<sup>2</sup>)<sup>+</sup>) = ((ℓ+1)/2) · L(p), with its own direct-enumeration verification package (not part of the main paper) |
-| `supplements/fricke-signed-residues/` | Separate paper, *Supersingular poles and signed residues of prime-level Fricke Hauptmoduln* (journal draft v1.9), with its original computational evidence bundle in `computational_evidence/` and the two packages added in v1.9 in `additional_evidence/` (not part of the main paper) |
+| `supplements/fricke-signed-residues/` | Separate paper, *Supersingular poles and signed residues of prime-level Fricke Hauptmoduln* (journal draft v1.10), with its original computational evidence bundle in `computational_evidence/` and the packages added in v1.9 and v1.10, including the v1.10 benchmarks, in `additional_evidence/` (not part of the main paper) |
 
 ## Reproducing the verification
 
