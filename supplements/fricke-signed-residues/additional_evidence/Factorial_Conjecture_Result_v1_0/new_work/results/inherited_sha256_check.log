@@ -1,0 +1,30 @@
+FRESH_SMOKE_CHECK.txt: OK
+INPUT_PROVENANCE.md: OK
+RESEARCH_PROMPT.md: OK
+SOURCE_GUIDE.md: OK
+START_HERE.md: OK
+evidence/Eta_Frobenius_Lemma_Audit_v1_0.zip: OK
+evidence/Signed_Weighted_Residue_v1_0.zip: OK
+manuscript/Fricke_Signed_Residues_Journal_v1_4.pdf: OK
+manuscript/Fricke_Signed_Residues_Journal_v1_4.tex: OK
+quick_start/code/build_note.py: OK
+quick_start/code/eta_multiplier_check.py: OK
+quick_start/code/extra/level11_check.py: OK
+quick_start/code/extra/t11_probe.py: OK
+quick_start/code/hecke_check.py: OK
+quick_start/code/independent_check/e2e_bm.py: OK
+quick_start/code/independent_check/level1_check.py: OK
+quick_start/code/independent_check/mult_check.py: OK
+quick_start/code/level1_c_explore.py: OK
+quick_start/code/level1_c_formula.py: OK
+quick_start/code/requirements.txt: OK
+quick_start/code/run_all.py: OK
+quick_start/code/summarize.py: OK
+quick_start/code/verify_normalization.py: OK
+quick_start/code/wr_core.py: OK
+quick_start/code/wr_pairs.py: OK
+quick_start/results/level1_c_checks.json: OK
+quick_start/results/level1_c_closed_form.json: OK
+sources/Kaneko & Zagier 1998.pdf: OK
+sources/Landweber 1988.pdf: OK
+sources/Robert 1980.pdf: OK

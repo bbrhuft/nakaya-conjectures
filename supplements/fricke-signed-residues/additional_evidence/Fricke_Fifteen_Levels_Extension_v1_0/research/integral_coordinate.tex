@@ -1,0 +1,50 @@
+\begin{lemma}[integral Fricke coordinate]\label{lem:coordinate}
+Let $N$ be prime with $g(X_0(N)^+)=0$, and put
+$\Lambda_N=\Z[1/(6N)]$. The coarse quotient
+\[
+\mathcal X_N^+:=X_0(N)_{\Lambda_N}/\langle w_N\rangle
+\]
+is a smooth proper curve over $\Lambda_N$ with a single cusp section $c$.
+There is a unique coordinate $T_N$ over $\Lambda_N$ whose expansion at
+that section is $q^{-1}+O(q)$. It identifies $\mathcal X_N^+$ with
+$\mathbb P^1_{\Lambda_N}$ and $c$ with infinity. In particular,
+$T_N\in q^{-1}+q\Lambda_N[[q]]$ and its reduction is a coordinate
+at every prime $p\ge5$ with $p\ne N$.
+\end{lemma}
+\begin{proof}
+Away from $6N$ the coarse modular curve $X_0(N)$ is smooth and proper,
+with geometrically connected fibres; its two disjoint rational cusp
+sections are exchanged by $w_N$ \citep{DR73,KM85}.
+The quotient exists, is proper, and is flat over $\Lambda_N$:
+on invariant affine opens its coordinate ring is a direct summand,
+via averaging, of a flat $\Lambda_N$-algebra. Since $2$ is invertible,
+formation of the quotient commutes with base change. Each geometric
+fibre is the quotient of a smooth curve by an involution, hence is
+smooth; thus $\mathcal X_N^+$ is smooth over $\Lambda_N$.
+Its fibres are geometrically connected and have constant genus,
+which is zero by the assumption on the generic fibre.
+The two cusps give one section $c$. The quotient map is an isomorphism
+on the completed neighbourhood of either cusp onto that of $c$, so
+$\widehat{\mathcal O}_{\mathcal X_N^+,c}=\Lambda_N[[q]]$.
+
+Write $f:\mathcal X_N^+\to\operatorname{Spec}\Lambda_N$.
+On every fibre, $\mathcal O(c)$ has degree one and $H^1(\mathcal O)=0$.
+Cohomology and base change therefore make $f_*\mathcal O(c)$ locally
+free of rank two, and the principal-part sequence is exact:
+\[
+0\longrightarrow\Lambda_N\longrightarrow
+H^0(\mathcal X_N^+,\mathcal O(c))
+\longrightarrow\Lambda_N\,q^{-1}\longrightarrow0.
+\]
+The last identification uses the parameter $q$ to trivialize the
+normal line of the section. Choose a section with principal part
+$q^{-1}$ and subtract its constant coefficient. This gives $T_N$;
+two such choices differ by a global constant, proving uniqueness.
+The sections $1,T_N$ form a basis on every fibre and generate
+$\mathcal O(c)$ there, so they give an isomorphism to
+$\mathbb P^1_{\Lambda_N}$, with the asserted cusp and coordinate.
+\end{proof}
+
+The lemma uses genus zero only for the Fricke quotient. Neither its
+proof nor the arguments below require $X_0(N)$ itself to have genus zero.
+

@@ -1,0 +1,524 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,amsthm,booktabs,enumitem}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\setlength{\emergencystretch}{2em}
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{fact}{Input}
+\renewcommand{\thefact}{S\arabic{fact}}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Fp}{\mathbb F_p}
+\newcommand{\Fq}{\mathbb F_{p^2}}
+\newcommand{\Fb}{\overline{\mathbb F}_p}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Lp}[1]{\left(\frac{#1}{p}\right)}
+\newcommand{\leg}[2]{\left(\frac{#1}{#2}\right)}
+
+\title{The supersingular factorial constant:\\ a proof of
+$E_{p+1}^{(p-1)/2}\equiv\left(\frac{6}{p}\right)\left(\frac{p-1}{2}\right)!\,\Delta^{(p^2-1)/24}
+\pmod{p,E_{p-1}}$}
+\author{\normalsize Research note on Conjecture~1.5 of D.~Jordan,\\
+\normalsize \emph{Supersingular poles and signed residues of prime-level Fricke Hauptmoduln}, v1.4\\[4pt]
+\small Prepared with AI assistance (Claude, Anthropic); not independently refereed}
+\date{4 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For a prime $p\ge5$ put $h=(p-1)/2$, $k=(p^2-1)/24$, $A=E_{p-1}\bmod p$ and $B=E_{p+1}\bmod p$.
+We prove that $B^{h}-\Lp{6}\,h!\,\Delta^{k}$ is divisible by $A$ in $\Fp[E_4,E_6]$; equivalently,
+$c(E)=B(E,\omega)^h/\Delta(E,\omega)^k$ equals $\Lp6\,h!$ for every supersingular elliptic curve
+$E/\Fb$. This is Conjecture~1.5 of the manuscript. The proof is uniform in $p$ and does not
+use constancy of $c$, Baker's congruence, isogeny graphs, the eta--Frobenius theorem or CM
+points. Its main ingredient is the weight-$\frac{p+1}{2}$ form $F=\eta^{p+1}$ on $\Gamma(12)$.
+Modulo $p$ one has $F\equiv\eta(\tau)\eta(p\tau)$, so its quadratic twist
+$\theta^{(p-1)/2}F$ is an explicit combination of $A^{(p+1)/2}F$ and $F^p$. Iterating
+$\theta f=A\,\partial f+\frac{w}{12}Bf$ shows that $\theta^{(p-1)/2}$ multiplies values at
+supersingular points by $-(B/12)^{h}/h!$. Comparing the two expressions gives the theorem,
+because $F^{p-1}=\Delta^k$. Constancy of $c$ and Baker's congruence follow as corollaries. So
+do the eta-character identity of the manuscript and a signed refinement of the
+Kaneko--Zagier/de~Shalit formula for $ss_p'(j)$. The proof is checked by exact computation
+for all $166$ primes $5\le p\le 997$ along four independent routes.
+\end{abstract}
+
+\section{Statement}\label{sec:statement}
+
+Throughout, $p\ge5$ is prime, $h=(p-1)/2$, $k=(p^2-1)/24$ and $m=(p+1)/2$. The Eisenstein series
+$E_w=1-\frac{2w}{B_w}\sum_{n\ge1}\sigma_{w-1}(n)q^n$ have constant term $1$,
+$\Delta=q\prod_{n\ge1}(1-q^n)^{24}=(E_4^3-E_6^2)/1728$, and
+\[
+A=E_{p-1}\bmod p,\qquad B=E_{p+1}\bmod p .
+\]
+For an elliptic curve $E$ over a field of characteristic $p$ with nowhere-vanishing invariant
+differential $\omega$, $f(E,\omega)$ denotes the value of a (Katz) modular form $f$; for weight
+$w$ one has $f(E,u\omega)=u^{-w}f(E,\omega)$. Since $B^h$ and $\Delta^k$ both have weight
+$(p^2-1)/2$, the ratio
+\[
+c(E)=\frac{B(E,\omega)^{h}}{\Delta(E,\omega)^{k}}
+\]
+is independent of $\omega$. $\Lp{a}$ is the Legendre symbol, $\chi_{12}(n)=\leg{12}{n}$ the
+Kronecker symbol (so $\chi_{12}(n)=1$ for $n\equiv\pm1$, $-1$ for $n\equiv\pm5\pmod{12}$, $0$
+otherwise), and $\theta=q\,\frac{d}{dq}=\frac{1}{2\pi i}\frac{d}{d\tau}$.
+
+\begin{theorem}\label{thm:main}
+Let $p\ge5$ be prime.
+\begin{enumerate}[label=\textup{(\alph*)}]
+\item For every supersingular elliptic curve $E/\Fb$ and every nonzero invariant differential
+$\omega$,
+\[
+B(E,\omega)^{(p-1)/2}=\Lp{6}\Bigl(\frac{p-1}{2}\Bigr)!\;\Delta(E,\omega)^{(p^2-1)/24}\quad\text{in }\Fb .
+\]
+\item Equivalently,
+$E_{p+1}^{(p-1)/2}\equiv\Lp6\bigl(\frac{p-1}2\bigr)!\,\Delta^{(p^2-1)/24}\pmod{(p,E_{p-1})}$ in
+$\Z_{(p)}[E_4,E_6]$, i.e.\ $A$ divides $B^h-\Lp6h!\Delta^k$ in $\Fp[E_4,E_6]$.
+\end{enumerate}
+In particular Conjecture~1.5 of the manuscript holds: $c_p=\Lp6\,h!\bmod p$.
+\end{theorem}
+
+The equivalence of (a) and (b), including the behaviour at $j=0$ and $j=1728$, is
+Lemma~\ref{lem:div}. The proof of (a) occupies Section~\ref{sec:proof}. It is
+self-contained apart from the standard inputs listed in Section~\ref{sec:inputs}.
+
+\begin{corollary}\label{cor:consequences}
+Let $p\ge5$.
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item \textup{(Constancy; manuscript Corollary~1.4.)} $c(E)$ is the same element
+$c_p=\Lp6h!$ of $\Fp$ for every supersingular $E$.
+\item \textup{(Baker's congruence \cite[Theorem~1.4]{Baker98}.)}
+$B^{p-1}\equiv-\Lp{-1}\Delta^{(p^2-1)/12}\pmod A$.
+\item \textup{(Eta character; manuscript Theorem~1.3.)} For every prime $\ell\ne p$ and every
+supersingular point $x$ of $X_0(\ell)_{\Fb}$, $\bigl(\Delta(\tau)/\Delta(\ell\tau)\bigr)^{k}(x)=\leg{\ell}{p}$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) is Theorem~\ref{thm:main}(a). For (ii), Wilson's theorem gives
+$h!^2\equiv(-1)^{h+1}=-\Lp{-1}$, so squaring (a) gives $B^{p-1}=-\Lp{-1}\Delta^{2k}$ at every
+supersingular point, and Lemma~\ref{lem:div} applies. For (iii), let $x=(E,C)$ with
+$\pi:E\to E'=E/C$ and $\omega=\pi^*\omega'$. Robert's isogeny identity in the manuscript's
+normalization \cite[Th\'eor\`eme~B]{Robert80}, \cite[Lemma~2.2]{Baker98}, manuscript
+Lemma~4.3, states $B(E',\omega')=\ell B(E,\omega)$ and
+$\Delta(\ell\tau)(x)=\ell^{-12}\Delta(E',\omega')$. It gives
+$c(E')/c(E)=\leg{\ell}{p}\bigl(\Delta/\Delta(\ell\tau)\bigr)^k(x)$, using $\ell^{12k}=1$ and
+$\ell^{h}=\leg{\ell}{p}$; this is the computation in the manuscript's proof of
+Corollary~1.4. By (i) the left side is $1$.
+\end{proof}
+
+Thus Corollary~\ref{cor:consequences}(iii) reverses the logical order of the manuscript.
+There, Theorem~1.3 and the connectivity of the isogeny graph give constancy. Here, constancy
+and Robert's identity give Theorem~1.3 for every $\ell$. Explicit consequences on the $j$-line,
+on Weierstrass models and on the Legendre family are in Section~\ref{sec:explicit}.
+
+\section{Standard inputs}\label{sec:inputs}
+
+We use Katz's theory of modular forms over $\Z[1/N]$-algebras for the full level structure
+$\Gamma(N)$, $N\ge3$, $p\nmid N$ \cite[\S\S1.2--1.6]{Katz73}, \cite{DR73}. Let
+$X(N)^{\zeta}$ be the component of the compactified moduli scheme of triples
+$(E,\alpha,\omega)$ on which the Weil pairing of the level structure is a fixed primitive
+$N$th root of unity $\zeta$. It is smooth and proper with geometrically connected fibres over
+$\Z[1/N,\zeta_N]$, and its complex points are $\Gamma(N)\backslash\mathfrak H^*$. Its standard
+cusp has $q$-expansion parameter $q^{1/N}$. We take $N=12$ and work over
+$R=\Z_{(p)}[\zeta_{12}]\subset W(\Fb)$.
+
+\begin{fact}[$q$-expansion principle]\label{in:qexp}
+\cite[\S1.6]{Katz73}. A classical modular form of weight $w$ on $\Gamma(N)$ whose Fourier
+expansion at $\infty$ has coefficients in $R$ is a section of $\omega^{\otimes w}$ on
+$X(N)^\zeta_R$. If all its coefficients lie in $pR$, its reduction vanishes identically on
+the special fibre. In particular its value at every test object $(E,\alpha,\omega)$ over
+$\Fb$ is $0$. Values commute with reduction modulo $p$.
+\end{fact}
+
+\begin{fact}[Hasse invariant]\label{in:hasse}
+\cite[\S2.1]{Katz73}, \cite{SerreBourbaki}. For $E/\Fb$, $A(E,\omega)=E_{p-1}(E,\omega)\bmod p$ is
+the Hasse invariant of $(E,\omega)$. It vanishes if and only if $E$ is supersingular. Its
+zeros are simple, and $A$ is squarefree in $\Fp[E_4,E_6]$, with irreducible factors
+$E_4$ if $j=0$ is supersingular, $E_6$ if $j=1728$ is supersingular, and the forms
+$E_4^3-j_0\Delta$ (over $\Fb$) for the supersingular $j_0\ne0,1728$
+\cite[Theorem~1.2]{Baker98}, \cite[\S3 and \S10(a)]{KZ98}.
+\end{fact}
+
+\begin{fact}[Kummer congruences]\label{in:kummer}
+$E_{p-1}\equiv1$ and $E_{p+1}\equiv E_2=1-24\sum\sigma_1(n)q^n$ coefficientwise modulo $p$.
+Both have $p$-integral coefficients by von Staudt--Clausen and Kummer.
+\end{fact}
+
+\begin{fact}[Serre derivative]\label{in:serre}
+If $f$ is a modular form of weight $w$ on a finite-index subgroup $\Gamma\le\mathrm{SL}_2(\Z)$,
+then $\partial_wf:=\theta f-\frac{w}{12}E_2f$ is a modular form of weight $w+2$ on $\Gamma$. If
+the Fourier coefficients of $f$ lie in $R$ then so do those of $\partial_wf$, since $p\ge5$.
+On $\Z[\frac16][E_4,E_6]$, $\partial$ is the derivation with $\partial E_4=-E_6/3$ and
+$\partial E_6=-E_4^2/2$, and $\partial\Delta=0$ (Ramanujan).
+\end{fact}
+
+\begin{fact}[Euler]\label{in:euler}
+$\eta(\tau)=q^{1/24}\prod_{n\ge1}(1-q^n)=\sum_{n\ge1}\chi_{12}(n)\,q^{n^2/24}$ and $\eta^{24}=\Delta$.
+\end{fact}
+
+\begin{lemma}\label{lem:eta2}
+$\eta^2$ is a holomorphic modular form of weight $1$ on $\Gamma(12)$ with trivial character.
+Hence, for every even integer $r\ge2$, $\eta^{r}\in M_{r/2}(\Gamma(12))$ with integral Fourier
+coefficients in $q^{1/12}$.
+\end{lemma}
+
+\begin{proof}
+$\eta^2$ is holomorphic and nonvanishing on $\mathfrak H$ and has positive order at every cusp.
+Write $\eta(\gamma\tau)=\nu(\gamma)(c\tau+d)^{1/2}\eta(\tau)$. Then
+$\eta^2(\gamma\tau)=\nu(\gamma)^2(c\tau+d)\eta^2(\tau)$, and $\nu^2$ is a character of
+$\mathrm{SL}_2(\Z)$. Let $\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\Gamma(12)$. If $c=0$ then
+$\gamma=\begin{pmatrix}1&b\\0&1\end{pmatrix}$ with $12\mid b$, and $\eta^2(\tau+b)=e^{2\pi ib/12}\eta^2(\tau)=\eta^2(\tau)$.
+If $c>0$, then $c$ is even. The Petersson--Rademacher formula
+(manuscript eq.~(4.1); \cite[Ch.~4]{Knopp70}) gives
+$\nu(\gamma)^2=\leg{c}{d}^2e\bigl(\frac{(a+d)c-bd(c^2-1)+3d-3-3cd}{12}\bigr)$. Here
+$\leg cd^2=1$, and the numerator is $\equiv0\pmod{12}$ because $12\mid b$, $12\mid c$ and
+$12\mid d-1$. If $c<0$, apply the formula to $-\gamma$, which has $a,d\equiv-1\pmod{12}$. The
+numerator is then $\equiv3(d'-1)\equiv-6\pmod{12}$, so $\nu(-\gamma)^2=-1$. Since
+$\eta^2((-\gamma)\tau)=\nu(-\gamma)^2(-c\tau-d)\eta^2(\tau)$, this gives $\nu(\gamma)^2=+1$.
+The leading exponent of $\eta^r$ is $r/24\in\frac1{12}\Z$ for even $r$.
+\end{proof}
+
+The script \texttt{eta2\_gamma12\_check.py} confirms Lemma~\ref{lem:eta2} numerically to
+$56$ digits for random elements of $\Gamma(12)$ with $c>0$ and $c<0$.
+
+\begin{lemma}[divisibility criterion]\label{lem:div}
+Let $G\in\Fp[E_4,E_6]$ be isobaric. Then $A\mid G$ if and only if $G(E,\omega)=0$ for every
+supersingular $E/\Fb$ and every $\omega$. Consequently (a)$\Leftrightarrow$(b) in
+Theorem~\ref{thm:main}. Moreover, with $\mathrm{ss}_p(j)=\prod_{E\ \mathrm{ss}}(j-j(E))$ and
+$R(j)=B^h/\Delta^k\in\Fp[j]$, (b) is equivalent to
+$R(j)\equiv\Lp6h!\pmod{\mathrm{ss}_p(j)}$.
+\end{lemma}
+
+\begin{proof}
+If $A\mid G$, then $G$ vanishes at supersingular points by Input~\ref{in:hasse}.
+Conversely, work over $\Fb$ and use the factorization in Input~\ref{in:hasse}. For
+supersingular $j_0\ne0,1728$, the form $E_4^3-j_0\Delta=(1-\frac{j_0}{1728})E_4^3+\frac{j_0}{1728}E_6^2$
+is irreducible, since $\alpha X^3+\beta Y^2$ with $\alpha\beta\ne0$ is irreducible. Its zero
+set in $\mathbb A^2\smallsetminus\{0\}$ is exactly the set of pairs
+$(E_4(E,\omega),E_6(E,\omega))$ with $j(E)=j_0$. If $G$ vanishes there, this factor divides
+$G$. If $j=0$ is supersingular, the zero set of the factor $E_4$ is $\{(0,y):y\ne0\}$, the
+set of values for curves with $j=0$. Vanishing there means $G(0,E_6)=0$, i.e.\ $E_4\mid G$.
+The case $j=1728$, with factor $E_6$, is the same. Since $A$ is squarefree, $A\mid G$.
+
+This settles the stack-multiplicity issue. On the $j$-line the zeros of $A$ at $j=0$ and
+$j=1728$ have multiplicity $1/3$ and $1/2$. In the graded ring $\Fp[E_4,E_6]$ the
+corresponding factors $E_4$ and $E_6$ occur to the first power. The criterion is formulated
+in that ring, so vanishing at the points $(0,y)$, resp.\ $(x,0)$, suffices.
+
+For the last statement write $p-1=12n+4\delta+6\varepsilon$ with $\delta,\varepsilon\in\{0,1\}$.
+Then $A=E_4^\delta E_6^\varepsilon\Delta^n s(j)$ and
+$\mathrm{ss}_p=j^\delta(j-1728)^\varepsilon s(j)$ \cite[\S3]{KZ98}, \cite[\S6]{Baker98}.
+Every isobaric form of weight $12k$ is $\Delta^kr(j)$ with $\deg r\le k$. Clearing the
+factors $E_4^\delta$, $E_6^\varepsilon$ with $E_4^3=j\Delta$ and $E_6^2=(j-1728)\Delta$ shows
+that $A\mid\Delta^k r(j)$ if and only if $\mathrm{ss}_p\mid r$.
+\end{proof}
+
+\section{Proof of Theorem~\ref{thm:main}}\label{sec:proof}
+
+Put $F=\eta^{p+1}$. Since $p+1$ is even, Lemma~\ref{lem:eta2} gives
+$F\in M_m(\Gamma(12))$, $m=\frac{p+1}2$, with coefficients in $\Z$. By Input~\ref{in:euler},
+\begin{equation}\label{eq:Fpowers}
+F^{24}=\Delta^{p+1},\qquad F^{p-1}=\eta^{p^2-1}=\Delta^{k}.
+\end{equation}
+
+\begin{lemma}[iterating $\theta$]\label{lem:iter}
+Define forms on $\Gamma(12)$ by $G_0=F$ and
+\[
+G_{i+1}=E_{p-1}\,\partial_{w_i}G_i+\frac{w_i}{12}\,E_{p+1}\,G_i,\qquad w_i=m+i(p+1).
+\]
+Then $G_i\in M_{w_i}(\Gamma(12))$ has coefficients in $R$, and:
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item $G_i\equiv\theta^iF\pmod p$ coefficientwise;
+\item $G_i=\tilde c_i\,E_{p+1}^{\,i}F+E_{p-1}R_i$ with $R_i\in M_{w_i-(p-1)}(\Gamma(12))$
+$p$-integral and $\tilde c_i=\prod_{l=0}^{i-1}\frac{w_l}{12}\in\Z_{(p)}$;
+\item $\tilde c_h\equiv12^{-h}\prod_{l=0}^{h-1}(m+l)=12^{-h}\frac{(p-1)!}{h!}\equiv-\frac{12^{-h}}{h!}\pmod p$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+Modularity and integrality follow by induction from Input~\ref{in:serre}. For (i),
+Input~\ref{in:kummer} gives
+$G_{i+1}\equiv\partial_{w_i}G_i+\frac{w_i}{12}E_2G_i=\theta G_i$. For (ii),
+$G_{i+1}=E_{p-1}\bigl(\partial_{w_i}G_i+\frac{w_i}{12}E_{p+1}R_i\bigr)+\frac{w_i}{12}\tilde c_iE_{p+1}^{i+1}F$.
+For (iii), $w_l\equiv m+l\pmod p$, and $m+h-1=p-1$, $m-1=h$.
+\end{proof}
+
+\begin{lemma}[the twist of $\eta^{p+1}$]\label{lem:twist}
+As power series in $q^{1/12}$ over $\Fp$,
+\[
+\theta^{h}F\equiv\Lp6\bigl(F-\chi_{12}(p)\,F^p\bigr)\pmod p .
+\]
+Consequently the form
+$D:=G_h-\Lp6\bigl(E_{p-1}^{\,m}F-\chi_{12}(p)F^p\bigr)\in M_{pm}(\Gamma(12))$ has all Fourier
+coefficients in $pR$.
+\end{lemma}
+
+\begin{proof}
+$\eta^p=q^{p/24}\prod(1-q^n)^p\equiv q^{p/24}\prod(1-q^{pn})=\eta(p\tau)$, hence by
+Input~\ref{in:euler}
+\[
+F\equiv\eta(\tau)\eta(p\tau)=\sum_{a,b\ge1}\chi_{12}(a)\chi_{12}(b)\,q^{(a^2+pb^2)/24}.
+\]
+On $q^{e}$, $\theta^h$ is multiplication by $e^h$. For $e=(a^2+pb^2)/24$ with
+$\chi_{12}(a)\ne0$, one has $e\equiv a^2/24\pmod p$ in $\Z_{(p)}$. So $e^h\equiv0$ if
+$p\mid a$. If $p\nmid a$, then $e^h\equiv a^{p-1}24^{-h}\equiv\leg{24}{p}=\Lp6$. Therefore
+$\theta^hF\equiv\Lp6\bigl(F-\Sigma\bigr)$, where $\Sigma$ is the sub-sum over $p\mid a$.
+Writing $a=pa'$ and using the multiplicativity of $\chi_{12}$,
+\[
+\Sigma=\chi_{12}(p)\sum_{a',b}\chi_{12}(a')\chi_{12}(b)\,q^{p(b^2+pa'^2)/24}
+=\chi_{12}(p)\,\bigl(\eta(\tau)\eta(p\tau)\bigr)\big|_{\tau\mapsto p\tau}\equiv\chi_{12}(p)F^p,
+\]
+because a series $g$ over $\Fp$ satisfies $g(q^p)=g(q)^p$. The forms $G_h$, $E_{p-1}^mF$ and
+$F^p$ all have weight $pm=m+h(p+1)$. By Lemma~\ref{lem:iter}(i) and $E_{p-1}\equiv1$,
+$D\equiv\theta^hF-\Lp6(F-\chi_{12}(p)F^p)\equiv0$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Let $E/\Fb$ be supersingular and $\omega\ne0$. Choose a level-$12$ structure $\alpha$ with
+Weil pairing $\zeta$, and put $x=(E,\alpha,\omega)$. By Input~\ref{in:qexp} and
+Lemma~\ref{lem:twist}, $D(x)=0$. By Input~\ref{in:hasse}, $E_{p-1}(x)=A(E,\omega)=0$.
+Evaluating Lemma~\ref{lem:iter}(ii) and the definition of $D$ at $x$ gives
+\[
+\tilde c_h\,B(E,\omega)^h\,F(x)=-\Lp6\chi_{12}(p)\,F(x)^p .
+\]
+By \eqref{eq:Fpowers}, $F(x)^{24}=\Delta(E,\omega)^{p+1}\ne0$, so we may divide by $F(x)$. Using
+$F(x)^{p-1}=\Delta(E,\omega)^k$ and Lemma~\ref{lem:iter}(iii),
+\[
+B(E,\omega)^h=\Lp6\chi_{12}(p)\,12^h\,h!\,\Delta(E,\omega)^k .
+\]
+Finally $12^h\equiv\leg{12}{p}=\Lp3$ by Euler's criterion, and $\chi_{12}(p)=\leg{12}{p}=\Lp3$
+for $p\ge5$. Hence $\chi_{12}(p)12^h=1$, which proves (a). Part (b) follows from
+Lemma~\ref{lem:div}.
+\end{proof}
+
+\begin{remark}[sources of the factorial and the sign]\label{rem:mechanism}
+The factorial is the Pochhammer symbol $(m)_h\equiv(p-1)!/h!$, the leading coefficient of
+$\theta^h$ on weight $m\equiv\frac12\pmod p$. The weight $(p+1)/2$ is \emph{self-dual} for
+Serre's pairing $w\leftrightarrow p+1-w$. For even $w$ this is Robert's
+Th\'eor\`eme~2 \cite[\S2.5, p.~119]{Robert80}: $(p-w)!\,G_w^p$ and $(E_{p+1}/12)^{w-1}G_{p+1-w}$
+have the same image in $\mathcal M/(p,E_{p-1})$, a functional equation communicated by Serre.
+At level one a self-dual Eisenstein series exists only when $(p+1)/2$ is even. The form
+$\eta^{p+1}$ supplies a self-dual form for every $p$, and its twist is explicit because
+$\eta^{p+1}\equiv\eta(\tau)\eta(p\tau)$ has ``CM by $\Q(\sqrt{-p})$'' modulo $p$. For
+$p\equiv23\pmod{24}$, $F=\Delta^{(p+1)/24}$ is of level one, and Lemma~\ref{lem:twist}
+contains Wilton's congruence $\tau(n)\equiv0\pmod{23}$ for $\leg n{23}=-1$. The symbol
+$\Lp6$, not $\Lp{-6}$, arises as $\leg{24}{p}$ from the exponent $1/24$ of $\eta$. The factor
+$\chi_{12}(p)12^h=1$ removes all dependence on $p\bmod12$.
+\end{remark}
+
+\begin{remark}[on the traps listed in the assignment]
+No evaluation of a $q$-expansion at a supersingular point occurs. The only $q$-expansion
+argument, Lemma~\ref{lem:twist}, compares forms of equal weight $pm$. It keeps the factor
+$E_{p-1}^m$, and Input~\ref{in:qexp} turns it into an identity of sections. Only then is
+$A=0$ used. The sign is obtained directly, not as a square root of Baker's congruence.
+Neither Baker's congruence nor the manuscript's signed-residue theorem is used.
+\end{remark}
+
+\section{Explicit forms}\label{sec:explicit}
+
+\subsection{The supersingular polynomial}
+Write $p-1=12n+4\delta+6\varepsilon$ with $\delta,\varepsilon\in\{0,1\}$ and let
+$\mathrm{ss}_p(j)\in\Fp[j]$ be the monic supersingular polynomial.
+
+\begin{corollary}[signed form of Kaneko--Zagier (40)]\label{cor:KZ}
+For every supersingular $j_0\notin\{0,1728\}$,
+\[
+\mathrm{ss}_p'(j_0)^{\frac{p-1}{2}}\;j_0^{\frac{(1-\delta)(p-1)}{3}}\;(j_0-1728)^{\frac{(1-\varepsilon)(p-1)}{4}}
+=\leg{-2}{p}\Bigl(\frac{p-1}2\Bigr)!.
+\]
+Squaring gives \cite[(40)]{KZ98} in the form proved by Baker \cite[(6.1)]{Baker98}. In
+particular, for $p\equiv-1\pmod{12}$ one gets $\mathrm{ss}_p'(j_0)^{(p-1)/2}=\pm1$, hence
+$\mathrm{ss}_p'(j_0)\in\Fp$. This is the ``simple statement'' for which
+\cite[\S10]{KZ98} asked for an elementary proof.
+\end{corollary}
+
+\begin{proof}
+$A=E_4^\delta E_6^\varepsilon\Delta^ns(j)$ with $\mathrm{ss}_p=j^\delta(j-1728)^\varepsilon s$, and
+$B=12\partial A$ \cite[Prop.~1.3]{Baker98}; this also follows from Inputs~\ref{in:kummer}
+and~\ref{in:qexp} at level one. Since $\partial j=\theta j=-E_4^2E_6/\Delta$, at a root
+$j_0$ of $s$ we get $B=-12E_4^{\delta+2}E_6^{\varepsilon+1}\Delta^{n-1}s'(j_0)$. Raise this to
+the $h$th power and use $E_4^3=j\Delta$ and $E_6^2=(j-1728)\Delta$; the exponents are
+integral because $3\mid h(\delta+2)$ and $2\mid h(\varepsilon+1)$. This gives
+$c=\leg{-3}p\,s'(j_0)^hj_0^{h(\delta+2)/3}(j_0-1728)^{h(\varepsilon+1)/2}$. Substitute
+$s'(j_0)=\mathrm{ss}_p'(j_0)j_0^{-\delta}(j_0-1728)^{-\varepsilon}$ and $c=\Lp6h!$, and note
+$\leg{-3}p\Lp6=\leg{-2}p$.
+\end{proof}
+
+\subsection{Weierstrass models}
+For $f(x)=x^3+ax+b$ put $c_i(a,b)=[x^i]\,f(x)^h$. On $(y^2=f(x),\,dx/y)$ one has
+$E_4=-3a$, $E_6=27b/2$ and $\Delta=-(4a^3+27b^2)/256$.
+
+\begin{proposition}\label{prop:HW}
+In $\Fp[a,b]$: $A=c_{p-1}$ and $B=3\,c_{p-2}$. In particular, for every supersingular
+$y^2=x^3+ax+b$ over $\Fb$,
+\[
+\Bigl([x^{p-2}](x^3+ax+b)^{\frac{p-1}2}\Bigr)^{\frac{p-1}2}=\Lp2\Bigl(\frac{p-1}2\Bigr)!\,
+\Bigl(-\frac{4a^3+27b^2}{256}\Bigr)^{\frac{p^2-1}{24}}.
+\]
+\end{proposition}
+
+\begin{proof}
+$c_{p-1}$ is isobaric of weight $p-1$ in $(a,b)$ of weights $(4,6)$, and it vanishes exactly at
+supersingular curves \cite[Thm.~V.4.1(a)]{Silverman}. By Lemma~\ref{lem:div}, $c_{p-1}=\kappa A$
+with $\kappa\in\Fp$. At $(E_4,E_6)=(1,1)$, i.e.\ $f=(x-\frac13)^2(x+\frac23)$,
+$c_{p-1}=\sum_s\binom{p-1}{s}(-\frac13)^s\binom hs(\frac23)^{h-s}\equiv(\frac13+\frac23)^h=1$.
+Also $A(1,1)=1$, since that is the constant term of $E_{p-1}$. Hence $\kappa=1$.
+
+Next, $B=12\partial A$, and $\partial a=\frac{3b}{2}$, $\partial b=-\frac{a^2}3$. Let
+$d_i=[x^i]f^{h-1}$. Then $12\partial c_{p-1}=h(18b\,d_{p-2}-4a^2d_{p-1})\equiv-9b\,d_{p-2}+2a^2d_{p-1}$.
+Compare coefficients of $x^j$ in $f\cdot(f^{h-1})'=(h-1)f'f^{h-1}$, with $h-1\equiv-\frac32$:
+$(2j+5)d_{j-2}+a(2j+3)d_j+2b(j+1)d_{j+1}\equiv0$. For $j=p-1$ this gives $a\,d_{p-1}\equiv-3d_{p-3}$;
+for $j=p-3$ it gives $d_{p-5}+3a\,d_{p-3}+4b\,d_{p-2}\equiv0$. Hence
+$12\partial c_{p-1}-3c_{p-2}=-6a\,d_{p-3}-12b\,d_{p-2}-3d_{p-5}-3a\,d_{p-3}
+=-3(d_{p-5}+3a\,d_{p-3}+4b\,d_{p-2})\equiv0$, using $c_{p-2}=d_{p-5}+a\,d_{p-3}+b\,d_{p-2}$.
+The displayed formula is Theorem~\ref{thm:main}(a) with $\leg{3}{p}\Lp6=\Lp2$.
+\end{proof}
+
+Proposition~\ref{prop:HW} identifies $B$ at supersingular points with $3c_{p-2}$. Up to a
+$p$th root, $c_{p-2}$ is the coefficient of $dx/y$ in the Cartier image of $x\,dx/y$. Translating $x$ changes $c_{p-2}$ by a
+multiple of $c_{p-1}$, so at supersingular points the formula holds for any monic cubic.
+
+\subsection{The Legendre family}
+Let $H(\lambda)=\sum_{i=0}^h\binom hi^2\lambda^i$ be the Deuring polynomial. On $\Gamma(2)$
+one has $\theta\lambda=\frac12\lambda(1-\lambda)\theta_3^4$ and
+$\Delta=2^{-8}\lambda^2(1-\lambda)^2\theta_3^{24}$, and $A=H(\lambda)\,\theta_3^{2(p-1)}$
+modulo $p$. The last identity is the classical congruence
+$\theta_3^2={}_2F_1(\frac12,\frac12;1;\lambda)\equiv H(\lambda)\,\theta_3^{2p}$ together with
+Input~\ref{in:qexp}. At a root $\lambda_0$ of $H$ this gives
+$B=12\theta(H(\lambda))\theta_3^{2(p-1)}=6\lambda_0(1-\lambda_0)H'(\lambda_0)\theta_3^{2(p+1)}$,
+and Theorem~\ref{thm:main} becomes:
+
+\begin{corollary}\label{cor:Leg}
+For every root $\lambda_0\in\Fq$ of $H$,
+\[
+H'(\lambda_0)^{\frac{p-1}2}=\Bigl(\frac{p-1}2\Bigr)!\;2^{-\frac{p^2-1}{3}}\;
+\bigl(\lambda_0(1-\lambda_0)\bigr)^{\frac{(p-1)(p-5)}{12}}.
+\]
+\end{corollary}
+
+This corollary depends on the cited theta identities. It is also confirmed exactly for all
+$p\le997$ (route~II below). Combining Theorem~\ref{thm:main} with Landweber's half-exponent
+identity \cite[Theorem~3, p.~72]{Landweber88} gives, for supersingular
+$y^2=4\prod_{i=1}^3(x-e_i)$ with $\omega=dx/y$,
+$E_{p+1}(E,\omega)^{(p-1)/2}=\Lp6h!\,(e_\alpha-e_\beta)^{(p^2-1)/4}$ for $\alpha\ne\beta$.
+
+\section{What is proved, imported and computed}\label{sec:status}
+
+\begin{center}
+\small
+\begin{tabular}{p{0.46\textwidth}p{0.46\textwidth}}
+\toprule
+Statement & Status\\\midrule
+Theorem~\ref{thm:main} (Conjecture~1.5), all $p\ge5$ & proved here, given Inputs~\ref{in:qexp}--\ref{in:euler}\\
+Lemma~\ref{lem:eta2} ($\eta^2$ on $\Gamma(12)$) & proved here, given the Petersson formula; checked numerically\\
+Lemma~\ref{lem:div} (equivalence, $j=0,1728$) & proved here, given squarefreeness of $A$ (Input~\ref{in:hasse})\\
+Constancy, Baker, eta character & corollaries; Robert's identity imported for (iii)\\
+Corollary~\ref{cor:KZ}, Proposition~\ref{prop:HW} & proved here; checked exactly\\
+Corollary~\ref{cor:Leg} & imports classical $\Gamma(2)$ identities; checked exactly, $p\le997$\\
+$q$-expansion principle, Hasse invariant, Kummer, Serre derivative, Euler & imported (standard)\\
+Conjectural content remaining & none for Conjecture~1.5\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Computational verification}\label{sec:comp}
+All computations use exact arithmetic in $\Fp$ and $\Fq$ (PARI/GP 2.17.2 via cypari2 2.2.4,
+Python 3.13). This implementation is independent of the inherited code: $E_{p\pm1}$ are found
+by solving the $q$-expansion system with PARI's \texttt{bernfrac} and \texttt{matsolvemod}.
+For each of the $166$ primes $5\le p\le997$ (36 with $p\equiv1$, 44 with $p\equiv5$, 44 with
+$p\equiv7$, 42 with $p\equiv11\pmod{12}$), the following hold.
+\begin{enumerate}[label=\textup{(\Roman*)}]
+\item[(IV)] Divisibility: $R(j)\bmod\mathrm{ss}_p(j)$ is the constant $\Lp6h!$
+(Lemma~\ref{lem:div}).
+\item[(I)] Evaluation of the polynomial $E_{p+1}(E_4,E_6)$ at each of the $6430$
+supersingular $j$-values, $4734$ of them not in $\Fp$, on three randomly rescaled models
+$(u^4E_4,u^6E_6)$, $u\in\Fq^\times$, each.
+\item[(II)] The Legendre route of Corollary~\ref{cor:Leg} at all roots of $H$, which uses no
+Eisenstein series. The resulting $j$-set agrees with the roots of $\mathrm{ss}_p$.
+\item[(III)] The Hasse--Witt route of Proposition~\ref{prop:HW}, which uses no $E_{p+1}$; the
+identity $B=3c_{p-2}$ is checked at all supersingular models.
+\end{enumerate}
+A negative control replacing $\Lp6h!$ by $-\Lp6h!$ fails every sign-sensitive check. The
+supersingular counts agree with the Eichler--Deuring formula. For
+$p\in\{23,47,71,167\}$, where $F$ has level one, Lemmas~\ref{lem:iter} and~\ref{lem:twist}
+are checked as identities in $\Fp[E_4,E_6]$ (\texttt{mechanism\_check.py}). For $p\le200$
+the polynomial identities $A=c_{p-1}$ and $B=3c_{p-2}$ in $\Fp[a,b]$ are checked, and for
+$p\le997$ Corollaries~\ref{cor:KZ} and~\ref{cor:Leg}. The inherited script reproduces
+$166$ matches through $997$. Finite checks support the proof but are not part of it.
+
+\section{Literature and priority}\label{sec:lit}
+Sources examined, all with explicit statements read:
+\begin{itemize}
+\item Baker \cite{Baker98}: Theorem~1.4 (the square), Proposition~1.3 ($B\equiv\partial A$),
+(6.1). There is no half-exponent statement and no factorial.
+\item Robert \cite{Robert80}: Th\'eor\`eme~B (isogeny identity) and Th\'eor\`eme~2 (Serre's
+functional equation for $G_w$, $4\le w\le p-3$ even). This is the same mechanism as here,
+but for Eisenstein series; no $\eta$ and no evaluation of $c_p$.
+\item Landweber \cite{Landweber88}: Theorems~1--3, the half exponent for $\Delta$ via
+$e_\alpha-e_\beta$. Nothing on $E_{p+1}$.
+\item Kaneko--Zagier \cite{KZ98}, \S10: (39)--(40) in squared form; asks for an elementary
+proof when $p\equiv-1\pmod{12}$.
+\item Ono \cite{Ono25}: Theorem~1.2 and Remark~4 (squared isogeny ratios). No $E_{p+1}^h$.
+\item Recent papers found by search: Bringmann--Guerzhoy--Kane--Mertens--Rolen (2026),
+Ringeling (2022), and arXiv:2608.21198 (2026) on Legendre polynomials and CM. None contains the statement.
+\end{itemize}
+De~Shalit's paper is known to us only through \cite{KZ98} and was not checked. No published
+signed evaluation of $c_p$ was found in these sources. Because the argument combines
+standard tools in a short way, it may be known to specialists; priority should not be
+asserted without a wider search.
+
+\section{Suggested replacement text for the manuscript}\label{sec:replace}
+\emph{(Offered for consideration; the inherited manuscript has not been edited.)}
+Replace Conjecture~1.5 by:
+\begin{quote}\small
+\textbf{Theorem 1.5.} $c_p=\Lp6\bigl(\frac{p-1}2\bigr)!\bmod p$; equivalently
+$E_{p+1}^{(p-1)/2}\equiv\Lp6\bigl(\frac{p-1}2\bigr)!\Delta^{(p^2-1)/24}\pmod{(p,E_{p-1})}$.
+\end{quote}
+Replace the remark ``on Conjecture~1.5'' in Section~6 by a proof sketch:
+\begin{quote}\small
+Let $F=\eta^{p+1}\in M_{(p+1)/2}(\Gamma(12))$. Since $F\equiv\eta(\tau)\eta(p\tau)\pmod p$ and
+$\eta=\sum\chi_{12}(n)q^{n^2/24}$, the $q$-expansion principle gives
+$\theta^{(p-1)/2}F=\Lp6(A^{(p+1)/2}F-\chi_{12}(p)F^p)$ as mod-$p$ forms of weight
+$p(p+1)/2$. On the other hand, iterating $\theta f=A\partial f+\frac w{12}Bf$ gives
+$\theta^{(p-1)/2}F\equiv-\frac{1}{h!}(B/12)^{h}F\pmod A$. At a supersingular point $A=0$ and
+$F\ne0$, so $(B/12)^h=\Lp6\chi_{12}(p)h!\,F^{p-1}=\Lp6\chi_{12}(p)h!\,\Delta^k$, and
+$\chi_{12}(p)12^h=1$.
+\end{quote}
+The proof gives Corollary~1.4 and Theorem~1.3 independently, so the authors may also note
+that these results, and with them Theorem~1.1(e), no longer depend on Baker's congruence.
+
+\begin{thebibliography}{99}\small
+\bibitem{Baker98} Baker, A. (1998). A supersingular congruence for modular forms.
+\emph{Acta Arithmetica}, 86(1), 91--100. \url{https://doi.org/10.4064/aa-86-1-91-100}
+\bibitem{DR73} Deligne, P., \& Rapoport, M. (1973). Les sch\'emas de modules de courbes
+elliptiques. In \emph{Modular Functions of One Variable II}, LNM 349, 143--316. Springer.
+\bibitem{Katz73} Katz, N. M. (1973). $p$-adic properties of modular schemes and modular forms.
+In \emph{Modular Functions of One Variable III}, LNM 350, 69--190. Springer.
+\bibitem{KZ98} Kaneko, M., \& Zagier, D. (1998). Supersingular $j$-invariants, hypergeometric
+series, and Atkin's orthogonal polynomials. \emph{AMS/IP Studies in Advanced Mathematics}, 7, 97--126.
+\bibitem{Knopp70} Knopp, M. I. (1970). \emph{Modular Functions in Analytic Number Theory}.
+Markham.
+\bibitem{Landweber88} Landweber, P. S. (1988). Supersingular elliptic curves and congruences for
+Legendre polynomials. In \emph{Elliptic Curves and Modular Forms in Algebraic Topology},
+LNM 1326, 69--93. Springer.
+\bibitem{Ono25} Ono, K. (2025). Modular forms for chromatic homotopy: supersingular
+congruences. arXiv:2509.16175.
+\bibitem{Robert80} Robert, G. (1980). Congruences entre s\'eries d'Eisenstein, dans le cas
+supersingulier. \emph{Inventiones Mathematicae}, 61, 103--158.
+\bibitem{SerreBourbaki} Serre, J.-P. (1973). Congruences et formes modulaires [d'apr\`es
+H.~P.~F. Swinnerton-Dyer]. \emph{S\'eminaire Bourbaki} 416, LNM 317, 319--338. Springer.
+\bibitem{Silverman} Silverman, J. H. (2009). \emph{The Arithmetic of Elliptic Curves}
+(2nd ed.). Springer.
+\bibitem{Jordan} Jordan, D. (2026). Supersingular poles and signed residues of prime-level
+Fricke Hauptmoduln, v1.4 (manuscript).
+\end{thebibliography}
+\end{document}

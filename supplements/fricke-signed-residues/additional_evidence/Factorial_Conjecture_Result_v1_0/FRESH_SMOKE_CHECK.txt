@@ -1,0 +1,19 @@
+Fresh bounded checks, 4 November 2026. Full p<=997 data are inherited, not rerun here.
+Python 3.12; python-flint 0.9.0; mpmath 1.3.0.
+
+$ python code/level1_c_formula.py 97
+primes tested: 23 pmax: 97 mismatches: []
+
+$ python code/independent_check/level1_check.py 43
+5 ss= 1 beta {'4'} baker 4 c {'2'} conj 2 OK
+7 ss= 1 beta {'1'} baker 1 c {'1'} conj 1 OK
+11 ss= 2 beta {'1'} baker 1 c {'1'} conj 1 OK
+13 ss= 1 beta {'12'} baker 12 c {'8'} conj 8 OK
+17 ss= 2 beta {'16'} baker 16 c {'4'} conj 4 OK
+19 ss= 2 beta {'1'} baker 1 c {'18'} conj 18 OK
+23 ss= 3 beta {'1'} baker 1 c {'1'} conj 1 OK
+29 ss= 3 beta {'28'} baker 28 c {'12'} conj 12 OK
+31 ss= 3 beta {'1'} baker 1 c {'30'} conj 30 OK
+37 ss= 3 beta {'36'} baker 36 c {'6'} conj 6 OK
+41 ss= 4 beta {'40'} baker 40 c {'32'} conj 32 OK
+43 ss= 4 beta {'1'} baker 1 c {'42'} conj 42 OK

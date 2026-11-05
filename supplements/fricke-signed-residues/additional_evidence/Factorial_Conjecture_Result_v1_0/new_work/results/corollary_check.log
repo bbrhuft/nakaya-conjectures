@@ -1,0 +1,168 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+5 5 W: [True, True] J: True (0 ss j) L: True OK
+7 7 W: [True, True] J: True (0 ss j) L: True OK
+11 11 W: [True, True] J: True (0 ss j) L: True OK
+13 1 W: [True, True] J: True (1 ss j) L: True OK
+17 5 W: [True, True] J: True (1 ss j) L: True OK
+19 7 W: [True, True] J: True (1 ss j) L: True OK
+23 11 W: [True, True] J: True (1 ss j) L: True OK
+29 5 W: [True, True] J: True (2 ss j) L: True OK
+31 7 W: [True, True] J: True (2 ss j) L: True OK
+37 1 W: [True, True] J: True (3 ss j) L: True OK
+41 5 W: [True, True] J: True (3 ss j) L: True OK
+43 7 W: [True, True] J: True (3 ss j) L: True OK
+47 11 W: [True, True] J: True (3 ss j) L: True OK
+53 5 W: [True, True] J: True (4 ss j) L: True OK
+59 11 W: [True, True] J: True (4 ss j) L: True OK
+61 1 W: [True, True] J: True (5 ss j) L: True OK
+67 7 W: [True, True] J: True (5 ss j) L: True OK
+71 11 W: [True, True] J: True (5 ss j) L: True OK
+73 1 W: [True, True] J: True (6 ss j) L: True OK
+79 7 W: [True, True] J: True (6 ss j) L: True OK
+83 11 W: [True, True] J: True (6 ss j) L: True OK
+89 5 W: [True, True] J: True (7 ss j) L: True OK
+97 1 W: [True, True] J: True (8 ss j) L: True OK
+101 5 W: [True, True] J: True (8 ss j) L: True OK
+103 7 W: [True, True] J: True (8 ss j) L: True OK
+107 11 W: [True, True] J: True (8 ss j) L: True OK
+109 1 W: [True, True] J: True (9 ss j) L: True OK
+113 5 W: [True, True] J: True (9 ss j) L: True OK
+127 7 W: [True, True] J: True (10 ss j) L: True OK
+131 11 W: [True, True] J: True (10 ss j) L: True OK
+137 5 W: [True, True] J: True (11 ss j) L: True OK
+139 7 W: [True, True] J: True (11 ss j) L: True OK
+149 5 W: [True, True] J: True (12 ss j) L: True OK
+151 7 W: [True, True] J: True (12 ss j) L: True OK
+157 1 W: [True, True] J: True (13 ss j) L: True OK
+163 7 W: [True, True] J: True (13 ss j) L: True OK
+167 11 W: [True, True] J: True (13 ss j) L: True OK
+173 5 W: [True, True] J: True (14 ss j) L: True OK
+179 11 W: [True, True] J: True (14 ss j) L: True OK
+181 1 W: [True, True] J: True (15 ss j) L: True OK
+191 11 W: [True, True] J: True (15 ss j) L: True OK
+193 1 W: [True, True] J: True (16 ss j) L: True OK
+197 5 W: [True, True] J: True (16 ss j) L: True OK
+199 7 W: [True, True] J: True (16 ss j) L: True OK
+211 7 W: None J: True (17 ss j) L: True OK
+223 7 W: None J: True (18 ss j) L: True OK
+227 11 W: None J: True (18 ss j) L: True OK
+229 1 W: None J: True (19 ss j) L: True OK
+233 5 W: None J: True (19 ss j) L: True OK
+239 11 W: None J: True (19 ss j) L: True OK
+241 1 W: None J: True (20 ss j) L: True OK
+251 11 W: None J: True (20 ss j) L: True OK
+257 5 W: None J: True (21 ss j) L: True OK
+263 11 W: None J: True (21 ss j) L: True OK
+269 5 W: None J: True (22 ss j) L: True OK
+271 7 W: None J: True (22 ss j) L: True OK
+277 1 W: None J: True (23 ss j) L: True OK
+281 5 W: None J: True (23 ss j) L: True OK
+283 7 W: None J: True (23 ss j) L: True OK
+293 5 W: None J: True (24 ss j) L: True OK
+307 7 W: None J: True (25 ss j) L: True OK
+311 11 W: None J: True (25 ss j) L: True OK
+313 1 W: None J: True (26 ss j) L: True OK
+317 5 W: None J: True (26 ss j) L: True OK
+331 7 W: None J: True (27 ss j) L: True OK
+337 1 W: None J: True (28 ss j) L: True OK
+347 11 W: None J: True (28 ss j) L: True OK
+349 1 W: None J: True (29 ss j) L: True OK
+353 5 W: None J: True (29 ss j) L: True OK
+359 11 W: None J: True (29 ss j) L: True OK
+367 7 W: None J: True (30 ss j) L: True OK
+373 1 W: None J: True (31 ss j) L: True OK
+379 7 W: None J: True (31 ss j) L: True OK
+383 11 W: None J: True (31 ss j) L: True OK
+389 5 W: None J: True (32 ss j) L: True OK
+397 1 W: None J: True (33 ss j) L: True OK
+401 5 W: None J: True (33 ss j) L: True OK
+409 1 W: None J: True (34 ss j) L: True OK
+419 11 W: None J: True (34 ss j) L: True OK
+421 1 W: None J: True (35 ss j) L: True OK
+431 11 W: None J: True (35 ss j) L: True OK
+433 1 W: None J: True (36 ss j) L: True OK
+439 7 W: None J: True (36 ss j) L: True OK
+443 11 W: None J: True (36 ss j) L: True OK
+449 5 W: None J: True (37 ss j) L: True OK
+457 1 W: None J: True (38 ss j) L: True OK
+461 5 W: None J: True (38 ss j) L: True OK
+463 7 W: None J: True (38 ss j) L: True OK
+467 11 W: None J: True (38 ss j) L: True OK
+479 11 W: None J: True (39 ss j) L: True OK
+487 7 W: None J: True (40 ss j) L: True OK
+491 11 W: None J: True (40 ss j) L: True OK
+499 7 W: None J: True (41 ss j) L: True OK
+503 11 W: None J: True (41 ss j) L: True OK
+509 5 W: None J: True (42 ss j) L: True OK
+521 5 W: None J: True (43 ss j) L: True OK
+523 7 W: None J: True (43 ss j) L: True OK
+541 1 W: None J: True (45 ss j) L: True OK
+547 7 W: None J: True (45 ss j) L: True OK
+557 5 W: None J: True (46 ss j) L: True OK
+563 11 W: None J: True (46 ss j) L: True OK
+569 5 W: None J: True (47 ss j) L: True OK
+571 7 W: None J: True (47 ss j) L: True OK
+577 1 W: None J: True (48 ss j) L: True OK
+587 11 W: None J: True (48 ss j) L: True OK
+593 5 W: None J: True (49 ss j) L: True OK
+599 11 W: None J: True (49 ss j) L: True OK
+601 1 W: None J: True (50 ss j) L: True OK
+607 7 W: None J: True (50 ss j) L: True OK
+613 1 W: None J: True (51 ss j) L: True OK
+617 5 W: None J: True (51 ss j) L: True OK
+619 7 W: None J: True (51 ss j) L: True OK
+631 7 W: None J: True (52 ss j) L: True OK
+641 5 W: None J: True (53 ss j) L: True OK
+643 7 W: None J: True (53 ss j) L: True OK
+647 11 W: None J: True (53 ss j) L: True OK
+653 5 W: None J: True (54 ss j) L: True OK
+659 11 W: None J: True (54 ss j) L: True OK
+661 1 W: None J: True (55 ss j) L: True OK
+673 1 W: None J: True (56 ss j) L: True OK
+677 5 W: None J: True (56 ss j) L: True OK
+683 11 W: None J: True (56 ss j) L: True OK
+691 7 W: None J: True (57 ss j) L: True OK
+701 5 W: None J: True (58 ss j) L: True OK
+709 1 W: None J: True (59 ss j) L: True OK
+719 11 W: None J: True (59 ss j) L: True OK
+727 7 W: None J: True (60 ss j) L: True OK
+733 1 W: None J: True (61 ss j) L: True OK
+739 7 W: None J: True (61 ss j) L: True OK
+743 11 W: None J: True (61 ss j) L: True OK
+751 7 W: None J: True (62 ss j) L: True OK
+757 1 W: None J: True (63 ss j) L: True OK
+761 5 W: None J: True (63 ss j) L: True OK
+769 1 W: None J: True (64 ss j) L: True OK
+773 5 W: None J: True (64 ss j) L: True OK
+787 7 W: None J: True (65 ss j) L: True OK
+797 5 W: None J: True (66 ss j) L: True OK
+809 5 W: None J: True (67 ss j) L: True OK
+811 7 W: None J: True (67 ss j) L: True OK
+821 5 W: None J: True (68 ss j) L: True OK
+823 7 W: None J: True (68 ss j) L: True OK
+827 11 W: None J: True (68 ss j) L: True OK
+829 1 W: None J: True (69 ss j) L: True OK
+839 11 W: None J: True (69 ss j) L: True OK
+853 1 W: None J: True (71 ss j) L: True OK
+857 5 W: None J: True (71 ss j) L: True OK
+859 7 W: None J: True (71 ss j) L: True OK
+863 11 W: None J: True (71 ss j) L: True OK
+877 1 W: None J: True (73 ss j) L: True OK
+881 5 W: None J: True (73 ss j) L: True OK
+883 7 W: None J: True (73 ss j) L: True OK
+887 11 W: None J: True (73 ss j) L: True OK
+907 7 W: None J: True (75 ss j) L: True OK
+911 11 W: None J: True (75 ss j) L: True OK
+919 7 W: None J: True (76 ss j) L: True OK
+929 5 W: None J: True (77 ss j) L: True OK
+937 1 W: None J: True (78 ss j) L: True OK
+941 5 W: None J: True (78 ss j) L: True OK
+947 11 W: None J: True (78 ss j) L: True OK
+953 5 W: None J: True (79 ss j) L: True OK
+967 7 W: None J: True (80 ss j) L: True OK
+971 11 W: None J: True (80 ss j) L: True OK
+977 5 W: None J: True (81 ss j) L: True OK
+983 11 W: None J: True (81 ss j) L: True OK
+991 7 W: None J: True (82 ss j) L: True OK
+997 1 W: None J: True (83 ss j) L: True OK
+ALL_OK primes 5..997 (W up to 200) 124.8s
