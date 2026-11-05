@@ -1,0 +1,273 @@
+{
+  "records": [
+    {
+      "N": 2,
+      "p": 11,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N02_p0011.json",
+      "historical_entry_sha256": "aaa341383371f6e6a726cbec0167b37c41d4f5ffed4e44063bb12ab15103df34"
+    },
+    {
+      "N": 3,
+      "p": 11,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N03_p0011.json",
+      "historical_entry_sha256": "a886e3e2ea8fa578d4708403edced614af5c67b4ca0112fbd2ba99c81c69ccce"
+    },
+    {
+      "N": 5,
+      "p": 11,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N05_p0011.json",
+      "historical_entry_sha256": "ba8f56a396cd7b9e4c5b9c3f888748e34985d140f1cedc72adde82e00588c12a"
+    },
+    {
+      "N": 7,
+      "p": 11,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N07_p0011.json",
+      "historical_entry_sha256": "4a8b2ab9d3cd9163a1d121319fea7f16d3c9558685fc7c6c9fd9a03a2f8e6024"
+    },
+    {
+      "N": 13,
+      "p": 11,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N13_p0011.json",
+      "historical_entry_sha256": "70fb4d4b41478e2295c5bedd4f7f8115e877f7b47b517df76296e56ea87adb1c"
+    },
+    {
+      "N": 2,
+      "p": 29,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N02_p0029.json",
+      "historical_entry_sha256": "a137be251aa822ef18384a465f9be17cb9c1bf9163f3f5458ed85e74e2355fdc"
+    },
+    {
+      "N": 3,
+      "p": 29,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N03_p0029.json",
+      "historical_entry_sha256": "a586fcc224857186bf33025955805d3295663a0042b432c692a3f5cc33ee5a99"
+    },
+    {
+      "N": 5,
+      "p": 29,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N05_p0029.json",
+      "historical_entry_sha256": "cf244042580b0d0d3222ec5e6f670c1ed484205fa31876959395b09ccb49b5de"
+    },
+    {
+      "N": 7,
+      "p": 29,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N07_p0029.json",
+      "historical_entry_sha256": "e0ebf89f34b462f4d6f2c041f4fcd01ec68cb0e0a1468e1b80b1560c53728f7e"
+    },
+    {
+      "N": 13,
+      "p": 29,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N13_p0029.json",
+      "historical_entry_sha256": "d49226ca5269413eced663e2ddef146f7ed86af079f0dcc21df997204eaaf5a4"
+    },
+    {
+      "N": 2,
+      "p": 59,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N02_p0059.json",
+      "historical_entry_sha256": "41f31812d4b69a6c62d619ede0a433aef6c28c68bc6fa98704de5fcdeed875cb"
+    },
+    {
+      "N": 3,
+      "p": 59,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N03_p0059.json",
+      "historical_entry_sha256": "6ec505aca599a6354c8b0028644a667b7d41e2c4a0a334a1816db6107663b82b"
+    },
+    {
+      "N": 5,
+      "p": 59,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N05_p0059.json",
+      "historical_entry_sha256": "987405e5f23de18dc6d3f291d84e34d51cf645d9e738b98d8759182f6fbf9e73"
+    },
+    {
+      "N": 7,
+      "p": 59,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N07_p0059.json",
+      "historical_entry_sha256": "78c4de6bd542dcb533022bea0d0185f2540721b0a152f20bd1fad61713745ba5"
+    },
+    {
+      "N": 13,
+      "p": 59,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N13_p0059.json",
+      "historical_entry_sha256": "bb00e27cdac3ac1171a418b0705a7952ba529f2b3f5a96ed4a52142501378454"
+    },
+    {
+      "N": 2,
+      "p": 101,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N02_p0101.json",
+      "historical_entry_sha256": "e7d289977628a8c39c3dc6ff47849e36efd80d62523bee7c087710ada40f13f9"
+    },
+    {
+      "N": 3,
+      "p": 101,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N03_p0101.json",
+      "historical_entry_sha256": "359c150aa01f22bbe661e41203c4854b11b1b3036af87e12f4f18502b26be515"
+    },
+    {
+      "N": 5,
+      "p": 101,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N05_p0101.json",
+      "historical_entry_sha256": "102815a6b3748f82db7eb01106f7f33a5ebac22e88542b3fd90d6157daba6688"
+    },
+    {
+      "N": 7,
+      "p": 101,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N07_p0101.json",
+      "historical_entry_sha256": "edbd88f96e1da784a57b103ddfc00cabdbfba7e910a8b1460fc614f8181a59bc"
+    },
+    {
+      "N": 13,
+      "p": 101,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N13_p0101.json",
+      "historical_entry_sha256": "6720af51dfe1d910369b27aacdcf38518d58bfc064d75ec8b1c91ee44a7924fe"
+    },
+    {
+      "N": 2,
+      "p": 211,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N02_p0211.json",
+      "historical_entry_sha256": "fa8d1c9c336eec3a3bd952aac76b19ceaa8a59d885dcf499c588b4c5f201a34f"
+    },
+    {
+      "N": 3,
+      "p": 211,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N03_p0211.json",
+      "historical_entry_sha256": "94604193ce33ffc8d2e04b97b67aed1a59493596f134f8a8d6b00e8ac9f25ffd"
+    },
+    {
+      "N": 5,
+      "p": 211,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N05_p0211.json",
+      "historical_entry_sha256": "2f692f116b7b64c109233a113c275f6953d1970096b1e2c45f5eb8e87496953f"
+    },
+    {
+      "N": 7,
+      "p": 211,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N07_p0211.json",
+      "historical_entry_sha256": "5a814e555e77e85a0aef63aaeba00b9bbd1e32fdb585f9e8334b6b930ffabf49"
+    },
+    {
+      "N": 13,
+      "p": 211,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N13_p0211.json",
+      "historical_entry_sha256": "8239c2cbc776c471f3167b6abe5243178285347b96c7076a50cf67420b365503"
+    },
+    {
+      "N": 2,
+      "p": 509,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 3,
+      "p": 509,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 5,
+      "p": 509,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 7,
+      "p": 509,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 13,
+      "p": 509,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 2,
+      "p": 1009,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 3,
+      "p": 1009,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 5,
+      "p": 1009,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 7,
+      "p": 1009,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 13,
+      "p": 1009,
+      "replay_and_q_free": "PASS"
+    },
+    {
+      "N": 2,
+      "p": 5,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N02_p0005.json",
+      "historical_entry_sha256": "ef36129bcfeb14f91f8566c26035a402246b3451c6b86f70002c10e690c14404"
+    },
+    {
+      "N": 2,
+      "p": 7,
+      "replay_and_q_free": "PASS",
+      "historical_certificate": "PASS",
+      "historical_entry": "Signed_Weighted_Residue_v1_0/results/certified/N02_p0007.json",
+      "historical_entry_sha256": "09d94dc47ca4357d2fd937c4cb0b181fb284106d8103fe00e4bfa8fd3fcb97ba"
+    }
+  ],
+  "all_ok": true,
+  "historical_matches": 27,
+  "archive_available": true
+}
