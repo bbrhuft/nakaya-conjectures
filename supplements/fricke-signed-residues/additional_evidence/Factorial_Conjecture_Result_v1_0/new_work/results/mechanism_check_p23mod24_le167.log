@@ -1,0 +1,5 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+p=23: (Q) True  c_h=-12^-h/h! True  (R) True  A|B^h-(6/p)h!D^k True  (control A|B^h+(6/p)h!D^k: False)  [0.0s]
+p=47: (Q) True  c_h=-12^-h/h! True  (R) True  A|B^h-(6/p)h!D^k True  (control A|B^h+(6/p)h!D^k: False)  [0.2s]
+p=71: (Q) True  c_h=-12^-h/h! True  (R) True  A|B^h-(6/p)h!D^k True  (control A|B^h+(6/p)h!D^k: False)  [2.1s]
+p=167: (Q) True  c_h=-12^-h/h! True  (R) True  A|B^h-(6/p)h!D^k True  (control A|B^h+(6/p)h!D^k: False)  [282.6s]

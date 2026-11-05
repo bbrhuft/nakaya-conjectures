@@ -1,0 +1,634 @@
+[
+ {
+  "N": 11,
+  "p": 5,
+  "n_supersingular": 2,
+  "n_thin": 2,
+  "n_nonrational_thin": 0,
+  "weight_counts": {
+   "1": 2
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 4,
+  "ratio_set": [
+   4
+  ],
+  "numerator": [
+   1,
+   3
+  ],
+  "denominator": [
+   0,
+   4,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   2,
+   1,
+   1,
+   2,
+   3,
+   4,
+   1,
+   0,
+   3,
+   4
+  ],
+  "seconds": 0.002
+ },
+ {
+  "N": 11,
+  "p": 7,
+  "n_supersingular": 5,
+  "n_thin": 1,
+  "n_nonrational_thin": 0,
+  "weight_counts": {
+   "1": 1,
+   "2": 4
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 1,
+  "ratio_set": [
+   1
+  ],
+  "numerator": [
+   1
+  ],
+  "denominator": [
+   4,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   3,
+   4,
+   4,
+   0,
+   1,
+   5,
+   1,
+   5,
+   2,
+   0
+  ],
+  "seconds": 0.002
+ },
+ {
+  "N": 11,
+  "p": 13,
+  "n_supersingular": 8,
+  "n_thin": 4,
+  "n_nonrational_thin": 0,
+  "weight_counts": {
+   "1": 4,
+   "2": 4
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 1,
+  "ratio_set": [
+   1
+  ],
+  "numerator": [
+   5,
+   0,
+   6,
+   10
+  ],
+  "denominator": [
+   12,
+   2,
+   1,
+   10,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   4,
+   7,
+   12,
+   5,
+   0,
+   7,
+   11,
+   4,
+   0,
+   7
+  ],
+  "seconds": 0.011
+ },
+ {
+  "N": 17,
+  "p": 5,
+  "n_supersingular": 5,
+  "n_thin": 1,
+  "n_nonrational_thin": 0,
+  "weight_counts": {
+   "1": 1,
+   "2": 4
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 1,
+  "ratio_set": [
+   1
+  ],
+  "numerator": [
+   2
+  ],
+  "denominator": [
+   3,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   2,
+   4,
+   4,
+   0,
+   2,
+   3,
+   1,
+   1,
+   3,
+   4
+  ],
+  "seconds": 0.001
+ },
+ {
+  "N": 17,
+  "p": 7,
+  "n_supersingular": 5,
+  "n_thin": 4,
+  "n_nonrational_thin": 0,
+  "weight_counts": {
+   "1": 4,
+   "2": 1
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 6,
+  "ratio_set": [
+   6
+  ],
+  "numerator": [
+   6,
+   5,
+   0,
+   1
+  ],
+  "denominator": [
+   0,
+   4,
+   5,
+   5,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "seconds": 0.002
+ },
+ {
+  "N": 17,
+  "p": 11,
+  "n_supersingular": 8,
+  "n_thin": 7,
+  "n_nonrational_thin": 6,
+  "weight_counts": {
+   "1": 7,
+   "2": 1
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 10,
+  "ratio_set": [
+   10
+  ],
+  "numerator": [
+   8,
+   2,
+   7,
+   2,
+   1,
+   3,
+   3
+  ],
+  "denominator": [
+   6,
+   7,
+   1,
+   10,
+   1,
+   4,
+   9,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   7,
+   3,
+   7,
+   6,
+   4,
+   5,
+   4,
+   1,
+   9,
+   2
+  ],
+  "seconds": 0.009
+ },
+ {
+  "N": 17,
+  "p": 13,
+  "n_supersingular": 9,
+  "n_thin": 9,
+  "n_nonrational_thin": 4,
+  "weight_counts": {
+   "1": 9
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 12,
+  "ratio_set": [
+   12
+  ],
+  "numerator": [
+   12,
+   11,
+   8,
+   0,
+   8,
+   10,
+   8,
+   12,
+   2
+  ],
+  "denominator": [
+   0,
+   1,
+   10,
+   9,
+   9,
+   1,
+   8,
+   1,
+   12,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   7,
+   1,
+   3,
+   11,
+   1,
+   5,
+   12,
+   9,
+   5,
+   7
+  ],
+  "seconds": 0.018
+ },
+ {
+  "N": 71,
+  "p": 5,
+  "n_supersingular": 12,
+  "n_thin": 12,
+  "n_nonrational_thin": 8,
+  "weight_counts": {
+   "1": 12
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 4,
+  "ratio_set": [
+   4
+  ],
+  "numerator": [
+   0,
+   3,
+   0,
+   2,
+   3,
+   1,
+   3,
+   2,
+   3,
+   2,
+   2,
+   2
+  ],
+  "denominator": [
+   3,
+   2,
+   0,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   4,
+   2,
+   4,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   4
+  ],
+  "seconds": 0.009
+ },
+ {
+  "N": 71,
+  "p": 7,
+  "n_supersingular": 25,
+  "n_thin": 11,
+  "n_nonrational_thin": 6,
+  "weight_counts": {
+   "1": 11,
+   "2": 14
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 1,
+  "ratio_set": [
+   1
+  ],
+  "numerator": [
+   1,
+   0,
+   3,
+   1,
+   1,
+   5,
+   1,
+   4,
+   6,
+   6,
+   3
+  ],
+  "denominator": [
+   0,
+   2,
+   5,
+   1,
+   3,
+   4,
+   0,
+   3,
+   2,
+   4,
+   4,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   4
+  ],
+  "seconds": 0.014
+ },
+ {
+  "N": 71,
+  "p": 11,
+  "n_supersingular": 37,
+  "n_thin": 23,
+  "n_nonrational_thin": 18,
+  "weight_counts": {
+   "1": 23,
+   "2": 14
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 1,
+  "ratio_set": [
+   1
+  ],
+  "numerator": [
+   8,
+   6,
+   7,
+   9,
+   10,
+   8,
+   7,
+   4,
+   2,
+   5,
+   10,
+   8,
+   5,
+   4,
+   4,
+   10,
+   3,
+   4,
+   3,
+   2,
+   1,
+   6,
+   6
+  ],
+  "denominator": [
+   1,
+   6,
+   6,
+   0,
+   5,
+   10,
+   3,
+   6,
+   9,
+   0,
+   0,
+   10,
+   5,
+   10,
+   4,
+   0,
+   5,
+   6,
+   6,
+   8,
+   3,
+   0,
+   8,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   4
+  ],
+  "seconds": 0.056
+ },
+ {
+  "N": 71,
+  "p": 13,
+  "n_supersingular": 43,
+  "n_thin": 29,
+  "n_nonrational_thin": 20,
+  "weight_counts": {
+   "1": 29,
+   "2": 14
+  },
+  "certificate": true,
+  "geometric_weights": true,
+  "weighted_polynomial": true,
+  "signed_residues": true,
+  "expected": 1,
+  "ratio_set": [
+   1
+  ],
+  "numerator": [
+   8,
+   5,
+   4,
+   5,
+   5,
+   12,
+   12,
+   9,
+   7,
+   9,
+   9,
+   7,
+   0,
+   10,
+   5,
+   11,
+   10,
+   6,
+   2,
+   10,
+   9,
+   10,
+   1,
+   0,
+   9,
+   9,
+   1,
+   6,
+   7
+  ],
+  "denominator": [
+   0,
+   4,
+   7,
+   9,
+   11,
+   7,
+   7,
+   5,
+   10,
+   0,
+   1,
+   10,
+   0,
+   10,
+   8,
+   3,
+   5,
+   5,
+   6,
+   3,
+   0,
+   12,
+   3,
+   11,
+   3,
+   0,
+   7,
+   11,
+   10,
+   1
+  ],
+  "initial_T_coefficients": [
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   4
+  ],
+  "seconds": 0.098
+ }
+]
