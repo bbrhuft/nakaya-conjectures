@@ -1,7 +1,8 @@
 {
   "title": "Nakaya's conjectures on the linear factors and degree of Fricke supersingular polynomials: manuscript and PARI/GP verification",
+  "version": "v1.3",
   "upload_type": "software",
-  "description": "<p>Manuscript (LaTeX source and PDF) and exact PARI/GP and Python verification code for a deduction of Nakaya's Conjectures 5 and 6 on the supersingular polynomials attached to the Fricke groups &Gamma;<sub>0</sub>(N)<sup>+</sup>, at all fourteen odd prime levels N in Nakaya's set, with versions at other odd prime levels, and a uniform form of Nakaya's Conjecture 4 (resultant multiplicities) at all fifteen levels of his set. Includes stored modular relations, computed polynomials, CSV files and run logs.</p><p>Code (verification/, exploratory/) is released under the MIT licence; the manuscript in paper/ is not covered by that licence (all rights reserved), as stated in the repository's LICENSE file.</p>",
+  "description": "<p>Manuscript (LaTeX source and PDF) and exact PARI/GP and Python verification code for a deduction of Nakaya's Conjectures 5 and 6 on the supersingular polynomials attached to the Fricke groups &Gamma;<sub>0</sub>(N)<sup>+</sup>, at all fourteen odd prime levels N in Nakaya's set, with versions at other odd prime levels, a uniform form of Nakaya's Conjecture 4 (resultant multiplicities) at all fifteen levels of his set, and a deduction of Morton's Conjectures 2 and 3 on the Hasse invariant of the Tate normal form E<sub>7</sub>. Includes stored modular relations, computed polynomials, CSV files and run logs.</p><p>Code (verification/, exploratory/) is released under the MIT licence; the manuscript in paper/ is not covered by that licence (all rights reserved), as stated in the repository's LICENSE file.</p>",
   "creators": [
     {
       "name": "Jordan, David",

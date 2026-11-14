@@ -72,3 +72,32 @@ A source check of Section 7 against Morton's proofs, a step-by-step review of th
 
 Remark numbers in earlier entries above (for example "Remark 7.3") refer to the numbering before Section 7 was added; that remark is now 8.3.
 
+
+## Revision of 14 November 2026 (release v1.3)
+
+Changes to the manuscript (now 24 pages):
+
+- Introduction: defines Nakaya's supersingular polynomial explicitly from R_N; adds a "Contribution" paragraph and a separate "Relation to previous work" paragraph; states that Theorem 1.1 needs no squarefree hypothesis on N.
+- Section 2: explains the two uses of the hypothesis p ≥ 5 (tame averaging, and automorphism groups at j = 0 = 1728 in characteristic 2 and 3).
+- Lemma 3.1: cites Bars and Dalal (J. Algebra 672 (2025), Lemma 30) for the same total-count identity.
+- Lemma 3.3: the cyclic-stabilizer argument is spelled out.
+- Proposition 5.1: restructured into three parts (integral coordinate; norm identity Norm(X − j) = R_N over Z_(p); identification of the roots), with the integrality of the Fourier coefficients proved directly rather than taken from moonshine.
+- Corollary 8.3 (new): Morton's Conjectures 2 and 3 for the Tate normal form E_7, deduced from Corollary 1.2 at N = 7 and Morton's Theorem 1, Theorem A and Section 3. It replaces the former Remark 8.3 ("What the count does not determine"); Remark 8.4 now explains why the finer counts follow at level seven. This supersedes the statement under "Status and contribution" above that the article does not prove Morton's Conjectures 2–3.
+- Remark 8.5 (new): the two terms of the linear-factor formula as rational points lifting to X_0(N) and points with an N-isogeny to the Frobenius conjugate (Chenu–Smith, Arpin). Hajouji's Table 1 remark is now 8.6.
+- Appendix A condensed into four subsections; the general-level check is now A.3 and the survey summary A.4.
+- Code and data availability: cites the Zenodo concept DOI 10.5281/zenodo.23698276 instead of a version DOI.
+- AI declaration: adds Gemini Hydrogen and Claude Fable 5.2.
+
+The verification code and results are unchanged from v1.2.
+
+### Open source checks (moved from comments in the .tex)
+
+- Theorem 1.1 is stated for every N prime to p, not only squarefree N. Confirm that Deligne–Rapoport VI 6.9 and Ribet Proposition 3.8 are stated in that generality; only prime N is needed for the corollaries.
+- Corollary 8.3: the pinpoint references to Morton's E_7 paper (Theorem 1; Theorem A; Section 3, Lemma 1 and Proposition 1; Conjectures 2 and 3 in Section 2) were checked against arXiv:2206.09801, not the published version.
+- Corollary 8.3 uses Morton's Section 3, Proposition 1 as stated; parts of its proof there are brief. A specialist should confirm that it is unconditional. A Google Gemini Hydrogen review (November 2026) asserts that it is, but that assertion has not been checked against Morton's proof.
+- Remark 8.5: the statements of Arpin's paper relevant to it (reported as Theorem 4.13 and Proposition 5.3) have not been checked against the source; add pinpoint references once they are.
+- Morton's Fricke-group paper (IJNT 19 (2023)): theorem and section numbers are taken from arXiv:2105.14532v1; check them against the published version before submission.
+
+### Zenodo labelling of v1.2
+
+The GitHub tag and release for v1.2 are correctly named, but the Zenodo record doi:10.5281/zenodo.23778165 was published with the version label "v5" by mistake; the label was corrected to "v1.2" on Zenodo on 14 November 2026 (the DOI and files are unchanged). From v1.3, `.zenodo.json` sets the version explicitly.

@@ -1,6 +1,6 @@
 # Nakaya's Conjectures 5 and 6: linear factors and degree of Fricke supersingular polynomials
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23778165.svg)](https://doi.org/10.5281/zenodo.23778165)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23698276.svg)](https://doi.org/10.5281/zenodo.23698276)
 
 Manuscript and exact PARI/GP verification for a deduction of two conjectures of Nakaya (*J. Number Theory* 204 (2019)) on the supersingular polynomial ss<sub>p</sub><sup>(N\*)</sup> attached to the Fricke group Γ<sub>0</sub>(N)<sup>+</sup>, at every prime level N ∈ {3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71} and every prime p ≥ 5, p ≠ N:
 
@@ -9,7 +9,7 @@ Manuscript and exact PARI/GP verification for a deduction of two conjectures of 
 
 Together with Aricheta's theorem, they determine the factorization over 𝔽<sub>p</sub>: ss<sub>p</sub><sup>(N\*)</sup> has that many linear factors and exactly g(X<sub>0</sub>(Np)/⟨w<sub>N</sub>, w<sub>p</sub>⟩) irreducible quadratic factors (Corollary 6.3).
 
-As a secondary result, Section 7 gives a uniform form of Nakaya's **Conjecture 4** (the multiplicities in the resultant Res<sub>X</sub>(ss<sub>p</sub>(X), R<sub>N</sub>(X, Y)), whose radical is ss<sub>p</sub><sup>(N\*)</sup>) at all fifteen levels in 𝔖 (Proposition 7.1). Nakaya stated Conjecture 4 only for N = 2, 3, 5, 7, and Morton (*Int. J. Number Theory* 19 (2023)) proved those four cases; Proposition 7.1 recovers them and supplies the analogues at the other eleven levels. Remarks 6.4 and 8.4 record consequences for Nakaya's Question 1 and Observation 3, alongside the earlier results of Morton and Hajouji (arXiv:2303.09096); Remark 8.4 explains, for N, p ≥ 5, the symmetry Hajouji observed in his table of quadratic-factor counts.
+As a secondary result, Section 7 gives a uniform form of Nakaya's **Conjecture 4** (the multiplicities in the resultant Res<sub>X</sub>(ss<sub>p</sub>(X), R<sub>N</sub>(X, Y)), whose radical is ss<sub>p</sub><sup>(N\*)</sup>) at all fifteen levels in 𝔖 (Proposition 7.1). Nakaya stated Conjecture 4 only for N = 2, 3, 5, 7, and Morton (*Int. J. Number Theory* 19 (2023)) proved those four cases; Proposition 7.1 recovers them and supplies the analogues at the other eleven levels. At level seven, Corollary 8.3 combines the count of linear factors with Morton's results on the Hasse invariant of the Tate normal form E<sub>7</sub> to give his Conjectures 2 and 3 on its quadratic and sextic factors. Remark 8.5 relates the two terms of the linear-factor formula to supersingular curves with an N-isogeny to their Frobenius conjugate (Chenu–Smith, Arpin). Remarks 6.4 and 8.6 record consequences for Nakaya's Question 1 and Observation 3, alongside the earlier results of Morton and Hajouji (arXiv:2303.09096); Remark 8.6 explains, for N, p ≥ 5, the symmetry Hajouji observed in his table of quadratic-factor counts.
 
 > **Status: draft, not yet reviewed by a specialist.** The proofs assemble known results (Deligne–Rapoport, Aricheta's Theorem 3.1, Ogg's and Im–Jeon–Kim's fixed-point formulas, the genus formula, tame ramification of the j-map) and make no priority claim for the underlying geometric identities. Nakaya proved N = 3 of Conjecture 6, and Morton proved N = 5 and N = 7. See `notes/AUTHOR_NOTES.md`.
 
@@ -21,7 +21,7 @@ As a secondary result, Section 7 gives a uniform form of Nakaya's **Conjecture 4
 
 Here X = X<sub>0</sub>(N)<sup>+</sup>, B = X<sub>0</sub>(Np)/⟨w<sub>N</sub>, w<sub>p</sub>⟩, D is the total number of supersingular points on X in characteristic p, and λ = λ<sub>p</sub>(X) is the number of 𝔽<sub>p</sub>-rational ones. The terms r<sub>p</sub>(Np) and r<sub>Np</sub>(Np) count fixed points of the Atkin–Lehner involutions w<sub>p</sub> and w<sub>Np</sub> on X<sub>0</sub>(Np) over ℂ.
 
-For N = 7 this settles the case of Conjecture 5 that Morton (*Ramanujan J.* 63 (2024), §3) had reduced to his Conjectures 1–3, of which he proved Conjecture 1 (Theorem A). It does not prove his finer Conjectures 2–3.
+For N = 7 this settles the case of Conjecture 5 that Morton (*Ramanujan J.* 63 (2024), §3) had reduced to his Conjectures 1–3, of which he proved Conjecture 1 (Theorem A). Reading his counting identities in the opposite direction, Corollary 8.3 then deduces his finer Conjectures 2 and 3 from Conjecture 5 and his other published results (see `notes/AUTHOR_NOTES.md` for the source checks still open).
 
 Only step 1 needs N ∈ 𝔖. The same arguments count the rational supersingular points (Corollary 5.2) and, with a genus correction, all supersingular points (Proposition 6.2) on X<sub>0</sub>(N)<sup>+</sup> at **every odd prime level N**, including levels where X<sub>0</sub>(N)<sup>+</sup> has positive genus.
 
@@ -36,8 +36,8 @@ Only step 1 needs N ∈ 𝔖. The same arguments count the rational supersingula
 | `verification/c6_degrees.py` | Checks Nakaya's degree formula (Conjecture 6) against the polynomial degrees from the stored relations |
 | `verification/c6_direct.gp` | Direct count of all supersingular points from Φ<sub>N</sub>; checks Conjecture 6, Proposition 6.2 and the level-3 fixed-point count |
 | `verification/conjecture6_second_implementation/` | Separate PARI/GP implementation of the degree check, with an Atkin–Lehner trace computation (PARI 2.15.4), its results and its own README |
-| `verification/conjecture4/` | Conjecture 4 (resultant multiplicities, Section 7 and Appendix A.7): `code/verify_c4.gp` (PARI/GP 2.15.4), an output audit script, full results for all 1,127 pairs, a research memorandum (`report/report.pdf`), provenance notes and its own README; `independent/` holds the FLINT re-implementation and the checks of R<sub>N</sub> against Morton and Φ<sub>N</sub> |
-| `verification/hajouji_table1/` | Comparison of Hajouji's Table 1 with g(X<sub>0</sub>(pℓ)\*) (Remark 8.4) |
+| `verification/conjecture4/` | Conjecture 4 (resultant multiplicities, Section 7 and Appendix A.4): `code/verify_c4.gp` (PARI/GP 2.15.4), an output audit script, full results for all 1,127 pairs, a research memorandum (`report/report.pdf`), provenance notes and its own README; `independent/` holds the FLINT re-implementation and the checks of R<sub>N</sub> against Morton and Φ<sub>N</sub> |
+| `verification/hajouji_table1/` | Comparison of Hajouji's Table 1 with g(X<sub>0</sub>(pℓ)\*) (Remark 8.6) |
 | `verification/trace_example.gp` | Characteristic-zero Atkin–Lehner trace check of the worked example N = 11, p = 13 |
 | `verification/relations/`, `polynomials/` | Exact modular relations and supersingular polynomials for each level |
 | `verification/n2/` | Supplementary level-2 run |
@@ -49,20 +49,20 @@ Only step 1 needs N ∈ 𝔖. The same arguments count the rational supersingula
 
 ## Reproducing the verification
 
-The current manuscript corresponds to release v1.2, archived on Zenodo as doi:10.5281/zenodo.23778165. Release v1.2 revises Section 7 and Remarks 6.4 and 8.4 after a source check, and adds the independent checks described below. Release v1.1 (doi:10.5281/zenodo.23750884) added Section 7 (Conjecture 4) and Appendix A.7; release v1.0 (doi:10.5281/zenodo.23698277) matches the earlier manuscript without Section 7. All commands are run from `verification/`. "Reconstructed" means the run rebuilds the Hauptmoduli and modular relations from spaces of modular forms; "stored" means it reads `relations/relation_N.gp`, produced by the reconstructing run under PARI/GP 2.15.4; "none" means it uses only the classical supersingular polynomial and the modular polynomial Φ<sub>N</sub>.
+The current manuscript corresponds to release v1.3. All releases are archived on Zenodo under the concept DOI doi:10.5281/zenodo.23698276, which resolves to the latest version; each version's own DOI is listed on that record. Release v1.3 restructures the Introduction and Proposition 5.1 (Nakaya's Hauptmodul as an integral coordinate), adds Corollary 8.3 (Morton's Conjectures 2 and 3 for E<sub>7</sub>) and Remark 8.5 (isogenies to the Frobenius conjugate), cites Bars–Dalal for the total count, condenses Appendix A, and updates the AI declaration; the verification code and results are unchanged. Release v1.2 (doi:10.5281/zenodo.23778165) revised Section 7 and Remarks 6.4 and 8.4 after a source check, and added the independent checks described below. Release v1.1 (doi:10.5281/zenodo.23750884) added Section 7 (Conjecture 4) and what was then Appendix A.7; release v1.0 (doi:10.5281/zenodo.23698277) matches the earlier manuscript without Section 7. All commands are run from `verification/`. "Reconstructed" means the run rebuilds the Hauptmoduli and modular relations from spaces of modular forms; "stored" means it reads `relations/relation_N.gp`, produced by the reconstructing run under PARI/GP 2.15.4; "none" means it uses only the classical supersingular polynomial and the modular polynomial Φ<sub>N</sub>.
 
 | Survey | Command | Hauptmoduli | PARI | Expected final output |
 |---|---|---|---|---|
 | Conjecture 5, p ≤ 300 | `gp -fq -s 256000000 verify_nakaya.gp` | reconstructed | 2.15.4 | `ALL PASSED: 827 cases` |
 | Level 2, p ≤ 300 | `NK_MAXP=300; NK_LEVELS=[2]; read("verify_nakaya.gp")` | reconstructed | 2.15.4 | `ALL PASSED: 60 cases` |
 | Conjecture 5, p ≤ 2000 | `python run_extended.py 2000` | stored | 2.17.2 | `TOTAL 4201 pairs, mismatches: none` |
-| Other prime levels (paper, Corollary 5.2) | `verify_general.gp` with `VG_LEVELS`, `VG_MAXP` (paper, Appendix A.5) | none | 2.17.2 | `ALL AGREE: 468 cases`; `ALL AGREE: 58 cases` |
+| Other prime levels (paper, Corollary 5.2) | `verify_general.gp` with `VG_LEVELS`, `VG_MAXP` (paper, Appendix A.3) | none | 2.17.2 | `ALL AGREE: 468 cases`; `ALL AGREE: 58 cases` |
 | Conjecture 6, p ≤ 1500 | `python c6_degrees.py 1500` | stored | 2.17.2 | Part 1: 827 pairs, Part 2: 2478 pairs, `mismatches: none` |
 | Conjecture 6, second implementation | in `conjecture6_second_implementation/`: `gp -fq -s 768000000 code/verify_conjecture6.gp`, then `code/verify_traces.gp` | reconstructed | 2.15.4 | `ALL PASSED: 883`; `TRACE PASSED: 39` |
 | Conjecture 6 and Proposition 6.2, direct | `gp -fq -s 1000000000 c6_direct.gp` | none | 2.17.2 | (a) 167 pairs, (b) 87 pairs, (c) 12 primes, each with `mismatches []` |
 | Conjecture 4, p ≤ 400 | in `conjecture4/`: `gp -fq -s 1000000000 code/verify_c4.gp` | reconstructed | 2.15.4 | `COMPLETE tested=1127 failed=0 exceptional_pairs=246` |
 | Conjecture 4, independent (FLINT), p ≤ 2000 | in `conjecture4/independent/`: see its README | stored | 2.15.4 (export only) and python-flint 0.9.0 | `TOTAL pairs=4502 failures=0` |
-| Remark 8.4, Hajouji's Table 1 | in `hajouji_table1/`: `gp -q -s 2000000000 hajouji_table1.gp` | none | 2.15.4 | `off-diagonal unordered pairs: 105, mismatches: 0` |
+| Remark 8.6, Hajouji's Table 1 | in `hajouji_table1/`: `gp -q -s 2000000000 hajouji_table1.gp` | none | 2.15.4 | `off-diagonal unordered pairs: 105, mismatches: 0` |
 | Worked example N = 11, p = 13 | `gp -fq trace_example.gp` | none | 2.15.4 | fixed-point counts 4 and 20 |
 | Conjecture 4 analogue, p ≤ 400 | in `conjecture4/`: `mkdir -p results; gp -fq -s 1000000000 code/verify_c4.gp > results/run.log 2>&1`, then `python3 code/audit_outputs.py` | reconstructed | 2.15.4 | `COMPLETE tested=1127 failed=0 exceptional_pairs=246` |
 
@@ -95,7 +95,7 @@ gp -fq -s 1000000000 c6_direct.gp    # Conjecture 6, direct count from Phi_N
 | `verify_general.gp`, levels 37–73 (outside 𝔖) | 2.17.2 | p ≤ 1300, p ≡ 1 (mod 12) | 238 | 0 |
 | `verify_general.gp`, levels 79–127 (outside 𝔖) | 2.17.2 | p ≤ 600, p ≡ 1 (mod 12) | 58 | 0 |
 
-**General-level check** (Appendix A.5 of the paper). Run in PARI/GP with `gp -fq -s 512000000 verify_general.gp`, or set `VG_LEVELS` and `VG_MAXP` before `read`. Points over a Frobenius-stable pair (j, j′) with several isogenies are separated by the branch tangents of Φ<sub>N</sub>(x, y) = 0; 10,881 such points were resolved. 237 small pairs (all with p < 4N) had a repeated tangent slope and were skipped and reported, not guessed. Primes p ≢ 1 (mod 12) are not covered by this check. Full log: `results/general_levels_run.log`.
+**General-level check** (Appendix A.3 of the paper). Run in PARI/GP with `gp -fq -s 512000000 verify_general.gp`, or set `VG_LEVELS` and `VG_MAXP` before `read`. Points over a Frobenius-stable pair (j, j′) with several isogenies are separated by the branch tangents of Φ<sub>N</sub>(x, y) = 0; 10,881 such points were resolved. 237 small pairs (all with p < 4N) had a repeated tangent slope and were skipped and reported, not guessed. Primes p ≢ 1 (mod 12) are not covered by this check. Full log: `results/general_levels_run.log`.
 
 ### Conjecture 6 (degree)
 
@@ -122,7 +122,7 @@ Logs: `results/c6_degrees.log`, `results/c6_direct.log`. The second implementati
 
 The script reconstructs R<sub>N</sub> from modular forms, extracts the correction polynomials A<sub>N</sub>, B<sub>N</sub>, E<sub>N</sub>, confirms that they reproduce Nakaya's four sets of correction factors, and compares every exponent in the factorization of the resultant with Proposition 7.1. It deliberately refuses PARI versions other than 2.15.4, since it uses the same Hauptmodul construction as `verify_nakaya.gp`. Log: `conjecture4/results/run.log`; checksums: `conjecture4/SHA256SUMS.json`. A rerun under PARI/GP 2.15.4 on 29 October 2026 reproduced every result file except for timing fields. The discriminant of every E<sub>N</sub> has no prime factor other than 2, 3 and N, so its reduction is squarefree for every prime p ≥ 5, p ≠ N, as the proof requires. Morton's theorem and section numbers, in the paper and the memorandum, are cited from arXiv:2105.14532v1; the journal version was not accessible. The memorandum in `conjecture4/report/` is kept as written; where the paper differs from it (for example, it no longer cites Beneish–Wen's Proposition 3.16), the paper and `notes/SOURCE_AUDIT.md` take precedence.
 
-### Remark 8.4 (Hajouji's Table 1)
+### Remark 8.6 (Hajouji's Table 1)
 
 `hajouji_table1/hajouji_table1.gp` transcribes Hajouji's Table 1 (arXiv:2303.09096v3, Section 2.5): the number of irreducible quadratic factors over 𝔽<sub>p</sub> of the level-ℓ supersingular polynomial, for all pairs of primes in 𝔖. It compares each entry with g(X<sub>0</sub>(pℓ)\*), the count given by Corollary 6.3, computed from traces of Hecke operators on weight-two newforms. All 105 off-diagonal pairs agree, including those with 2 or 3, which the proof does not cover. Log: `hajouji_table1/hajouji_table1.log`.
 
@@ -130,9 +130,9 @@ Finite agreement checks the implementation and normalisations; it is not a subst
 
 ## How to cite
 
-Jordan, D. (2026). *Nakaya's conjectures on the linear factors and degree of Fricke supersingular polynomials: manuscript and PARI/GP verification* (Version v1.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23778165
+Jordan, D. (2026). *Nakaya's conjectures on the linear factors and degree of Fricke supersingular polynomials: manuscript and PARI/GP verification* (Version v1.3) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23698276
 
-Release v1.2 matches the current manuscript; v1.1 added the Conjecture 4 material; v1.0 matches the earliest version without it.
+The DOI above is the concept DOI, which always resolves to the latest release; to cite a specific release, use the version DOI shown on its Zenodo record. Release v1.3 matches the current manuscript; v1.2 (doi:10.5281/zenodo.23778165) source-checked Section 7; v1.1 added the Conjecture 4 material; v1.0 matches the earliest version without it.
 
 ## AI assistance
 
